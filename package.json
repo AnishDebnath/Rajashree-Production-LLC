@@ -1,0 +1,19 @@
+{
+  "name": "rajashree-production",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev --workspace=client",
+    "build": "npm run build --workspace=client",
+    "preview": "npm run preview --workspace=client",
+    "lint": "npm run lint --workspace=client"
+  },
+  "workspaces": [
+    "client"
+  ],
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3"
+  }
+}

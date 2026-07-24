@@ -1,0 +1,108 @@
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import { ChevronDown } from 'lucide-react';
+import { faqs } from '../../data/contact';
+
+interface FAQsProps {
+  onShowMessage: (msg: string, type: 'info' | 'success') => void;
+}
+
+export default function FAQs({ onShowMessage }: FAQsProps) {
+  const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
+
+  return (
+    <section
+      className="relative z-20 bg-bg-dark pt-24 pb-8 px-6 md:px-12"
+      id="contact-faq-section"
+    >
+      <div className="max-w-4xl mx-auto space-y-16">
+        <div className="text-center space-y-4">
+          <h2 className="font-sans font-bold text-2xl text-white tracking-tight">
+            Frequently Asked Questions (FAQs)
+          </h2>
+          <div className="h-0.5 w-12 bg-gold mx-auto" />
+        </div>
+
+        <div className="space-y-4">
+          {faqs.map((faq, i) => {
+            const isOpen = expandedFaq === i;
+            const serialNum = String(i + 1).padStart(2, '0');
+            return (
+              <div
+                key={i}
+                className={`group relative rounded-xl border transition-all duration-300 overflow-hidden ${isOpen
+                  ? 'border-gold/30 bg-neutral-950/70'
+                  : 'border-white/5 hover:border-gold/20 bg-neutral-950/40 hover:bg-neutral-950/70'
+                  }`}
+              >
+                {/* Left sliding active indicator bar */}
+                <div
+                  className={`absolute left-0 top-0 bottom-0 w-0.5 bg-gold transition-transform duration-300 origin-left ${isOpen ? 'scale-x-100' : 'scale-x-0'
+                    }`}
+                />
+
+                <button
+                  onClick={() => {
+                    setExpandedFaq(isOpen ? null : i);
+                    onShowMessage(`Reading FAQ: "${faq.q}"`, 'info');
+                  }}
+                  className="w-full flex items-center justify-between text-left px-6 py-5 font-sans font-medium text-xs sm:text-sm text-neutral-200 hover:text-white transition-colors relative z-10"
+                >
+                  <div className="flex items-center gap-x-5 transition-transform duration-300 group-hover:translate-x-1.5">
+                    <span className="font-mono text-xs text-gold/60 font-semibold tracking-wider">
+                      {serialNum}
+                    </span>
+                    <span className={`transition-colors duration-200 pr-4 ${isOpen ? 'text-gold font-semibold' : 'group-hover:text-gold'}`}>
+                      {faq.q}
+                    </span>
+                  </div>
+                  <ChevronDown
+                    className={`w-4 h-4 text-neutral-500 transition-transform duration-300 shrink-0 ml-4 ${isOpen ? 'rotate-180 text-gold' : ''
+                      }`}
+                  />
+                </button>
+
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: 'easeInOut' }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-6 pb-6 pt-1 border-t border-white/5">
+                        <p className="font-sans text-neutral-400 text-xs sm:text-sm leading-relaxed max-w-3xl border-l border-gold/20 pl-4">
+                          {faq.a}
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Bottom blend transition into footer/CTA */}
+      <div className="absolute bottom-0 left-0 right-0 h-48 translate-y-full pointer-events-none z-10 overflow-hidden">
+        <div className="w-full h-full absolute inset-0 bg-linear-to-b from-bg-dark via-bg-dark/85 to-transparent" />
+        <div
+          className="w-full h-32 absolute top-0 backdrop-blur-xs"
+          style={{
+            WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)',
+            maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)'
+          }}
+        />
+        <div
+          className="w-full h-20 absolute top-0 backdrop-blur-md"
+          style={{
+            WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
+            maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)'
+          }}
+        />
+      </div>
+    </section>
+  );
+}
