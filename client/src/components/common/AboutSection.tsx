@@ -1,30 +1,43 @@
-import { Trophy, Award, Sparkles } from 'lucide-react';
+import { motion } from 'motion/react';
+import { Trophy, Award, Sparkles, ArrowUpRight } from 'lucide-react';
 import { LaurelWreath } from './LaurelWreath';
 
-export default function AgencySection() {
+interface AboutSectionProps {
+    /** Blend transition divs for hero melt effect (About page) */
+    showBlendTransition?: boolean;
+    /** CTA button linking to About page (Home page) */
+    showCta?: boolean;
+    onNavigateToAbout?: () => void;
+    onShowMessage?: (msg: string, type?: 'info' | 'success') => void;
+}
+
+export default function AboutSection({
+    showBlendTransition = false,
+    showCta = false,
+    onNavigateToAbout,
+    onShowMessage,
+}: AboutSectionProps) {
     return (
         <section className="relative py-24 z-20 bg-transparent" id="about-our-agency">
-            {/* Seamless Melt/Blend Transition with the Hero's Fixed Background */}
-            <div className="absolute top-0 left-0 right-0 h-48 -translate-y-full pointer-events-none z-10 overflow-hidden">
-                {/* Smooth color gradient from transparent to solid bg-bg-dark */}
-                <div className="w-full h-full absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/85 to-transparent" />
-
-                {/* Layered progressive backdrop blurs with vertical gradient masks to 'melt' the fixed image */}
-                <div
-                    className="w-full h-32 absolute bottom-0 backdrop-blur-[4px]"
-                    style={{
-                        WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)',
-                        maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)'
-                    }}
-                />
-                <div
-                    className="w-full h-20 absolute bottom-0 backdrop-blur-[12px]"
-                    style={{
-                        WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
-                        maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)'
-                    }}
-                />
-            </div>
+            {showBlendTransition && (
+                <div className="absolute top-0 left-0 right-0 h-48 -translate-y-full pointer-events-none z-10 overflow-hidden">
+                    <div className="w-full h-full absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/85 to-transparent" />
+                    <div
+                        className="w-full h-32 absolute bottom-0 backdrop-blur-[4px]"
+                        style={{
+                            WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)',
+                            maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)'
+                        }}
+                    />
+                    <div
+                        className="w-full h-20 absolute bottom-0 backdrop-blur-[12px]"
+                        style={{
+                            WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
+                            maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)'
+                        }}
+                    />
+                </div>
+            )}
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -34,6 +47,22 @@ export default function AgencySection() {
                         <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight">
                             About Our Agency
                         </h2>
+
+                        {showCta && onNavigateToAbout && (
+                            <motion.button
+                                whileHover={{ scale: 1.03 }}
+                                whileTap={{ scale: 0.98 }}
+                                onClick={() => {
+                                    onNavigateToAbout();
+                                    window.scrollTo({ top: 0, behavior: 'instant' });
+                                    onShowMessage?.("Discovering Rajashree Production agency story!", "info");
+                                }}
+                                className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gold hover:bg-white text-black font-sans font-bold text-[10px] sm:text-xs tracking-widest uppercase cursor-pointer select-none transition-all duration-300 shrink-0 mt-6"
+                            >
+                                <span>About Us</span>
+                                <ArrowUpRight className="w-3.5 h-3.5 text-black group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+                            </motion.button>
+                        )}
                     </div>
 
                     {/* Right Contents */}
@@ -98,11 +127,9 @@ export default function AgencySection() {
 
                             {/* Stat 1 */}
                             <div className="relative h-20 sm:h-24 md:h-28 flex items-center justify-center overflow-visible group transition-all duration-300">
-                                {/* Giant Background Number */}
                                 <span className="absolute inset-0 flex items-center justify-center select-none font-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-neutral-600/50 tracking-tighter leading-none whitespace-nowrap group-hover:text-gold/30 group-hover:scale-105 transition-all duration-300 pointer-events-none">
                                     15+
                                 </span>
-                                {/* Overlaid Label */}
                                 <span className="relative z-10 text-center font-display font-bold text-[10px] sm:text-xs md:text-sm text-white tracking-[0.2em] px-2 uppercase leading-snug max-w-[95%] pointer-events-none">
                                     YEARS OF EXPERIENCE
                                 </span>
@@ -110,11 +137,9 @@ export default function AgencySection() {
 
                             {/* Stat 2 */}
                             <div className="relative h-20 sm:h-24 md:h-28 flex items-center justify-center overflow-visible group transition-all duration-300">
-                                {/* Giant Background Number */}
                                 <span className="absolute inset-0 flex items-center justify-center select-none font-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-neutral-600/50 tracking-tighter leading-none whitespace-nowrap group-hover:text-gold/30 group-hover:scale-105 transition-all duration-300 pointer-events-none">
                                     200+
                                 </span>
-                                {/* Overlaid Label */}
                                 <span className="relative z-10 text-center font-display font-bold text-[10px] sm:text-xs md:text-sm text-white tracking-[0.2em] px-2 uppercase leading-snug max-w-[95%] pointer-events-none">
                                     REPEATED CLIENTS
                                 </span>
@@ -122,11 +147,9 @@ export default function AgencySection() {
 
                             {/* Stat 3 */}
                             <div className="relative h-20 sm:h-24 md:h-28 flex items-center justify-center overflow-visible group transition-all duration-300">
-                                {/* Giant Background Number */}
                                 <span className="absolute inset-0 flex items-center justify-center select-none font-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-neutral-600/50 tracking-tighter leading-none whitespace-nowrap group-hover:text-gold/30 group-hover:scale-105 transition-all duration-300 pointer-events-none">
                                     470+
                                 </span>
-                                {/* Overlaid Label */}
                                 <span className="relative z-10 text-center font-display font-bold text-[10px] sm:text-xs md:text-sm text-white tracking-[0.2em] px-2 uppercase leading-snug max-w-[95%] pointer-events-none">
                                     COMPLETED PROJECTS
                                 </span>
@@ -134,11 +157,9 @@ export default function AgencySection() {
 
                             {/* Stat 4 */}
                             <div className="relative h-20 sm:h-24 md:h-28 flex items-center justify-center overflow-visible group transition-all duration-300">
-                                {/* Giant Background Number */}
                                 <span className="absolute inset-0 flex items-center justify-center select-none font-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-neutral-600/50 tracking-tighter leading-none whitespace-nowrap group-hover:text-gold/30 group-hover:scale-105 transition-all duration-300 pointer-events-none">
                                     550+
                                 </span>
-                                {/* Overlaid Label */}
                                 <span className="relative z-10 text-center font-display font-bold text-[10px] sm:text-xs md:text-sm text-white tracking-[0.2em] px-2 uppercase leading-snug max-w-[95%] pointer-events-none">
                                     HAPPY CLIENTS
                                 </span>

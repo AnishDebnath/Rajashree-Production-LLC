@@ -2,15 +2,15 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'motion/react';
 import Marquee from '../../components/ui/Marquee';
 import { teamMembers, partners, usps, testimonials, faqs } from '../../data/about';
-import Agency from './Agency';
+import AboutSection from '../../components/common/AboutSection';
 import Storytellers from './Storytellers';
-import SecretSauce from './SecretSauce';
+import CoreValueSection from './CoreValue';
 import TeamMembers from './TeamMembers';
-import CreativePlayground from './CreativePlayground';
+import BrandPartnersSection from './BrandPartners';
 import HowWeWork from './HowWeWork';
 import WhyUs from './WhyUs';
-import ClientChronicles from './ClientChronicles';
-import FAQs from '../../components/common/FAQs';
+import Testimonial from '../../components/common/Testimonial';
+import FAQ from '../../components/common/FAQ';
 
 interface AboutPageProps {
   onCollaborateClick: () => void;
@@ -54,7 +54,6 @@ export default function AboutPage({ onCollaborateClick, onShowMessage }: AboutPa
 
   // Testimonials state
   const [activeTestimonial, setActiveTestimonial] = useState(0);
-  const [direction, setDirection] = useState(0); // -1 for left, 1 for right
 
   useEffect(() => {
     const handleScroll = () => {
@@ -81,12 +80,10 @@ export default function AboutPage({ onCollaborateClick, onShowMessage }: AboutPa
   const scrollIndicatorOpacity = Math.max(0, 1 - scrollYState / 280);
 
   const nextTestimonial = () => {
-    setDirection(1);
     setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
   };
 
   const prevTestimonial = () => {
-    setDirection(-1);
     setActiveTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
@@ -202,19 +199,19 @@ export default function AboutPage({ onCollaborateClick, onShowMessage }: AboutPa
           }}
         >
           {/* 2. ABOUT OUR AGENCY SECTION */}
-          <Agency />
+          <AboutSection showBlendTransition />
 
           {/* 3. STORYTELLERS CALLOUT & IMAGE GRID */}
           <Storytellers />
 
           {/* 4. THE SECRET SAUCE SECTION */}
-          <SecretSauce />
+          <CoreValueSection />
 
           {/* 5. TEAM MEMBERS SECTION */}
           <TeamMembers teamMembers={teamMembers} onShowMessage={onShowMessage} />
 
           {/* 6. OUR CREATIVE PLAYGROUND (BRAND LOGOS) */}
-          <CreativePlayground partners={partners} />
+          <BrandPartnersSection partners={partners} />
 
           {/* 7. HOW WE WORK (SPLIT ROW) */}
           <HowWeWork />
@@ -223,10 +220,10 @@ export default function AboutPage({ onCollaborateClick, onShowMessage }: AboutPa
           <WhyUs usps={usps} />
 
           {/* 10. CLIENT CHRONICLES TESTIMONIALS SLIDER */}
-          <ClientChronicles testimonials={testimonials} activeTestimonial={activeTestimonial} setActiveTestimonial={setActiveTestimonial} prevTestimonial={prevTestimonial} nextTestimonial={nextTestimonial} />
+          <Testimonial testimonials={testimonials} activeTestimonial={activeTestimonial} setActiveTestimonial={setActiveTestimonial} prevTestimonial={prevTestimonial} nextTestimonial={nextTestimonial} />
 
           {/* 11. FAQS ACCORDION SECTION */}
-          <FAQs faqs={faqs} onShowMessage={onShowMessage} sectionId="about-faqs" />
+          <FAQ faqs={faqs} onShowMessage={onShowMessage} sectionId="about-faqs" />
 
           <div className="relative w-full bg-bg-dark" id="about-marquee-section">
             <Marquee />

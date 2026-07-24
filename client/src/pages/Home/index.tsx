@@ -12,9 +12,9 @@ import FeaturedPortfolio from './FeaturedPortfolio';
 import WorkflowProcess from './WorkflowProcess';
 import FeaturedWork from './FeaturedWork';
 import SocialReels from './SocialReels';
-import AboutCompany from './AboutCompany';
-import Testimonials from './Testimonials';
-import FAQs from '../../components/common/FAQs';
+import AboutSection from '../../components/common/AboutSection';
+import Testimonial from '../../components/common/Testimonial';
+import FAQ from '../../components/common/FAQ';
 import Blogs from './Blogs';
 import {
   heroSlides,
@@ -36,7 +36,6 @@ interface HomePageProps {
 
 export default function HomePage({ setActiveTab, onShowMessage, onProjectClick, onSelectBlog }: HomePageProps) {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
-  const [direction, setDirection] = useState(0);
   const [currentHeroSlide, setCurrentHeroSlide] = useState(0);
 
   // Scrolling portfolio carousel refs and hooks
@@ -104,12 +103,10 @@ export default function HomePage({ setActiveTab, onShowMessage, onProjectClick, 
   };
 
   const nextTestimonial = () => {
-    setDirection(1);
     setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
   };
 
   const prevTestimonial = () => {
-    setDirection(-1);
     setActiveTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
@@ -185,17 +182,17 @@ export default function HomePage({ setActiveTab, onShowMessage, onProjectClick, 
 
 
         {/* 8. ABOUT OUR COMPANY / AGENCY SECTION */}
-        <AboutCompany
-          setActiveTab={setActiveTab}
+        <AboutSection
+          showCta
+          onNavigateToAbout={() => setActiveTab('about')}
           onShowMessage={onShowMessage}
         />
 
 
         {/* 9. CLIENT CHRONICLES TESTIMONIALS SLIDER */}
-        <Testimonials
+        <Testimonial
           testimonials={testimonials}
           activeTestimonial={activeTestimonial}
-          direction={direction}
           setActiveTestimonial={setActiveTestimonial}
           prevTestimonial={prevTestimonial}
           nextTestimonial={nextTestimonial}
@@ -203,7 +200,7 @@ export default function HomePage({ setActiveTab, onShowMessage, onProjectClick, 
 
 
         {/* 10. FAQs ACCORDION SECTION */}
-        <FAQs faqs={faqs} onShowMessage={onShowMessage} sectionId="home-faqs" />
+        <FAQ faqs={faqs} onShowMessage={onShowMessage} sectionId="home-faqs" />
 
 
         {/* 11. BLOGS GRID SECTION */}

@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
 
-interface FAQsProps {
+interface FAQProps {
     faqs: { q: string; a: string }[];
     onShowMessage: (msg: string, type: 'info' | 'success') => void;
     sectionId?: string;
     className?: string;
 }
 
-export default function FAQs({ faqs, onShowMessage, sectionId, className = 'bg-transparent' }: FAQsProps) {
+export default function FAQ({ faqs, onShowMessage, sectionId, className = 'bg-transparent' }: FAQProps) {
     const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
     return (

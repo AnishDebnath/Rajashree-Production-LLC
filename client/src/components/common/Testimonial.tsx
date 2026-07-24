@@ -1,22 +1,30 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { Quote, ChevronLeft, ChevronRight } from 'lucide-react';
-import type { Testimonial } from '../../data/about';
+import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
-interface ClientChroniclesSectionProps {
-    testimonials: Testimonial[];
+export interface TestimonialItem {
+    text: string;
+    author: string;
+    role: string;
+    company: string;
+    iconType: string;
+}
+
+interface TestimonialProps {
+    testimonials: TestimonialItem[];
     activeTestimonial: number;
     setActiveTestimonial: (idx: number) => void;
     prevTestimonial: () => void;
     nextTestimonial: () => void;
+    direction?: number;
 }
 
-export default function ClientChroniclesSection({
+export default function Testimonial({
     testimonials,
     activeTestimonial,
     setActiveTestimonial,
     prevTestimonial,
     nextTestimonial,
-}: ClientChroniclesSectionProps) {
+}: TestimonialProps) {
     return (
         <section className="relative py-24 z-10 bg-transparent overflow-hidden" id="client-chronicles">
 

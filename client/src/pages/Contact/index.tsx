@@ -3,7 +3,7 @@ import Hero from '../../components/common/hero/Hero';
 import InfoForm from './InfoForm';
 import MapSection from './Map';
 import { faqs } from '../../data/contact';
-import FAQs from '../../components/common/FAQs';
+import FAQ from '../../components/common/FAQ';
 
 interface ContactPageProps {
   onShowMessage: (msg: string, type: 'info' | 'success') => void;
@@ -42,7 +42,7 @@ export default function ContactPage({
       <MapSection />
 
       {/* FAQs Section */}
-      <FAQs faqs={faqs} onShowMessage={onShowMessage} sectionId="contact-faq-section" className="bg-bg-dark" />
+      <FAQ faqs={faqs} onShowMessage={onShowMessage} sectionId="contact-faq-section" className="bg-bg-dark" />
     </>
   );
 }

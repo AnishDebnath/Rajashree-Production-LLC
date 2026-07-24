@@ -5,7 +5,7 @@ import Intro from './Intro';
 import Stages from './Stages';
 import Categories from './Categories';
 import { faqs } from '../../data/services';
-import FAQs from '../../components/common/FAQs';
+import FAQ from '../../components/common/FAQ';
 
 interface ServicesPageProps {
   onCollaborateClick: () => void;
@@ -69,7 +69,7 @@ export default function ServicesPage({ onCollaborateClick, onShowMessage, onColl
         />
 
         {/* FAQS ACCORDION SECTION */}
-        <FAQs faqs={faqs} onShowMessage={onShowMessage} sectionId="services-faq-section" />
+        <FAQ faqs={faqs} onShowMessage={onShowMessage} sectionId="services-faq-section" />
 
         {/* MARQUEE TEXT SECTION */}
         <div className="relative w-full bg-bg-dark" id="services-marquee-section">
