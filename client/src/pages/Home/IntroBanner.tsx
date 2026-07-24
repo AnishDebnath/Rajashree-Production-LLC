@@ -169,8 +169,8 @@ export default function IntroBanner({ heroSlides, currentHeroSlide, setCurrentHe
                         loop
                         muted
                         playsInline
-                        poster="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&q=80&w=1600"
-                        src="https://assets.mixkit.co/videos/preview/mixkit-gorgeous-woman-under-rain-looking-at-neon-lights-40441-large.mp4"
+                        poster="/src/assets/images/cinematic-studio-hero.jpg"
+                        src="/src/assets/intro-video.mp4"
                         className="w-full h-full object-cover object-center"
                     />
                 </motion.div>
