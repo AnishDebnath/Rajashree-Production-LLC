@@ -1,20 +1,19 @@
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
-import type { FAQ } from '../../data/about';
 
-interface FAQsSectionProps {
-    faqs: FAQ[];
-    openFaqIdx: number | null;
-    setOpenFaqIdx: (idx: number | null) => void;
+interface FAQsProps {
+    faqs: { q: string; a: string }[];
     onShowMessage: (msg: string, type: 'info' | 'success') => void;
+    sectionId?: string;
+    className?: string;
 }
 
-export default function FAQsSection({ faqs, openFaqIdx, setOpenFaqIdx, onShowMessage }: FAQsSectionProps) {
+export default function FAQs({ faqs, onShowMessage, sectionId, className = 'bg-transparent' }: FAQsProps) {
+    const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
+
     return (
-        <section
-            className="relative z-20 bg-transparent pt-24 pb-8 px-6 md:px-12"
-            id="about-faqs"
-        >
+        <section className={`relative z-20 ${className} pt-24 pb-8 px-6 md:px-12`} id={sectionId}>
             <div className="max-w-4xl mx-auto space-y-16">
                 <div className="text-center space-y-4">
                     <h2 className="font-sans font-bold text-2xl text-white tracking-tight">
@@ -25,7 +24,7 @@ export default function FAQsSection({ faqs, openFaqIdx, setOpenFaqIdx, onShowMes
 
                 <div className="space-y-4">
                     {faqs.map((faq, i) => {
-                        const isOpen = openFaqIdx === i;
+                        const isOpen = expandedFaq === i;
                         const serialNum = String(i + 1).padStart(2, '0');
                         return (
                             <div
@@ -43,7 +42,7 @@ export default function FAQsSection({ faqs, openFaqIdx, setOpenFaqIdx, onShowMes
 
                                 <button
                                     onClick={() => {
-                                        setOpenFaqIdx(isOpen ? null : i);
+                                        setExpandedFaq(isOpen ? null : i);
                                         onShowMessage(`Reading FAQ: "${faq.q}"`, 'info');
                                     }}
                                     className="w-full flex items-center justify-between text-left px-6 py-5 font-sans font-medium text-xs sm:text-sm text-neutral-200 hover:text-white transition-colors relative z-10"

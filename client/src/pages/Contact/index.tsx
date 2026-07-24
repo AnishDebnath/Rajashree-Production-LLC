@@ -2,7 +2,8 @@ import { useEffect } from 'react';
 import Hero from '../../components/common/hero/Hero';
 import InfoForm from './InfoForm';
 import MapSection from './Map';
-import FAQs from './FAQs';
+import { faqs } from '../../data/contact';
+import FAQs from '../../components/common/FAQs';
 
 interface ContactPageProps {
   onShowMessage: (msg: string, type: 'info' | 'success') => void;
@@ -41,9 +42,7 @@ export default function ContactPage({
       <MapSection />
 
       {/* FAQs Section */}
-      <FAQs
-        onShowMessage={onShowMessage}
-      />
+      <FAQs faqs={faqs} onShowMessage={onShowMessage} sectionId="contact-faq-section" className="bg-bg-dark" />
     </>
   );
 }

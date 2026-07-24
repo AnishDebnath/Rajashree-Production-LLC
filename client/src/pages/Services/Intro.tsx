@@ -3,12 +3,12 @@ import { motion } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { gearSlides } from '../../data/services';
 
-interface StudioAwaitsSectionProps {
+interface IntroProps {
     onCollaborateClick: () => void;
     onShowMessage: (msg: string, type: 'info' | 'success') => void;
 }
 
-export default function StudioAwaitsSection({ onCollaborateClick, onShowMessage }: StudioAwaitsSectionProps) {
+export default function Intro({ onCollaborateClick, onShowMessage }: IntroProps) {
     const [currentGearSlide, setCurrentGearSlide] = useState(1);
 
     const handleNextGear = () => {

@@ -10,7 +10,7 @@ import CreativePlayground from './CreativePlayground';
 import HowWeWork from './HowWeWork';
 import WhyUs from './WhyUs';
 import ClientChronicles from './ClientChronicles';
-import FAQs from './FAQs';
+import FAQs from '../../components/common/FAQs';
 
 interface AboutPageProps {
   onCollaborateClick: () => void;
@@ -51,9 +51,6 @@ export default function AboutPage({ onCollaborateClick, onShowMessage }: AboutPa
   const smoothTranslateZ = useSpring(rawTranslateZ, { stiffness: 85, damping: 22 });
   const smoothTranslateY = useSpring(rawTranslateY, { stiffness: 85, damping: 22 });
   const smoothOpacity = useSpring(rawOpacity, { stiffness: 85, damping: 22 });
-
-  // Accordion state
-  const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(null);
 
   // Testimonials state
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -229,7 +226,7 @@ export default function AboutPage({ onCollaborateClick, onShowMessage }: AboutPa
           <ClientChronicles testimonials={testimonials} activeTestimonial={activeTestimonial} setActiveTestimonial={setActiveTestimonial} prevTestimonial={prevTestimonial} nextTestimonial={nextTestimonial} />
 
           {/* 11. FAQS ACCORDION SECTION */}
-          <FAQs faqs={faqs} openFaqIdx={openFaqIdx} setOpenFaqIdx={setOpenFaqIdx} onShowMessage={onShowMessage} />
+          <FAQs faqs={faqs} onShowMessage={onShowMessage} sectionId="about-faqs" />
 
           <div className="relative w-full bg-bg-dark" id="about-marquee-section">
             <Marquee />

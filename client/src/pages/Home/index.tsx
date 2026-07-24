@@ -14,7 +14,7 @@ import FeaturedWork from './FeaturedWork';
 import SocialReels from './SocialReels';
 import AboutCompany from './AboutCompany';
 import Testimonials from './Testimonials';
-import FAQs from './FAQs';
+import FAQs from '../../components/common/FAQs';
 import Blogs from './Blogs';
 import {
   heroSlides,
@@ -35,7 +35,6 @@ interface HomePageProps {
 }
 
 export default function HomePage({ setActiveTab, onShowMessage, onProjectClick, onSelectBlog }: HomePageProps) {
-  const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(null);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [direction, setDirection] = useState(0);
   const [currentHeroSlide, setCurrentHeroSlide] = useState(0);
@@ -204,12 +203,7 @@ export default function HomePage({ setActiveTab, onShowMessage, onProjectClick, 
 
 
         {/* 10. FAQs ACCORDION SECTION */}
-        <FAQs
-          faqs={faqs}
-          openFaqIdx={openFaqIdx}
-          setOpenFaqIdx={setOpenFaqIdx}
-          onShowMessage={onShowMessage}
-        />
+        <FAQs faqs={faqs} onShowMessage={onShowMessage} sectionId="home-faqs" />
 
 
         {/* 11. BLOGS GRID SECTION */}
