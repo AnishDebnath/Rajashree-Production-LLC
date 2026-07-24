@@ -2,7 +2,7 @@
 import { useScroll, useTransform, useSpring, useMotionValue } from 'motion/react';
 import { Artist, artistsData } from '../../data/artists';
 import { Project } from '../../types';
-import { projectsData } from '../../data/projects';
+import { projectsData } from '../../data/portfolio';
 import Header from './Header';
 import Bio from './Bio';
 import Content from './Content';

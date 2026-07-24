@@ -1,7 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'motion/react';
 import Marquee from '../../components/ui/Marquee';
-import { teamMembers, partners, usps, testimonials, faqs } from '../../data/about';
+import { teamMembers } from '../../data/about/team';
+import { partners } from '../../data/about/partner';
+import { usps } from '../../data/about/whyus';
+import { testimonials } from '../../data/testimonial';
+import { faqs } from '../../data/faq';
 import AboutSection from '../../components/common/AboutSection';
 import Storytellers from './Storytellers';
 import CoreValueSection from './CoreValue';

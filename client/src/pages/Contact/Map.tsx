@@ -3,7 +3,7 @@ export default function MapSection() {
     <section className="w-full relative bg-black h-100 border-y border-white/5 overflow-hidden" id="contact-map-section">
       {/* We use Google Maps in its original gorgeous, vibrant colors */}
       <iframe
-        src="https://maps.google.com/maps?q=mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        src="https://maps.google.com/maps?q=kolkata&t=&z=13&ie=UTF8&iwloc=&output=embed"
         width="100%"
         height="100%"
         frameBorder="0"

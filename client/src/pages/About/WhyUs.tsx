@@ -1,6 +1,6 @@
 ﻿import { motion } from 'motion/react';
 import ThreeDCardEffect from '../../components/ThreeDCardEffect';
-import type { USP } from '../../data/about';
+import type { USP } from '../../data/about/whyus';
 
 interface WhyUsSectionProps {
     usps: USP[];

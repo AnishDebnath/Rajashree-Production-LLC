@@ -20,7 +20,7 @@ import HomePage from './pages/Home';
 import { Footer, CtaSection } from './components/common/footer';
 import ThreeDBackground from './components/ThreeDBackground';
 
-import { projectsData } from './data/projects';
+import { projectsData } from './data/portfolio';
 import { Project, Category } from './types';
 import { Album } from './data/albums';
 import { BlogPost } from './data/blogs';

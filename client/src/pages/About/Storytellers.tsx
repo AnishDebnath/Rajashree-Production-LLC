@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { storytellerImages } from '../../data/about';
+import { storytellerImages } from '../../data/about/storyteller';
 
 export default function StorytellersSection() {
     return (

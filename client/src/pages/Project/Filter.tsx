@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Category } from '../../types';
-import { projectCategories } from '../../data/projects';
+import { projectCategories } from '../../data/portfolio';
 
 interface FilterProps {
     selectedCategory: Category;

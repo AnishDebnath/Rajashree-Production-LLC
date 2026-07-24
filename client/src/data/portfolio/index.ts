@@ -1,4 +1,4 @@
-import { Project } from '../../types';
+import { Project, Category } from '../../types';
 
 import project1 from './project-1';
 import project2 from './project-2';
@@ -42,6 +42,12 @@ export const projectsData: Project[] = [
 
 // ── IDs of projects featured on home page ──
 // Add/remove IDs to control which projects appear in FeaturedPortfolio section
+export const projectCategories: Category[] = [
+    'All', 'Animation', 'Commercials', 'Corporate', 'Documentary',
+    'Educational', 'Entertainment', 'Event', 'Fashion', 'Interview',
+    'Lifestyle', 'Product Video', 'Real Estate', 'Social Media'
+];
+
 export const featuredProjectIds: string[] = ['1', '7', '3', '20', '13', '18'];
 
 // ── Featured projects display data (custom titles for home page showcase) ──

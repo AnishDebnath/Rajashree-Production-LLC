@@ -1,4 +1,25 @@
-import type { ReelItem } from '../components/product/ReelCard';
+export interface ReelItem {
+    id: string;
+    title: string;
+    category: string;
+    views: string;
+    likes: string;
+    likesCount: number;
+    commentsCount: number;
+    shares: string;
+    videoUrl: string;
+    imageUrl: string;
+    sound: string;
+    creator: string;
+    duration: string;
+    caption: string;
+}
+
+export interface MockComment {
+    username: string;
+    text: string;
+    likes: string;
+}
 
 export const reelsData: ReelItem[] = [
     {
@@ -99,54 +120,22 @@ export const reelsData: ReelItem[] = [
     },
     {
         id: '7',
-        title: "Vanguard Minimalist Editorial",
-        category: "CREATIVE",
-        views: "2.4M",
-        likes: "210K",
-        likesCount: 210000,
-        commentsCount: 1980,
-        shares: "24K",
-        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-beautiful-woman-posing-with-a-red-light-40438-large.mp4",
-        imageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
-        sound: "Vanguard Synth - Minimalist Audio",
-        creator: "@rajashree_prod",
-        duration: "13s",
-        caption: "Playing with red neon projection mapping to create avant-garde minimalist portrait lines. 🔥 #editorial #avantgarde #portrait #creative"
-    },
-    {
-        id: '8',
-        title: "Velvet Nights Commercial Teaser",
-        category: "COMMERCIAL",
-        views: "930K",
-        likes: "81K",
-        likesCount: 81200,
-        commentsCount: 740,
-        shares: "6.8K",
-        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-sensual-woman-posing-in-creative-lighting-40440-large.mp4",
-        imageUrl: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=400",
-        sound: "Velvet Groove - Chill Hop",
-        creator: "@rajashree_prod",
-        duration: "11s",
-        caption: "A sultry high-fashion teaser utilizing velvet shadows and dynamic warm key lights. #fashionbts #commercial #lighting #teaser"
-    },
-    {
-        id: '9',
-        title: "Vogue Streetwear Autumn Edition",
+        title: "Autumn Vibes Street Style Shoot",
         category: "FASHION",
-        views: "1.9M",
-        likes: "156K",
-        likesCount: 156000,
-        commentsCount: 1040,
-        shares: "12K",
-        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-fashion-woman-with-silver-glitter-makeup-40439-large.mp4",
-        imageUrl: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=400",
+        views: "2.3M",
+        likes: "198K",
+        likesCount: 198000,
+        commentsCount: 1720,
+        shares: "21K",
+        videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-beautiful-woman-posing-with-a-red-light-40438-large.mp4",
+        imageUrl: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=400",
         sound: "Autumn Streets Vibe - Synth Beats",
         creator: "@rajashree_prod",
         duration: "12s",
         caption: "Highlighting heavy autumn textures and high-contrast layered streetwear. Shot on Location. 🍂🚶‍♀️ #streetstyle #vogue #autumnfashion #bts"
     },
     {
-        id: '10',
+        id: '8',
         title: "Urban Techwear Grid System",
         category: "CREATIVE",
         views: "2.8M",
@@ -162,7 +151,7 @@ export const reelsData: ReelItem[] = [
         caption: "Showcasing high-function techwear silhouettes with geometric laser grid projections. 🤖🌩️ #techwear #cyberpunk #lasergrid #urbanmotion"
     },
     {
-        id: '11',
+        id: '9',
         title: "Linen Summer Minimalist Lookbook",
         category: "NARRATIVE",
         views: "3.5M",
@@ -178,7 +167,7 @@ export const reelsData: ReelItem[] = [
         caption: "Breezy linen textures and pure warm sunshine highlights. Capturing simple, effortless elegance. ☀️🌾 #lookbook #linen #minimalism #summerfashion"
     },
     {
-        id: '12',
+        id: '10',
         title: "Retro Denim High Rise Commercial",
         category: "COMMERCIAL",
         views: "1.2M",
@@ -195,7 +184,7 @@ export const reelsData: ReelItem[] = [
     }
 ];
 
-export const mockComments = [
+export const mockComments: MockComment[] = [
     { username: "@cinematics_today", text: "That lens flare is absolutely gorgeous! What primes did you shoot this on?", likes: "42" },
     { username: "@clara_visuals", text: "The color grading in this is outstanding. The golds and blacks feel so premium. 😍", likes: "18" },
     { username: "@soundwave_master", text: "Spatial sound design is top notch! Sounds amazing on headphones.", likes: "31" },

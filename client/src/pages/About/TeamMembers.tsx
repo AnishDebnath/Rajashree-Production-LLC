@@ -1,7 +1,7 @@
 ﻿import { motion } from 'motion/react';
 import { Facebook, Linkedin } from 'lucide-react';
 import ThreeDCardEffect from '../../components/ThreeDCardEffect';
-import type { TeamMember } from '../../data/about';
+import type { TeamMember } from '../../data/about/team';
 
 interface TeamMembersSectionProps {
     teamMembers: TeamMember[];

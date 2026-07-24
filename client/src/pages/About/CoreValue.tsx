@@ -1,4 +1,4 @@
-import { coreValues } from '../../data/about';
+import { coreValues } from '../../data/about/coreValue';
 
 export default function CoreValueSection() {
     return (

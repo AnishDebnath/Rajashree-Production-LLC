@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useScroll, useTransform } from 'motion/react';
 import Marquee from '../../components/ui/Marquee';
 import { Project } from '../../types';
-import { projectsData } from '../../data/projects';
+import { projectsData } from '../../data/portfolio';
 import { blogsData, BlogPost } from '../../data/blogs';
 
 import HeroBanner from '../../components/common/hero/HeroBanner';

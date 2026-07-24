@@ -1,6 +1,5 @@
 import { useScroll, useTransform, motion, MotionValue } from 'motion/react';
 import { Project } from '../../types';
-import { getIntroParagraph } from '../../data/projectDetail';
 
 interface HeaderProps {
     project: Project;
@@ -77,7 +76,7 @@ export default function Header({ project, cardRotateX, cardRotateY }: HeaderProp
                 {/* Intro Paragraph & Metadata ──────────────── */}
                 <div className="max-w-3xl mx-auto w-full flex flex-col items-start text-left mt-12 sm:mt-16">
                     <p className="font-sans text-neutral-300 text-sm sm:text-base leading-relaxed font-light mb-10">
-                        {getIntroParagraph(project)}
+                        {project.introParagraph}
                     </p>
 
                     <div className="flex flex-col gap-6 pl-1 mb-16">

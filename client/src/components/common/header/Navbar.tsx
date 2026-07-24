@@ -35,7 +35,7 @@ export default function Navbar({ onCollaborateClick, activeTab, setActiveTab, on
         { name: 'Artists', path: 'artists' },
         { name: 'About', path: 'about' },
         { name: 'Services', path: 'services' },
-        { name: 'Blogs', path: 'blogs' },
+        { name: 'News', path: 'blogs' },
     ];
 
     const handleNavClick = (item: typeof navItems[0]) => {

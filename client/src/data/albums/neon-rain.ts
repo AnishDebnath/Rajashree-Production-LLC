@@ -1,4 +1,4 @@
-import type { Album } from './types';
+import type { Album } from './index';
 
 const album: Album = {
     id: 'neon-rain',

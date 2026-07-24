@@ -1,4 +1,4 @@
-import type { Artist } from './types';
+import type { Artist } from './index';
 
 const artist: Artist = {
     id: '4',

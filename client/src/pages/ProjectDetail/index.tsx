@@ -2,13 +2,8 @@
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'motion/react';
 import { Project } from '../../types';
 import { artistsData, Artist } from '../../data/artists';
-import {
-  getProjectCaseStudy,
-  getTestimonials,
-  getRelatedStills,
-  getSuggestedProjects
-} from '../../data/projectDetail';
-import Marquee from '../../components/ui/Marquee';
+import { projectsData } from '../../data/portfolio';
+
 import ThreeDCardEffect from '../../components/ThreeDCardEffect';
 import Header from './Header';
 import Content from './Content';
@@ -61,11 +56,11 @@ export default function ProjectDetailPage({
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, [project.id]);
 
-  // â”€â”€ Data from projectDetail data layer â”€â”€
-  const study = getProjectCaseStudy(project);
-  const testimonials = getTestimonials(project);
-  const relatedStills = getRelatedStills(project);
-  const suggestedProjects = getSuggestedProjects(project);
+  // â”€â”€ Data from project object â”€â”€
+  const study = project.caseStudy;
+  const testimonials = project.testimonials || [];
+  const relatedStills = project.gallery || [];
+  const suggestedProjects = projectsData.filter(p => p.id !== project.id).slice(0, 2);
 
   // Crew list from project.casting â€” all projects have unique casting data
   const crewList = (project.casting ?? []).map(member => {
@@ -216,10 +211,8 @@ export default function ProjectDetailPage({
 
       </div>
 
-      {/* Marquee Section bridging seamlessly into CTA section */}
-      <div className="relative w-full bg-bg-dark" id="project-marquee-section">
-        <Marquee />
-
+      {/* Seamless Melt/Blend Transition with the CTA's Fixed Background at the bottom */}
+      <div className="relative w-full bg-bg-dark" style={{ height: '1px' }}>
         <div
           className="absolute left-0 right-0 h-64 pointer-events-none z-30 overflow-hidden"
           style={{ bottom: '-256px' }}
