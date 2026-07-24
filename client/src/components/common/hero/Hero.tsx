@@ -104,11 +104,11 @@ export default function HeroSection({
                                     src={backgroundImage || '/src/assets/images/kolkata-film-hero.jpg'}
                                     alt="Cinematic Hero Background"
                                     referrerPolicy="no-referrer"
-                                    className="w-full h-full object-cover object-center opacity-75 scale-100 filter brightness-65 contrast-110"
+                                    className="w-full h-full object-cover object-center opacity-85 scale-100 filter brightness-75 contrast-110"
                                 />
                                 {/* Gradients to blend the image seamlessly */}
                                 <div className="absolute inset-y-0 left-0 w-full md:w-3/4 bg-linear-to-r from-bg-dark via-bg-dark/85 to-transparent pointer-events-none" />
-                                <div className="absolute inset-0 bg-black/30 pointer-events-none" />
+                                <div className="absolute inset-0 bg-black/15 pointer-events-none" />
 
                                 {/* Top shadow mask */}
                                 <div className="absolute inset-x-0 top-0 h-40 bg-linear-to-b from-bg-dark via-bg-dark/70 to-transparent pointer-events-none" />
