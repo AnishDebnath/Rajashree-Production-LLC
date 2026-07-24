@@ -17,7 +17,7 @@ export default function WhyUsSection({ usps }: WhyUsSectionProps) {
                         <div className="lg:col-span-5 order-2 lg:order-1">
                             <ThreeDCardEffect
                                 tiltMaxAngle={7}
-                                className="w-full relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] rounded-3xl bg-neutral-900 border border-white/10 hover:border-gold/30 group cursor-pointer transition-all duration-500 ease-out shadow-3xl"
+                                className="w-full relative aspect-4/3 sm:aspect-16/10 lg:aspect-4/3 rounded-3xl bg-neutral-900 border border-white/10 hover:border-gold/30 group cursor-pointer transition-all duration-500 ease-out shadow-3xl"
                             >
                                 <div
                                     className="w-full h-full rounded-3xl overflow-hidden bg-neutral-950 relative"
@@ -29,7 +29,7 @@ export default function WhyUsSection({ usps }: WhyUsSectionProps) {
                                         referrerPolicy="no-referrer"
                                         className="w-full h-full object-cover transition-all duration-700 ease-out brightness-90 group-hover:scale-[1.03] group-hover:brightness-105"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+                                    <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent pointer-events-none" />
                                 </div>
                             </ThreeDCardEffect>
                         </div>

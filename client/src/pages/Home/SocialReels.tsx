@@ -257,7 +257,7 @@ export default function SocialReels({ onShowMessage }: SocialReelsProps) {
             id="social-reels-section"
         >
             {/* Background Decorative glow */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#1d1607] via-transparent to-transparent opacity-20 pointer-events-none" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-[#1d1607] via-transparent to-transparent opacity-20 pointer-events-none" />
 
             <div className="max-w-6xl mx-auto px-6 mb-12 flex flex-col items-center text-center">
                 <div className="space-y-4 flex flex-col items-center">
@@ -419,7 +419,7 @@ export default function SocialReels({ onShowMessage }: SocialReelsProps) {
                             animate={{ scale: 1, opacity: 1, y: 0 }}
                             exit={{ scale: 0.9, opacity: 0, y: 30 }}
                             transition={{ type: 'spring', damping: 25, stiffness: 220 }}
-                            className="relative w-full max-w-[350px] sm:max-w-[370px] aspect-[9/19] bg-[#0c0c0e] rounded-[42px] border-8 border-neutral-800 shadow-[0_25px_80px_rgba(0,0,0,0.95)] overflow-hidden z-10 flex flex-col justify-between"
+                            className="relative w-full max-w-87.5 sm:max-w-92.5 aspect-9/19 bg-[#0c0c0e] rounded-[42px] border-8 border-neutral-800 shadow-[0_25px_80px_rgba(0,0,0,0.95)] overflow-hidden z-10 flex flex-col justify-between"
                         >
                             {/* Phone Camera Notch Pill */}
                             <div className="absolute top-3 left-1/2 -translate-x-1/2 w-28 h-5 bg-black rounded-full z-40 flex items-center justify-center">
@@ -542,7 +542,7 @@ export default function SocialReels({ onShowMessage }: SocialReelsProps) {
                             </div>
 
                             {/* BOTTOM INFORMATION CONTROLS AND DETAILS */}
-                            <div className="relative z-30 p-5 pb-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col gap-3 w-full text-left">
+                            <div className="relative z-30 p-5 pb-8 bg-linear-to-t from-black/90 via-black/40 to-transparent flex flex-col gap-3 w-full text-left">
 
                                 {/* Account Details & Follow Button */}
                                 <div className="flex items-center gap-2.5">
@@ -598,7 +598,7 @@ export default function SocialReels({ onShowMessage }: SocialReelsProps) {
                                 </div>
 
                                 {/* Progress bar of video */}
-                                <div className="w-full h-[2px] bg-white/20 rounded-full overflow-hidden mt-1">
+                                <div className="w-full h-0.5 bg-white/20 rounded-full overflow-hidden mt-1">
                                     <motion.div
                                         animate={{ width: ["0%", "100%"] }}
                                         transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
@@ -638,7 +638,7 @@ export default function SocialReels({ onShowMessage }: SocialReelsProps) {
                                         <div className="flex-1 overflow-y-auto p-4 space-y-4">
                                             {commentsList.map((comment, cIdx) => (
                                                 <div key={cIdx} className="flex gap-2.5 items-start">
-                                                    <div className="w-6 h-6 rounded-full bg-gradient-to-br from-neutral-700 to-neutral-800 border border-white/5 flex items-center justify-center font-mono text-[9px] font-black text-white uppercase select-none">
+                                                    <div className="w-6 h-6 rounded-full bg-linear-to-br from-neutral-700 to-neutral-800 border border-white/5 flex items-center justify-center font-mono text-[9px] font-black text-white uppercase select-none">
                                                         {comment.username.charAt(1)}
                                                     </div>
                                                     <div className="flex-1 flex flex-col">

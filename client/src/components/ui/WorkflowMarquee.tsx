@@ -4,7 +4,7 @@ export function WorkflowMarquee({ images, speed = 12, reverse = false }: { image
     const xValues = reverse ? ["0%", "-50%"] : ["-50%", "0%"];
 
     return (
-        <div className="relative overflow-hidden rounded-xl border border-white/5 h-28 sm:h-32 bg-[#050505] mt-4 z-10">
+        <div className="relative overflow-hidden rounded-xl border border-white/5 h-28 sm:h-32 bg-bg-dark mt-4 z-10">
             <div className="flex w-full h-full overflow-hidden select-none relative">
                 <motion.div
                     animate={{ x: xValues }}
@@ -13,14 +13,14 @@ export function WorkflowMarquee({ images, speed = 12, reverse = false }: { image
                 >
                     <div className="flex gap-3 shrink-0 h-full">
                         {images.map((img, idx) => (
-                            <div key={`set1-${idx}`} className="h-full aspect-[4/3] rounded-lg overflow-hidden border border-white/10 shrink-0 relative group/img">
+                            <div key={`set1-${idx}`} className="h-full aspect-4/3 rounded-lg overflow-hidden border border-white/10 shrink-0 relative group/img">
                                 <img src={img} alt="Workflow stage preview clip" referrerPolicy="no-referrer" className="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" />
                             </div>
                         ))}
                     </div>
                     <div className="flex gap-3 shrink-0 h-full">
                         {images.map((img, idx) => (
-                            <div key={`set2-${idx}`} className="h-full aspect-[4/3] rounded-lg overflow-hidden border border-white/10 shrink-0 relative group/img">
+                            <div key={`set2-${idx}`} className="h-full aspect-4/3 rounded-lg overflow-hidden border border-white/10 shrink-0 relative group/img">
                                 <img src={img} alt="Workflow stage preview clip copy" referrerPolicy="no-referrer" className="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" />
                             </div>
                         ))}

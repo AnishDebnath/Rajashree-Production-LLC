@@ -64,7 +64,7 @@ export function CategoryInteractiveCard({
             className="group relative flex flex-col justify-start w-full cursor-pointer"
         >
             {/* Large background serial number */}
-            <div className="absolute top-[-44px] left-[-16px] text-[110px] sm:text-[130px] font-extrabold text-white/[0.04] font-sans tracking-tighter leading-none select-none pointer-events-none group-hover:text-gold/[0.06] transition-colors duration-500">
+            <div className="absolute -top-11 -left-4 text-[110px] sm:text-[130px] font-extrabold text-white/4 font-sans tracking-tighter leading-none select-none pointer-events-none group-hover:text-gold/6 transition-colors duration-500">
                 {cat.serial}
             </div>
 

@@ -53,7 +53,7 @@ export default function BlogsSection({ blogsData, onSelectBlog, setActiveTab, on
                                 tiltMaxAngle={10}
                             >
                                 <div
-                                    className="relative aspect-[16/10.5] rounded-[24px] overflow-hidden bg-neutral-950 shadow-lg"
+                                    className="relative aspect-16/10.5 rounded-3xl overflow-hidden bg-neutral-950 shadow-lg"
                                     style={{ transform: 'translateZ(30px)', transformStyle: 'preserve-3d' }}
                                 >
                                     <img

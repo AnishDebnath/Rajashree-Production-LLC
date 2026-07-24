@@ -24,18 +24,18 @@ export default function Intro({ onCollaborateClick, onShowMessage }: IntroProps)
             {/* Seamless Melt/Blend Transition with the Hero's Fixed Background */}
             <div className="absolute top-0 left-0 right-0 h-48 -translate-y-full pointer-events-none z-10 overflow-hidden">
                 {/* Smooth color gradient from transparent to solid bg-bg-dark */}
-                <div className="w-full h-full absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/85 to-transparent" />
+                <div className="w-full h-full absolute inset-0 bg-linear-to-t from-bg-dark via-bg-dark/85 to-transparent" />
 
                 {/* Layered progressive backdrop blurs with vertical gradient masks to 'melt' the fixed image */}
                 <div
-                    className="w-full h-32 absolute bottom-0 backdrop-blur-[4px]"
+                    className="w-full h-32 absolute bottom-0 backdrop-blur-xs"
                     style={{
                         WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)',
                         maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)'
                     }}
                 />
                 <div
-                    className="w-full h-20 absolute bottom-0 backdrop-blur-[12px]"
+                    className="w-full h-20 absolute bottom-0 backdrop-blur-md"
                     style={{
                         WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
                         maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)'
@@ -68,7 +68,7 @@ export default function Intro({ onCollaborateClick, onShowMessage }: IntroProps)
 
                 {/* Interactive Gears Image Carousel with a premium 3D deck transition */}
                 <div className="relative max-w-5xl mx-auto pt-6 flex flex-col items-center gap-y-6">
-                    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[480px] flex items-center justify-center overflow-hidden">
+                    <div className="relative w-full h-75 sm:h-100 md:h-120 flex items-center justify-center overflow-hidden">
 
                         {/* Left navigation arrow button */}
                         <button
@@ -132,7 +132,7 @@ export default function Intro({ onCollaborateClick, onShowMessage }: IntroProps)
                                         onClick={() => {
                                             if (!isActive) setCurrentGearSlide(idx);
                                         }}
-                                        className={`absolute w-[85%] sm:w-[70%] md:w-[60%] lg:w-[55%] aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer select-none border transition-all duration-500 ${isActive
+                                        className={`absolute w-[85%] sm:w-[70%] md:w-[60%] lg:w-[55%] aspect-4/3 rounded-2xl overflow-hidden cursor-pointer select-none border transition-all duration-500 ${isActive
                                             ? 'shadow-[0_20px_50px_rgba(0,0,0,0.9)] border-gold/30'
                                             : 'shadow-lg shadow-black/40 border-white/5 hover:border-white/15'
                                             }`}
@@ -162,7 +162,7 @@ export default function Intro({ onCollaborateClick, onShowMessage }: IntroProps)
                                                     }`}
                                             />
                                             {/* Progressive overlay for perfect legibility */}
-                                            <div className={`absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent transition-opacity duration-500 ${isActive ? 'opacity-100' : 'opacity-80'
+                                            <div className={`absolute inset-0 bg-linear-to-t from-black/95 via-black/40 to-transparent transition-opacity duration-500 ${isActive ? 'opacity-100' : 'opacity-80'
                                                 }`} />
                                         </div>
 

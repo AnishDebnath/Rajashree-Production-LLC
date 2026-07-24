@@ -80,7 +80,7 @@ export default function ProjectGrid({ projects, selectedCategory, onSelectCatego
 
             {/* Project Cards */}
             <div className="relative z-10">
-                <div className="w-full max-w-7xl mx-auto px-6 md:px-12 pb-0 min-h-[300px]">
+                <div className="w-full max-w-7xl mx-auto px-6 md:px-12 pb-0 min-h-75">
                     <AnimatePresence mode="wait">
                         {isLoading ? (
                             <motion.div
@@ -94,14 +94,14 @@ export default function ProjectGrid({ projects, selectedCategory, onSelectCatego
                                 {Array.from({ length: Math.max(projects.length, 3) }).map((_, index) => (
                                     <div
                                         key={`skeleton-${index}`}
-                                        className="bg-surface-dark rounded-[24px] p-3 flex flex-col w-full"
+                                        className="bg-surface-dark rounded-3xl p-3 flex flex-col w-full"
                                     >
-                                        <div className="relative aspect-video rounded-[16px] overflow-hidden bg-[#181818] animate-pulse flex items-center justify-center">
+                                        <div className="relative aspect-video rounded-2xl overflow-hidden bg-surface-light animate-pulse flex items-center justify-center">
                                             <div className="absolute top-3 left-3 w-16 h-5 rounded-full bg-surface-dark/80" />
                                         </div>
                                         <div className="mt-1 px-4 pt-4 pb-2 flex flex-col gap-2.5">
-                                            <div className="h-3 w-20 bg-[#181818] rounded-md animate-pulse" />
-                                            <div className="h-5 w-44 bg-[#181818] rounded-md animate-pulse" />
+                                            <div className="h-3 w-20 bg-surface-light rounded-md animate-pulse" />
+                                            <div className="h-5 w-44 bg-surface-light rounded-md animate-pulse" />
                                         </div>
                                     </div>
                                 ))}

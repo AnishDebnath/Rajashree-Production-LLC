@@ -36,7 +36,7 @@ export default function FAQ({ faqs, onShowMessage, sectionId, className = 'bg-tr
                             >
                                 {/* Left sliding active indicator bar */}
                                 <div
-                                    className={`absolute left-0 top-0 bottom-0 w-[2px] bg-gold transition-transform duration-300 origin-left ${isOpen ? 'scale-x-100' : 'scale-x-0'
+                                    className={`absolute left-0 top-0 bottom-0 w-0.5 bg-gold transition-transform duration-300 origin-left ${isOpen ? 'scale-x-100' : 'scale-x-0'
                                         }`}
                                 />
 

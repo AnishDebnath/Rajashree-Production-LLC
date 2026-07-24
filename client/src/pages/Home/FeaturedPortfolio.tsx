@@ -55,7 +55,7 @@ export default function FeaturedPortfolioSection({
                         className="flex gap-4 sm:gap-8 select-none"
                     >
                         {featuredProjects.map((project) => (
-                            <div key={project.id} className="shrink-0 w-[300px] sm:w-[420px]">
+                            <div key={project.id} className="shrink-0 w-75 sm:w-105">
                                 <ProjectCard
                                     project={project}
                                     onClick={() => handleCardClick(project.id)}

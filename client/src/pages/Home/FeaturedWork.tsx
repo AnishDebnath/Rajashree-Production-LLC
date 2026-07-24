@@ -52,7 +52,7 @@ export default function FeaturedWork({ industries, setActiveTab, onShowMessage }
                                         loading="lazy"
                                     />
                                     <div
-                                        className="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-neutral-950/30 to-transparent z-10 transition-colors duration-300 group-hover:from-neutral-950/95 pointer-events-none"
+                                        className="absolute inset-0 bg-linear-to-t from-neutral-950/90 via-neutral-950/30 to-transparent z-10 transition-colors duration-300 group-hover:from-neutral-950/95 pointer-events-none"
                                         style={{ transform: 'translateZ(10px)' }}
                                     />
                                 </div>

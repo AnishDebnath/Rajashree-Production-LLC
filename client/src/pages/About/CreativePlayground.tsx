@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { BrandLogo } from './BrandLogo';
-import type { Partner } from '../../data/about/partner';
+import type { Partner } from '../../data/about';
 
 interface BrandPartnersSectionProps {
     partners: Partner[];

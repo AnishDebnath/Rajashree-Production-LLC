@@ -33,7 +33,7 @@ export default function ProjectSimilarSection({
                                         window.scrollTo({ top: 0, behavior: 'instant' });
                                     }
                                 }}
-                                className="group cursor-pointer select-none relative w-full aspect-[16/11] max-w-[340px]"
+                                className="group cursor-pointer select-none relative w-full aspect-16/11 max-w-85"
                                 tiltMaxAngle={8}
                             >
                                 {/* Background image covering the full card */}
@@ -51,7 +51,7 @@ export default function ProjectSimilarSection({
 
                                     {/* Clean Dark Gradient Overlay */}
                                     <div
-                                        className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent z-10 pointer-events-none"
+                                        className="absolute inset-0 bg-linear-to-t from-black/90 via-black/25 to-transparent z-10 pointer-events-none"
                                         style={{ transform: 'translateZ(5px)' }}
                                     />
                                 </div>

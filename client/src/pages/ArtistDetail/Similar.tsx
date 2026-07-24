@@ -20,7 +20,7 @@ export default function Similar({ otherArtists, onSelectArtist, onShowMessage, o
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 w-full justify-center">
           {otherArtists.map((art) => (
-            <div key={art.id} className="w-full max-w-[310px] mx-auto sm:mx-0 flex justify-center">
+            <div key={art.id} className="w-full max-w-77.5 mx-auto sm:mx-0 flex justify-center">
               <ThreeDCardEffect
                 onClick={() => {
                   onSelectArtist(art);

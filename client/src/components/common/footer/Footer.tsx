@@ -97,14 +97,14 @@ export default function Footer({ onCollaborateClick, onShowMessage, setActiveTab
                         }}
                     />
                     <div
-                        className="w-full h-48 absolute bottom-8 backdrop-blur-[4px]"
+                        className="w-full h-48 absolute bottom-8 backdrop-blur-xs"
                         style={{
                             WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)',
                             maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)',
                         }}
                     />
                     <div
-                        className="w-full h-32 absolute bottom-8 backdrop-blur-[12px]"
+                        className="w-full h-32 absolute bottom-8 backdrop-blur-md"
                         style={{
                             WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
                             maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
@@ -115,7 +115,7 @@ export default function Footer({ onCollaborateClick, onShowMessage, setActiveTab
 
             <div className="max-w-6xl mx-auto px-6 relative z-20">
                 {/* Dark Box Style Footer Card */}
-                <div className="bg-[#0f0f11]/90 backdrop-blur-md rounded-[24px] sm:rounded-[32px] p-8 sm:p-10 md:p-14 text-neutral-400 shadow-[0_32px_80px_rgba(0,0,0,0.6)] border border-white/5 flex flex-col gap-12 relative z-10">
+                <div className="bg-[#0f0f11]/90 backdrop-blur-md rounded-3xl sm:rounded-4xl p-8 sm:p-10 md:p-14 text-neutral-400 shadow-[0_32px_80px_rgba(0,0,0,0.6)] border border-white/5 flex flex-col gap-12 relative z-10">
                     {/* Top Column Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
                         {/* Brand column */}

@@ -23,11 +23,11 @@ export default function StorytellersSection() {
                     {/* Behind the scenes rounded colorful animated images marquee */}
                     <div className="relative overflow-hidden z-10 pt-6 pb-0 -mx-8 md:-mx-14">
                         {/* Fade masks for elegant marquee edges */}
-                        <div className="absolute top-0 bottom-0 left-0 w-6 sm:w-12 bg-gradient-to-r from-[#090909] to-transparent z-20 pointer-events-none" />
-                        <div className="absolute top-0 bottom-0 right-0 w-6 sm:w-12 bg-gradient-to-l from-[#090909] to-transparent z-20 pointer-events-none" />
+                        <div className="absolute top-0 bottom-0 left-0 w-6 sm:w-12 bg-linear-to-r from-[#090909] to-transparent z-20 pointer-events-none" />
+                        <div className="absolute top-0 bottom-0 right-0 w-6 sm:w-12 bg-linear-to-l from-[#090909] to-transparent z-20 pointer-events-none" />
 
                         <motion.div
-                            className="flex gap-6 w-max items-end h-64 sm:h-80 md:h-[400px]"
+                            className="flex gap-6 w-max items-end h-64 sm:h-80 md:h-100"
                             animate={{ x: ["-50%", "0%"] }}
                             transition={{
                                 ease: "linear",
@@ -38,7 +38,7 @@ export default function StorytellersSection() {
                             {[...storytellerImages, ...storytellerImages].map((item, idx) => (
                                 <motion.div
                                     key={idx}
-                                    className="h-[95%] rounded-t-2xl rounded-b-none overflow-hidden border-t border-x border-white/10 group relative shadow-2xl flex-shrink-0"
+                                    className="h-[95%] rounded-t-2xl rounded-b-none overflow-hidden border-t border-x border-white/10 group relative shadow-2xl shrink-0"
                                     animate={{
                                         width: ["11rem", "18rem", "11rem"]
                                     }}

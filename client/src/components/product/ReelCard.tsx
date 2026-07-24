@@ -82,9 +82,9 @@ export default function ReelCard({
             />
 
             {/* Immersive Edge-to-Edge Gradient Vignettes */}
-            <div className="absolute inset-x-0 bottom-0 h-[28%] bg-gradient-to-t from-black/80 via-black/25 to-transparent z-10 pointer-events-none" />
-            <div className="absolute inset-y-0 right-0 w-1/5 bg-gradient-to-l from-black/35 via-transparent to-transparent z-10 pointer-events-none" />
-            <div className="absolute inset-x-0 top-0 h-[10%] bg-gradient-to-b from-black/20 to-transparent z-10 pointer-events-none" />
+            <div className="absolute inset-x-0 bottom-0 h-[28%] bg-linear-to-t from-black/80 via-black/25 to-transparent z-10 pointer-events-none" />
+            <div className="absolute inset-y-0 right-0 w-1/5 bg-linear-to-l from-black/35 via-transparent to-transparent z-10 pointer-events-none" />
+            <div className="absolute inset-x-0 top-0 h-[10%] bg-linear-to-b from-black/20 to-transparent z-10 pointer-events-none" />
 
             {/* Play Button Overlay */}
             <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -165,17 +165,17 @@ export default function ReelCard({
                         alt={reel.creator}
                         className="w-4 h-4 md:w-5 md:h-5 rounded-full border border-white/25 shadow-md bg-zinc-950 object-cover"
                     />
-                    <span className="font-sans font-extrabold text-[8px] md:text-[9.5px] text-white tracking-wide truncate max-w-[45px] md:max-w-[65px] drop-shadow">
+                    <span className="font-sans font-extrabold text-[8px] md:text-[9.5px] text-white tracking-wide truncate max-w-11.25 md:max-w-16.25 drop-shadow">
                         {reel.creator.substring(1)}
                     </span>
                     <div className="w-2.5 h-2.5 bg-sky-500 rounded-full flex items-center justify-center scale-75 md:scale-85 origin-center select-none shadow shrink-0">
-                        <Check className="w-2 text-white stroke-[4]" />
+                        <Check className="w-2 text-white stroke-4" />
                     </div>
                     <button
                         onClick={(e) => { e.stopPropagation(); onFollow(reel); }}
                         className={`px-1 py-0.5 rounded text-[5.5px] md:text-[6.5px] font-black uppercase tracking-wider transition-all duration-300 shadow shrink-0 ${isFollowing
-                                ? 'bg-white/15 border border-white/10 text-white/90'
-                                : 'bg-white hover:bg-gold text-black hover:text-black border border-transparent'
+                            ? 'bg-white/15 border border-white/10 text-white/90'
+                            : 'bg-white hover:bg-gold text-black hover:text-black border border-transparent'
                             }`}
                     >
                         {isFollowing ? "Following" : "Follow"}
@@ -191,7 +191,7 @@ export default function ReelCard({
             {/* Spinning Music Disc */}
             <div className="absolute bottom-2.5 md:bottom-3 right-2 md:right-2.5 z-20">
                 <div className="w-4 h-4 md:w-5.5 md:h-5.5 rounded-full border-2 border-white/15 bg-black flex items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.5)] overflow-hidden relative">
-                    <div className="w-full h-full rounded-full animate-[spin_5s_linear_infinite] flex items-center justify-center relative bg-gradient-to-tr from-zinc-950 via-zinc-800 to-zinc-950">
+                    <div className="w-full h-full rounded-full animate-[spin_5s_linear_infinite] flex items-center justify-center relative bg-linear-to-tr from-zinc-950 via-zinc-800 to-zinc-950">
                         <div className="absolute inset-0.5 rounded-full border border-white/5" />
                         <div className="absolute inset-1.5 rounded-full border border-white/5" />
                         <div

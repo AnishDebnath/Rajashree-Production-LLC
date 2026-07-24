@@ -29,7 +29,7 @@ export default function BrandPartnersSection() {
                             {[...homePartners, ...homePartners, ...homePartners].map((partner, idx) => (
                                 <div
                                     key={`${partner.name}-${idx}`}
-                                    className="flex items-center justify-center shrink-0 border-r border-white/10 h-14 w-[170px] sm:w-[190px] last:border-r-0 gap-2 select-none"
+                                    className="flex items-center justify-center shrink-0 border-r border-white/10 h-14 w-42.5 sm:w-47.5 last:border-r-0 gap-2 select-none"
                                 >
                                     <span className="font-mono text-gold font-black text-lg">{partner.symbol}</span>
                                     <span className="font-sans text-sm font-semibold tracking-tight text-white/80 truncate">{partner.name}</span>
