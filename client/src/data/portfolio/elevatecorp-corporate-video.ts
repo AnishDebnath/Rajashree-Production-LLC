@@ -61,20 +61,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Suresh Menon', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'Drone Pilot', name: 'Sameer Ali', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Writer', name: 'Divya Patel', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Voiceover', name: 'Kabir Bedi', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Suresh Menon', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'Drone Pilot', name: 'Sameer Ali', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Writer', name: 'Divya Patel', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Voiceover', name: 'Kabir Bedi', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '5',
+    slug: 'elevatecorp-corporate-video',
     title: 'ElevateCorp Corporate Video',
     client: 'ELEVATECORP',
     category: 'Corporate',

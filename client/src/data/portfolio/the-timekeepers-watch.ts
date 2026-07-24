@@ -62,20 +62,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Rajashree Sen', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'Lead Actor', name: 'Naseeruddin Shah', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Screenplay', name: 'Aisha Sen', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Music Composer', name: 'Arjun Mehta', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Rajashree Sen', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'Lead Actor', name: 'Naseeruddin Shah', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Screenplay', name: 'Aisha Sen', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Music Composer', name: 'Arjun Mehta', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '20',
+    slug: 'the-timekeepers-watch',
     title: "The Timekeeper's Watch",
     client: 'STARFEST',
     category: 'Entertainment',

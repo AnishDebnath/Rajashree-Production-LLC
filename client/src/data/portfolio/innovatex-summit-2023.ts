@@ -61,20 +61,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Nikhil Advani', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'Technical Director', name: 'Vicky Shah', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Live Sound', name: 'Amit Sharma', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Social Media Editor', name: 'Divya Patel', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Nikhil Advani', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'Technical Director', name: 'Vicky Shah', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Live Sound', name: 'Amit Sharma', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Social Media Editor', name: 'Divya Patel', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '10',
+    slug: 'innovatex-summit-2023',
     title: 'InnovateX Summit 2023',
     client: 'INNOVATION INC.',
     category: 'Event',

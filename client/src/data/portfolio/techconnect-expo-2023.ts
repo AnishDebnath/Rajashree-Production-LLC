@@ -61,20 +61,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Farhan Akhtar', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'DoP', name: 'Pooja Rao', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Soundtrack', name: 'Arjun Mehta', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'VFX Intro', name: 'Aisha Sen', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Farhan Akhtar', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'DoP', name: 'Pooja Rao', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Soundtrack', name: 'Arjun Mehta', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'VFX Intro', name: 'Aisha Sen', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '19',
+    slug: 'techconnect-expo-2023',
     title: 'TechConnect Expo 2023',
     client: 'INNOVATETECH SOLUTIONS',
     category: 'Event',

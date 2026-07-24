@@ -62,20 +62,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Instructor', name: 'Prof. Alok Sen', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'Director', name: 'Rahul Bose', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Motion Graphics', name: 'Aisha Sen', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Audio Engineer', name: 'Priya Das', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Instructor', name: 'Prof. Alok Sen', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'Director', name: 'Rahul Bose', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Motion Graphics', name: 'Aisha Sen', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Audio Engineer', name: 'Priya Das', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '11',
+    slug: 'learntech-online-course-series',
     title: 'LearnTech Online Course Series',
     client: 'LEARNTECH ACADEMY',
     category: 'Educational',

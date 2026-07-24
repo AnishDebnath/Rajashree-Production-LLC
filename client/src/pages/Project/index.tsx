@@ -22,6 +22,7 @@ export default function ProjectsPage({
             <Hero
                 title="Our Projects"
                 subtitle="From coming up with creative concepts to delivering outstanding campaigns, we're your friendly, fun-loving crew ready to turn your project dreams into reality!"
+                breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Projects' }]}
             />
             <ProjectGrid
                 projects={projects}

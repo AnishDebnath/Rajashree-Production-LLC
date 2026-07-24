@@ -61,20 +61,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Ashwiny Iyer Tiwari', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'Drone Operator', name: 'Poornima Rao', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Writer', name: 'Divya Patel', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Colorist', name: 'Rohan Verma', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Ashwiny Iyer Tiwari', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'Drone Operator', name: 'Poornima Rao', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Writer', name: 'Divya Patel', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Colorist', name: 'Rohan Verma', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '21',
+    slug: 'top-roofers',
     title: 'Top Roofers',
     client: 'ROOFVISION',
     category: 'Corporate',

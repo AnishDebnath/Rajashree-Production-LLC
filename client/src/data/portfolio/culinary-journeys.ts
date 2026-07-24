@@ -62,20 +62,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Nandita Roy', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'Food Stylist', name: 'Chef Sanjay', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Grip', name: 'Rajesh Kumar', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Colorist', name: 'Rohan Verma', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Nandita Roy', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'Food Stylist', name: 'Chef Sanjay', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Grip', name: 'Rajesh Kumar', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Colorist', name: 'Rohan Verma', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '3',
+    slug: 'culinary-journeys',
     title: 'Culinary Journeys',
     client: 'FOODWONDERS',
     category: 'Lifestyle',

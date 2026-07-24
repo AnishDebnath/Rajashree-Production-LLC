@@ -42,6 +42,7 @@ export default function ServicesPage({ onCollaborateClick, onShowMessage, onColl
         backgroundImage="/src/assets/images/film-crew-set-kolkata.jpg"
         title="Services"
         subtitle="Join us on a journey where ideas transform into captivating video content, with a dash of creativity and a whole lot of fun."
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Services' }]}
       />
 
       {/* Subsequent sections wrapper with solid, opaque ambient gradient */}

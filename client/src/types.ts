@@ -21,6 +21,7 @@ export interface CastingMember {
 
 export interface Project {
   id: string;
+  slug: string;
   title: string;
   client: string;
   category: string;

@@ -62,20 +62,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Interviewer', name: 'Dr. Neha Sen', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'DoP', name: 'Amit Sharma', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Audio Recordist', name: 'Joy Dev', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Gaffer', name: 'Sunil Singh', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Interviewer', name: 'Dr. Neha Sen', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'DoP', name: 'Amit Sharma', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Audio Recordist', name: 'Joy Dev', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Gaffer', name: 'Sunil Singh', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '6',
+    slug: 'executive-insights',
     title: 'Executive Insights',
     client: 'TECHVISION INC',
     category: 'Interview',

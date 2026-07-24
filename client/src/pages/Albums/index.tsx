@@ -15,6 +15,7 @@ export default function AlbumsPage({ onSelectAlbum }: AlbumsPageProps) {
         backgroundImage="/src/assets/images/durga-puja-cinematic.jpg"
         title="Photo Albums"
         subtitle="Explore our portfolio of compelling photo stories in the albums, showcasing our expertise in landscape, automotive, documentary, and editorial photography."
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Albums' }]}
       />
       <AlbumsGrid onSelectAlbum={onSelectAlbum} />
     </>

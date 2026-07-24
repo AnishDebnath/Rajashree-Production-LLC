@@ -6,6 +6,11 @@ interface CtaButton {
     onClick: () => void;
 }
 
+interface BreadcrumbItem {
+    label: string;
+    href?: string;
+}
+
 interface HeroSectionProps {
     /** Background image URL (required for 'left' layout, optional for 'center') */
     backgroundImage?: string;
@@ -15,7 +20,10 @@ interface HeroSectionProps {
     subtitle?: string;
     /** Gold eyebrow label (center layout only) */
     eyebrow?: string;
+    /** Breadcrumb trail */
+    breadcrumbs?: BreadcrumbItem[];
     /** Primary CTA button */
+    primaryCta?: CtaButton;
     primaryCta?: CtaButton;
     /** Secondary CTA button */
     secondaryCta?: CtaButton;
@@ -32,6 +40,7 @@ export default function HeroSection({
     title,
     subtitle,
     eyebrow,
+    breadcrumbs,
     primaryCta,
     secondaryCta,
     showScrollIndicator = true,
@@ -144,6 +153,31 @@ export default function HeroSection({
                             {/* Aesthetic Horizontal Divider Behind Heading */}
                             <div className="absolute -left-50 -right-250 top-[40%] h-px bg-white/5 pointer-events-none -z-10 hidden md:block" />
 
+                            {/* Breadcrumb trail */}
+                            {breadcrumbs && breadcrumbs.length > 0 && (
+                                <motion.nav
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                                    className="flex items-center gap-2 mb-4 md:mb-6 font-sans text-[10px] sm:text-[11px] font-bold tracking-[0.15em] uppercase"
+                                >
+                                    {breadcrumbs.map((crumb, idx) => (
+                                        <span key={idx} className="flex items-center gap-2">
+                                            {idx > 0 && (
+                                                <span className="text-neutral-600 font-light text-[9px]">/</span>
+                                            )}
+                                            {crumb.href ? (
+                                                <span className="text-neutral-500 hover:text-gold transition-colors duration-200">
+                                                    {crumb.label}
+                                                </span>
+                                            ) : (
+                                                <span className="text-gold">{crumb.label}</span>
+                                            )}
+                                        </span>
+                                    ))}
+                                </motion.nav>
+                            )}
+
                             {/* Title with elegant gradient text */}
                             <motion.h1
                                 initial={{ opacity: 0, y: 20 }}
@@ -231,6 +265,31 @@ export default function HeroSection({
                         <span>{eyebrow}</span>
                         <span className="w-6 h-px bg-gold/40" />
                     </div>
+                )}
+
+                {/* Breadcrumb trail */}
+                {breadcrumbs && breadcrumbs.length > 0 && (
+                    <motion.nav
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                        className="flex items-center gap-2 font-sans text-[10px] sm:text-[11px] font-bold tracking-[0.15em] uppercase"
+                    >
+                        {breadcrumbs.map((crumb, idx) => (
+                            <span key={idx} className="flex items-center gap-2">
+                                {idx > 0 && (
+                                    <span className="text-neutral-600 font-light text-[9px]">/</span>
+                                )}
+                                {crumb.href ? (
+                                    <span className="text-neutral-500 hover:text-gold transition-colors duration-200">
+                                        {crumb.label}
+                                    </span>
+                                ) : (
+                                    <span className="text-gold">{crumb.label}</span>
+                                )}
+                            </span>
+                        ))}
+                    </motion.nav>
                 )}
 
                 {/* Main Hero Heading */}

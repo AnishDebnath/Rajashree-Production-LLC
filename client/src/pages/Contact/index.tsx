@@ -30,6 +30,7 @@ export default function ContactPage({
         backgroundImage="/src/assets/images/kolkata-tram-night.jpg"
         title="Contact Us"
         subtitle="We love hearing from you! Whether you're ready to discuss your next project, have a question, or just want to say hello, we're all ears. Drop us a message, and let's start a conversation."
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Contact' }]}
       />
 
       {/* Subsequent sections wrapper with solid, opaque ambient gradient */}

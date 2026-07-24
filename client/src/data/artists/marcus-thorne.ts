@@ -2,6 +2,7 @@ import type { Artist } from './index';
 
 const artist: Artist = {
     id: '5',
+    slug: 'marcus-thorne',
     name: 'Marcus Thorne',
     role: 'Principal Film Editor',
     avatar: '/src/assets/images/artist-marcus-thorne.jpg',

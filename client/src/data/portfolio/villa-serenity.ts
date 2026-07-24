@@ -62,20 +62,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Gauri Shinde', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'Architect', name: 'Emily Rodriguez', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Grip', name: 'Rajesh Kumar', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Music', name: 'Arjun Mehta', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Gauri Shinde', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'Architect', name: 'Emily Rodriguez', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Grip', name: 'Rajesh Kumar', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Music', name: 'Arjun Mehta', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '25',
+    slug: 'villa-serenity',
     title: 'Villa Serenity',
     client: 'EMILY RODRIGUEZ',
     category: 'Real Estate',

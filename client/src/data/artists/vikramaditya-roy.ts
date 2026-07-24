@@ -2,6 +2,7 @@ import type { Artist } from './index';
 
 const artist: Artist = {
     id: '1',
+    slug: 'vikramaditya-roy',
     name: 'Vikramaditya Roy',
     role: 'Principal Film Director',
     avatar: '/src/assets/images/artist-vikram-roy.jpg',

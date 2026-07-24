@@ -38,6 +38,7 @@ export default function BlogsPage({ onSelectBlog, onCollaborateClick, onShowMess
         backgroundImage="/src/assets/images/howrah-bridge-dusk.jpg"
         title="Blogs & Stories"
         subtitle="Discover the narratives behind our lens — from set production diaries and artist spotlights to cinematography deep-dives and cinematic philosophy."
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'News' }]}
       />
       <BlogsGrid
         filteredBlogs={filteredBlogs}

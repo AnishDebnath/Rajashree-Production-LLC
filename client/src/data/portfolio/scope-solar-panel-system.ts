@@ -61,20 +61,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Anurag Kashyap', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'VFX', name: 'Vikram Aditya', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Script', name: 'Divya Patel', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Voiceover', name: 'Ashutosh Rana', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Anurag Kashyap', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'VFX', name: 'Vikram Aditya', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Script', name: 'Divya Patel', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Voiceover', name: 'Ashutosh Rana', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '14',
+    slug: 'scope-solar-panel-system',
     title: 'Scope Solar Panel System',
     client: 'ECOSCAPE SOLUTIONS',
     category: 'Product Video',

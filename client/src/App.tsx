@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles, Check, AlertCircle, Info, X } from 'lucide-react';
 
@@ -27,10 +27,54 @@ import { Album } from './data/albums';
 import { BlogPost } from './data/blogs';
 import { Artist, artistsData } from './data/artists';
 
+// URL parsing utilities
+const validTabs = ['home', 'projects', 'albums', 'artists', 'about', 'services', 'blogs', 'contact'] as const;
+
+type Tab = typeof validTabs[number];
+
+type DetailType = 'project' | 'album' | 'artist' | 'blog' | null;
+
+interface ParsedPath {
+  tab: Tab;
+  detailType: DetailType;
+  detailId: string | null;
+}
+
+const parsePath = (path: string): ParsedPath => {
+  const segments = path.split('/').filter(Boolean);
+  if (segments.length === 0) return { tab: 'home', detailType: null, detailId: null };
+
+  const tab = segments[0] as Tab;
+  if (!validTabs.includes(tab)) return { tab: 'home', detailType: null, detailId: null };
+
+  const detailId = segments.length > 1 ? segments[1] : null;
+  let detailType: DetailType = null;
+  if (detailId) {
+    if (tab === 'projects') detailType = 'project';
+    else if (tab === 'albums') detailType = 'album';
+    else if (tab === 'artists') detailType = 'artist';
+    else if (tab === 'blogs') detailType = 'blog';
+  }
+  return { tab, detailType, detailId };
+};
+
+const getDetailUrl = (type: DetailType, id: string): string => {
+  if (!type || !id) return '';
+  const base = type === 'blog' ? 'blogs' : `${type}s`;
+  return `/${base}/${id}`;
+};
+
+const getTabUrl = (tab: Tab): string => {
+  return tab === 'home' ? '/' : `/${tab}`;
+};
+
 export default function App() {
   const [showIntro, setShowIntro] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<Category>('All');
-  const [activeTab, setActiveTab] = useState<string>('home');
+  const [activeTab, setActiveTab] = useState<Tab>(() => {
+    const { tab } = parsePath(window.location.pathname);
+    return tab;
+  });
   const [isGridLoading, setIsGridLoading] = useState(false);
 
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -41,6 +85,64 @@ export default function App() {
 
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [toastType, setToastType] = useState<'info' | 'success'>('info');
+
+  // Navigate to tab (clears details)
+  const navigateTo = (tab: string) => {
+    const { tab: validTab } = parsePath(`/${tab}`);
+    setActiveTab(validTab);
+    setSelectedProject(null);
+    setSelectedArtist(null);
+    setSelectedAlbum(null);
+    setSelectedBlog(null);
+    const url = getTabUrl(validTab);
+    window.history.pushState(null, '', url);
+  };
+
+  // Navigate to detail page
+  const navigateToDetail = (type: DetailType, id: string) => {
+    const url = getDetailUrl(type, id);
+    window.history.pushState(null, '', url);
+  };
+
+  // Handle browser back/forward
+  useEffect(() => {
+    const handlePopState = () => {
+      const { tab, detailType, detailId } = parsePath(window.location.pathname);
+      setActiveTab(tab);
+
+      // Clear all details first
+      setSelectedProject(null);
+      setSelectedArtist(null);
+      setSelectedAlbum(null);
+      setSelectedBlog(null);
+
+      // Load detail if present in URL
+      if (detailType && detailId) {
+        switch (detailType) {
+          case 'project':
+            projectsData.find(p => p.slug === detailId) && setSelectedProject(projectsData.find(p => p.slug === detailId) || null);
+            break;
+          case 'album':
+            import('./data/albums').then(({ albumsData }) => {
+              const album = albumsData.find(a => a.id === detailId);
+              if (album) setSelectedAlbum(album);
+            });
+            break;
+          case 'artist':
+            artistsData.find(a => a.slug === detailId) && setSelectedArtist(artistsData.find(a => a.slug === detailId) || null);
+            break;
+          case 'blog':
+            import('./data/blogs').then(({ blogsData }) => {
+              const blog = blogsData.find(b => b.id === detailId);
+              if (blog) setSelectedBlog(blog);
+            });
+            break;
+        }
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   // Trigger grid skeleton loading when selected category changes
   useEffect(() => {
@@ -67,8 +169,32 @@ export default function App() {
     }
   }, [toastMessage]);
 
-  // Deep-linking: Load project or artist from URL query param if present
+  // Deep-linking: Load detail from URL path on mount
   useEffect(() => {
+    const { detailType, detailId } = parsePath(window.location.pathname);
+    if (detailType && detailId) {
+      switch (detailType) {
+        case 'project':
+          projectsData.find(p => p.slug === detailId) && setSelectedProject(projectsData.find(p => p.slug === detailId) || null);
+          break;
+        case 'album':
+          import('./data/albums').then(({ albumsData }) => {
+            const album = albumsData.find(a => a.id === detailId);
+            if (album) setSelectedAlbum(album);
+          });
+          break;
+        case 'artist':
+          artistsData.find(a => a.slug === detailId) && setSelectedArtist(artistsData.find(a => a.slug === detailId) || null);
+          break;
+        case 'blog':
+          import('./data/blogs').then(({ blogsData }) => {
+            const blog = blogsData.find(b => b.id === detailId);
+            if (blog) setSelectedBlog(blog);
+          });
+          break;
+      }
+    }
+    // Also check query params for backward compatibility
     const params = new URLSearchParams(window.location.search);
     const projectId = params.get('project');
     if (projectId) {
@@ -95,11 +221,27 @@ export default function App() {
 
   const handleProjectClick = (project: Project) => {
     setSelectedProject(project);
+    navigateToDetail('project', project.slug);
+  };
+
+  const handleSelectAlbum = (album: Album) => {
+    setSelectedAlbum(album);
+    navigateToDetail('album', album.id);
+  };
+
+  const handleSelectArtist = (artist: Artist) => {
+    setSelectedArtist(artist);
+    navigateToDetail('artist', artist.slug);
+  };
+
+  const handleSelectBlog = (blog: BlogPost) => {
+    setSelectedBlog(blog);
+    navigateToDetail('blog', blog.id);
   };
 
   const handleCollaborateClick = () => {
     setCollabContext('');
-    setActiveTab('contact');
+    navigateTo('contact');
     setSelectedProject(null);
     setSelectedArtist(null);
     setSelectedAlbum(null);
@@ -109,7 +251,7 @@ export default function App() {
 
   const handleCollaborateWithContext = (projectName: string) => {
     setCollabContext(projectName);
-    setActiveTab('contact');
+    navigateTo('contact');
     setSelectedProject(null);
     setSelectedArtist(null);
     setSelectedAlbum(null);
@@ -141,7 +283,7 @@ export default function App() {
         <Navbar
           activeTab={activeTab}
           setActiveTab={(tab) => {
-            setActiveTab(tab);
+            navigateTo(tab);
             setSelectedProject(null);
             setSelectedArtist(null);
             setSelectedAlbum(null);
@@ -156,7 +298,11 @@ export default function App() {
           {selectedProject ? (
             <ProjectDetailPage
               project={selectedProject}
-              onBack={() => setSelectedProject(null)}
+              onBack={() => {
+                setSelectedProject(null);
+                window.history.replaceState(null, '', getTabUrl('projects'));
+                window.scrollTo({ top: 0, behavior: 'instant' });
+              }}
               onCollaborateWithContext={handleCollaborateWithContext}
               onShowMessage={(msg, type) => triggerToast(msg, type)}
               onSelectProject={setSelectedProject}
@@ -167,6 +313,7 @@ export default function App() {
               artist={selectedArtist}
               onBack={() => {
                 setSelectedArtist(null);
+                window.history.replaceState(null, '', getTabUrl('artists'));
                 window.scrollTo({ top: 0, behavior: 'instant' });
               }}
               onSelectProject={setSelectedProject}
@@ -178,6 +325,7 @@ export default function App() {
               album={selectedAlbum}
               onBack={() => {
                 setSelectedAlbum(null);
+                window.history.replaceState(null, '', getTabUrl('albums'));
                 window.scrollTo({ top: 0, behavior: 'instant' });
               }}
               onCollaborateWithContext={handleCollaborateWithContext}
@@ -189,6 +337,7 @@ export default function App() {
               blog={selectedBlog}
               onBack={() => {
                 setSelectedBlog(null);
+                window.history.replaceState(null, '', getTabUrl('blogs'));
                 window.scrollTo({ top: 0, behavior: 'instant' });
               }}
               onSelectBlog={setSelectedBlog}
@@ -199,11 +348,11 @@ export default function App() {
             <AlbumsPage
               onCollaborateClick={handleCollaborateClick}
               onShowMessage={(msg, type) => triggerToast(msg, type)}
-              onSelectAlbum={setSelectedAlbum}
+              onSelectAlbum={handleSelectAlbum}
             />
           ) : activeTab === 'blogs' ? (
             <BlogsPage
-              onSelectBlog={setSelectedBlog}
+              onSelectBlog={handleSelectBlog}
               onCollaborateClick={handleCollaborateClick}
               onShowMessage={(msg, type) => triggerToast(msg, type)}
             />
@@ -212,7 +361,7 @@ export default function App() {
               onCollaborateClick={handleCollaborateClick}
               onShowMessage={(msg, type) => triggerToast(msg, type)}
               onCollaborateWithContext={handleCollaborateWithContext}
-              onSelectArtist={setSelectedArtist}
+              onSelectArtist={handleSelectArtist}
             />
           ) : activeTab === 'contact' ? (
             <ContactPage
@@ -233,7 +382,7 @@ export default function App() {
             />
           ) : activeTab === 'home' ? (
             <HomePage
-              setActiveTab={setActiveTab}
+              setActiveTab={navigateTo}
               onShowMessage={(msg, type) => triggerToast(msg, type)}
               onProjectClick={handleProjectClick}
               onSelectBlog={setSelectedBlog}
@@ -252,6 +401,7 @@ export default function App() {
               <Hero
                 title="Our Projects"
                 subtitle="From coming up with creative concepts to delivering outstanding campaigns, we're your friendly, fun-loving crew ready to turn your project dreams into reality!"
+                breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Projects' }]}
               />
 
               {/* Portfolio Showcase Section — ProjectGrid handles its own background + blends */}
@@ -296,7 +446,7 @@ export default function App() {
               onCollaborateClick={handleCollaborateClick}
               onShowMessage={(msg) => triggerToast(msg, 'success')}
               setActiveTab={(tab) => {
-                setActiveTab(tab);
+                navigateTo(tab);
                 setSelectedProject(null);
                 setSelectedAlbum(null);
                 setSelectedBlog(null);

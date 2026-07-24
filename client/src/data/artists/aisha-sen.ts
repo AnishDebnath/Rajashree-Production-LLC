@@ -2,6 +2,7 @@ import type { Artist } from './index';
 
 const artist: Artist = {
     id: '6',
+    slug: 'aisha-sen',
     name: 'Aisha Sen',
     role: 'Creative Director & Producer',
     avatar: '/src/assets/images/artist-aisha-sen.jpg',

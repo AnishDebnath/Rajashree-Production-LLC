@@ -62,20 +62,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Anurag Kashyap', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'VFX Supervisor', name: 'Sidharth Pal', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Soundscape', name: 'Joy Dev', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Colorist', name: 'Rohan Verma', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Anurag Kashyap', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'VFX Supervisor', name: 'Sidharth Pal', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Soundscape', name: 'Joy Dev', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Colorist', name: 'Rohan Verma', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '28',
+    slug: 'whispers-in-the-mist-shortfilm',
     title: 'Whispers in the Mist : Shortfilm',
     client: 'DEEVHIVE',
     category: 'Entertainment',

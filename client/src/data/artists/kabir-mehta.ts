@@ -2,6 +2,7 @@ import type { Artist } from './index';
 
 const artist: Artist = {
     id: '3',
+    slug: 'kabir-mehta',
     name: 'Kabir Mehta',
     role: 'Lead Sound Designer & Composer',
     avatar: '/src/assets/images/artist-kabir-mehta.jpg',

@@ -53,6 +53,7 @@ export default function ArtistsPage({ onShowMessage, onSelectArtist }: ArtistsPa
         backgroundImage="/src/assets/images/kumartuli-sculptor-film.jpg"
         title="Our Artists"
         subtitle="Meet the visionary minds shaping contemporary storytelling. Directors, cinematographers, soundscapes composers, and master editors cooperating to build legacy visual content."
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Artists' }]}
       />
 
       {/* 3. ARTISTS GRID CONTAINER */}

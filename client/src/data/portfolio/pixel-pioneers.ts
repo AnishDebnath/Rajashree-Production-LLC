@@ -61,20 +61,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Abhishek Roy', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'Compositor', name: 'Amit Sharma', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Concept Artist', name: 'Neha Pal', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'SFX', name: 'Rohan Verma', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Abhishek Roy', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'Compositor', name: 'Amit Sharma', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Concept Artist', name: 'Neha Pal', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'SFX', name: 'Rohan Verma', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '12',
+    slug: 'pixel-pioneers',
     title: 'Pixel Pioneers',
     client: 'PIXELPLAY STUDIOS',
     category: 'Animation',

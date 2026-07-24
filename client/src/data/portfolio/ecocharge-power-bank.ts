@@ -61,20 +61,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Karan Johar (Ad Div)', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'Lead Actor', name: 'Ryan Sen', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Creative Director', name: 'Aisha Sen', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Music', name: 'Priya Das', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Karan Johar (Ad Div)', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'Lead Actor', name: 'Ryan Sen', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Creative Director', name: 'Aisha Sen', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Music', name: 'Priya Das', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '4',
+    slug: 'ecocharge-power-bank',
     title: 'EcoCharge Power Bank',
     client: 'ECOGLOW',
     category: 'Commercials',

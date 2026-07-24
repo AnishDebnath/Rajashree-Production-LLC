@@ -62,20 +62,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Rajashree Sen', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'Underwater Cam', name: 'Mike Watson', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Writer', name: 'Aisha Sen', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Music Composer', name: 'Arjun Mehta', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Rajashree Sen', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'Underwater Cam', name: 'Mike Watson', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Writer', name: 'Aisha Sen', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Music Composer', name: 'Arjun Mehta', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '13',
+    slug: 'rising-tides',
     title: 'Rising Tides',
     client: 'AWARENESS INC.',
     category: 'Documentary',

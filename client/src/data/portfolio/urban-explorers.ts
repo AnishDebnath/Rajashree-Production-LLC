@@ -62,20 +62,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Imtiaz Ali (Unit-B)', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'DoP', name: 'Amit Sharma', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Music', name: 'A.R. Rahman (Lic)', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Gaffer', name: 'Joy Dev', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Imtiaz Ali (Unit-B)', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'DoP', name: 'Amit Sharma', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Music', name: 'A.R. Rahman (Lic)', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Gaffer', name: 'Joy Dev', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '23',
+    slug: 'urban-explorers',
     title: 'Urban Explorers',
     client: 'METROLIFE REALTY',
     category: 'Lifestyle',

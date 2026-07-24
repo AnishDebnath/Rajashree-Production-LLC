@@ -61,20 +61,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Director', name: 'Sajid Nadiadwala', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'Stunt Coordinator', name: 'Sham K.', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'DoP', name: 'Amit Sharma', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Sound FX', name: 'Joy Dev', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Director', name: 'Sajid Nadiadwala', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'Stunt Coordinator', name: 'Sham K.', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'DoP', name: 'Amit Sharma', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Sound FX', name: 'Joy Dev', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '24',
+    slug: 'urbaneats-food-delivery',
     title: 'UrbanEats Food Delivery',
     client: 'URBANEATS INC.',
     category: 'Commercials',

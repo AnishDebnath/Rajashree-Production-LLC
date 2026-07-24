@@ -2,6 +2,7 @@ import type { Artist } from './index';
 
 const artist: Artist = {
     id: '2',
+    slug: 'elina-roy',
     name: 'Elina Roy',
     role: 'Director of Photography',
     avatar: '/src/assets/images/artist-elina-roy.jpg',

@@ -86,6 +86,7 @@ const gallery: string[] = [
 
 const project: Project = {
     id: '1',
+    slug: 'travel-vlog-adventure',
     title: 'A Travel Vlog Adventure',
     client: 'SARAH',
     category: 'Social Media',

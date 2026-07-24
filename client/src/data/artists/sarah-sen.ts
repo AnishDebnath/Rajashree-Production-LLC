@@ -2,6 +2,7 @@ import type { Artist } from './index';
 
 const artist: Artist = {
     id: '4',
+    slug: 'sarah-sen',
     name: 'Sarah Sen',
     role: 'Senior VFX Supervisor & Colorist',
     avatar: '/src/assets/images/artist-sarah-sen.jpg',

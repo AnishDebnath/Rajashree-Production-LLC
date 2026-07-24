@@ -148,6 +148,22 @@ export default function AboutPage({ onCollaborateClick, onShowMessage }: AboutPa
               {/* Elegant design wireline */}
               <div className="absolute -left-50 -right-250 top-[40%] h-px bg-white/5 pointer-events-none -z-10 hidden md:block" />
 
+              {/* Breadcrumb trail */}
+              <motion.nav
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                className="flex items-center gap-2 mb-4 md:mb-6 font-sans text-[10px] sm:text-[11px] font-bold tracking-[0.15em] uppercase"
+              >
+                <span className="flex items-center gap-2">
+                  <span className="text-neutral-500 hover:text-gold transition-colors duration-200">Home</span>
+                </span>
+                <span className="flex items-center gap-2">
+                  <span className="text-neutral-600 font-light text-[9px]">/</span>
+                  <span className="text-gold">About</span>
+                </span>
+              </motion.nav>
+
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

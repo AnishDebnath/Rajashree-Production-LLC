@@ -61,20 +61,21 @@ const testimonials: Testimonial[] = [
 ];
 
 const casting: CastingMember[] = [
-        { role: 'Lead Videographer', name: 'Rohan Sharma', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
-        { role: 'B-Roll Shooter', name: 'Pooja Rao', avatar: '/src/assets/images/artist-elina-roy.jpg' },
-        { role: 'Editor', name: 'Priya Das', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
-        { role: 'Sound Design', name: 'Joy Dev', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
-    ];
+    { role: 'Lead Videographer', name: 'Rohan Sharma', avatar: '/src/assets/images/artist-vikram-roy.jpg' },
+    { role: 'B-Roll Shooter', name: 'Pooja Rao', avatar: '/src/assets/images/artist-elina-roy.jpg' },
+    { role: 'Editor', name: 'Priya Das', avatar: '/src/assets/images/artist-kabir-mehta.jpg' },
+    { role: 'Sound Design', name: 'Joy Dev', avatar: '/src/assets/images/artist-sarah-sen.jpg' }
+];
 
 const gallery: string[] = [
-        '/src/assets/images/project-doc-sundarbans.jpg',
-        '/src/assets/images/kumartuli-sculptor-film.jpg',
-        '/src/assets/images/princep-ghat-film.jpg'
-    ];
+    '/src/assets/images/project-doc-sundarbans.jpg',
+    '/src/assets/images/kumartuli-sculptor-film.jpg',
+    '/src/assets/images/princep-ghat-film.jpg'
+];
 
 const project: Project = {
     id: '9',
+    slug: 'healthy-living-expo-2023',
     title: 'Healthy Living Expo 2023',
     client: 'WELLNESSWORLD GROUP',
     category: 'Event',
