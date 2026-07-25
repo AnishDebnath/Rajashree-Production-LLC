@@ -108,6 +108,7 @@ export default function AboutPage({ onCollaborateClick, onShowMessage }: AboutPa
             src="/src/assets/images/bengali-heritage-mansion.jpg"
             alt="Bengali Heritage Mansion Production Set"
             referrerPolicy="no-referrer"
+            loading="lazy"
             className="w-full h-full object-cover object-center opacity-75 scale-100 filter brightness-65 contrast-110"
           />
           {/* Gradients to seamlessly blend the background and provide high contrast readability for text */}

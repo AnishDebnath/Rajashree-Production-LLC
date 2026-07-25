@@ -76,7 +76,7 @@ export function CategoryInteractiveCard({
                     let widthClass = "w-[8%] shrink-0";
                     let borderRad = "rounded-full";
                     if (isActive) {
-                        widthClass = "aspect-[4/3] shrink-0";
+                        widthClass = "aspect-4/3 shrink-0";
                         borderRad = "rounded-[24px]";
                     } else {
                         const relativeIdx = (imgIdx - activeIndex + 3) % 3;
@@ -109,6 +109,7 @@ export function CategoryInteractiveCard({
                                 src={img}
                                 alt={`${cat.title} preview ${imgIdx + 1}`}
                                 referrerPolicy="no-referrer"
+                                loading="lazy"
                                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                             />
                             <div className={`absolute inset-0 transition-colors duration-300 ${isActive ? "bg-black/10" : imgIdx === (activeIndex + 1) % 3 ? "bg-black/40" : "bg-black/50"

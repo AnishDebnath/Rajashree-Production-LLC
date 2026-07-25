@@ -26,6 +26,7 @@ export default function Header({ artist, cardRotateX, cardRotateY, children }: H
             src={artist.avatar}
             alt={artist.name}
             referrerPolicy="no-referrer"
+            loading="lazy"
             className="w-full h-full object-cover object-center filter scale-[1.05] brightness-[0.45] contrast-[1.1] saturate-[0.95]"
             style={{
               WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 60%, rgba(0,0,0,0) 100%)',
@@ -68,6 +69,7 @@ export default function Header({ artist, cardRotateX, cardRotateY, children }: H
             src={artist.avatar}
             alt={artist.name}
             referrerPolicy="no-referrer"
+            loading="lazy"
             className="w-full h-full object-cover transition-all duration-700 ease-out brightness-100 scale-100 group-hover/player:scale-[1.01]"
             style={{ transform: 'translateZ(30px)' }}
           />

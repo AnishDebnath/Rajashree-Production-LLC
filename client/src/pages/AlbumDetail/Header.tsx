@@ -26,6 +26,7 @@ export default function Header({ album, heroRotateX, heroRotateY, children }: He
             src={album.coverImage}
             alt={album.title}
             referrerPolicy="no-referrer"
+            loading="lazy"
             className="w-full h-full object-cover object-center filter scale-[1.05] brightness-[0.45] contrast-[1.1] saturate-[0.95]"
             style={{
               WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 60%, rgba(0,0,0,0) 100%)',
@@ -72,6 +73,7 @@ export default function Header({ album, heroRotateX, heroRotateY, children }: He
             src={album.coverImage}
             alt={album.title}
             referrerPolicy="no-referrer"
+            loading="lazy"
             className="w-full h-full object-cover transition-all duration-700 ease-out brightness-95 group-hover/cover:scale-[1.015] group-hover/cover:brightness-100"
             style={{ transform: 'translateZ(20px)' }}
           />

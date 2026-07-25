@@ -53,6 +53,7 @@ export default function StorytellersSection() {
                                         src={item.src}
                                         alt={item.alt}
                                         referrerPolicy="no-referrer"
+                                        loading="lazy"
                                         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[18rem] max-w-none h-full object-cover transition-all duration-700 brightness-100 saturate-125 contrast-105"
                                     />
                                 </motion.div>

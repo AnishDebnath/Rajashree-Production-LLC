@@ -50,7 +50,7 @@ export default function ProjectTestimonialsSection({
                         </p>
 
                         {/* Elegant divider */}
-                        <div className="w-8 h-[1px] bg-white/20 my-1" />
+                        <div className="w-8 h-px bg-white/20 my-1" />
 
                         {/* Author Avatar & Details (Side-by-side layout without border) */}
                         <div className="flex flex-row items-center justify-center gap-4 text-left mt-3">
@@ -60,6 +60,7 @@ export default function ProjectTestimonialsSection({
                                         src={testimonial.avatar}
                                         alt={testimonial.author}
                                         referrerPolicy="no-referrer"
+                                        loading="lazy"
                                         className="w-full h-full object-cover rounded-full filter brightness-[1.03] contrast-[1.05]"
                                     />
                                 </div>

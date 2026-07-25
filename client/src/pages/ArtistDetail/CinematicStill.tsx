@@ -20,6 +20,7 @@ export default function CinematicStill({ artist, projects }: CinematicStillProps
                 src={stillSrc}
                 alt={`${artist.name} Cinematic Wide`}
                 referrerPolicy="no-referrer"
+                loading="lazy"
                 className="w-full h-full object-cover brightness-[0.8]"
                 style={{ transform: 'translateZ(30px)' }}
             />

@@ -96,12 +96,14 @@ export default function App() {
     setSelectedBlog(null);
     const url = getTabUrl(validTab);
     window.history.pushState(null, '', url);
+    window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
   // Navigate to detail page
   const navigateToDetail = (type: DetailType, id: string) => {
     const url = getDetailUrl(type, id);
     window.history.pushState(null, '', url);
+    window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
   // Handle browser back/forward
@@ -263,26 +265,10 @@ export default function App() {
     <>
       {showIntro && <OpeningIntro onFinish={() => setShowIntro(false)} />}
 
-      {/* Persistent cinematic background video — plays once, stays across all pages */}
-      {!showIntro && (
-        <div className="fixed inset-0 z-0 pointer-events-none">
-          <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-black/30 z-10" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_50%,black_100%)] opacity-40 z-10 pointer-events-none" />
-          <video
-            autoPlay
-            muted
-            playsInline
-            poster="/src/assets/images/cinematic-studio-hero.jpg"
-            src="/src/assets/intro-video.mp4"
-            className="w-full h-full object-cover object-center"
-          />
-        </div>
-      )}
-
       <div
-        className="relative z-10 min-h-screen text-neutral-200 selection:bg-accent-red selection:text-white overflow-x-clip antialiased font-sans"
+        className="relative min-h-screen text-neutral-200 selection:bg-accent-red selection:text-white overflow-x-clip antialiased font-sans"
         style={{
-          background: 'linear-gradient(135deg, rgba(5,5,5,0.85) 0%, rgba(21,17,6,0.75) 25%, rgba(34,28,11,0.7) 50%, rgba(21,17,6,0.75) 75%, rgba(3,3,3,0.85) 100%)',
+          background: 'linear-gradient(135deg, #050505 0%, #151106 25%, #221c0b 50%, #151106 75%, #030303 100%)',
           backgroundAttachment: 'fixed'
         }}
       >
@@ -439,6 +425,7 @@ export default function App() {
                 src="/src/assets/images/howrah-bridge-dusk.jpg"
                 alt="Kolkata Cinematic Production Background"
                 referrerPolicy="no-referrer"
+                loading="lazy"
                 className="w-full h-full object-cover object-center opacity-65 filter brightness-90 contrast-105"
               />
               {/* Top joining fade gradient */}

@@ -107,6 +107,7 @@ export default function IntroBanner({ heroSlides, currentHeroSlide, setCurrentHe
                                     <img
                                         src={slide.image}
                                         alt={slide.title}
+                                        loading="lazy"
                                         className={`w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ${isActive
                                             ? 'opacity-100 brightness-110 contrast-105 scale-100'
                                             : 'opacity-45 brightness-70 contrast-90 hover:opacity-85 hover:brightness-95'
@@ -182,9 +183,13 @@ export default function IntroBanner({ heroSlides, currentHeroSlide, setCurrentHe
                     {/* Clean inner border bezel */}
                     <div className="absolute inset-0 border border-white/5 rounded-[inherit] z-20 pointer-events-none" />
 
-                    <img
-                        src="/src/assets/images/cinematic-studio-hero.jpg"
-                        alt=""
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        poster="/src/assets/images/cinematic-studio-hero.jpg"
+                        src="/src/assets/intro-video.mp4"
                         className="w-full h-full object-cover object-center"
                     />
                 </motion.div>

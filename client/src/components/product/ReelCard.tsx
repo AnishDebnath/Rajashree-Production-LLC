@@ -78,6 +78,7 @@ export default function ReelCard({
                 src={reel.imageUrl}
                 alt={reel.title}
                 referrerPolicy="no-referrer"
+                loading="lazy"
                 className="ls-curved-carousel__media pointer-events-none transition-transform duration-700 group-hover:scale-105"
             />
 
@@ -163,6 +164,7 @@ export default function ReelCard({
                     <img
                         src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${reel.id}&backgroundColor=38bdf8`}
                         alt={reel.creator}
+                        loading="lazy"
                         className="w-4 h-4 md:w-5 md:h-5 rounded-full border border-white/25 shadow-md bg-zinc-950 object-cover"
                     />
                     <span className="font-sans font-extrabold text-[8px] md:text-[9.5px] text-white tracking-wide truncate max-w-11.25 md:max-w-16.25 drop-shadow">

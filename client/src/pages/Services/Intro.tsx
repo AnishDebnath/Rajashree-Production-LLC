@@ -159,6 +159,7 @@ export default function Intro({ onCollaborateClick, onShowMessage }: IntroProps)
                                                 src={slide.image}
                                                 alt={slide.title}
                                                 referrerPolicy="no-referrer"
+                                                loading="lazy"
                                                 className={`w-full h-full object-cover object-center transition-transform duration-700 ${isActive ? 'scale-100' : 'scale-105 brightness-[0.35]'
                                                     }`}
                                             />

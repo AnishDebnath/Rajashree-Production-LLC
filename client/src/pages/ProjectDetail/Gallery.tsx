@@ -43,6 +43,7 @@ export default function ProjectGallerySection({ relatedStills }: ProjectGalleryS
                                     src={still}
                                     alt={`Project Frame ${idx + 1}`}
                                     referrerPolicy="no-referrer"
+                                    loading="lazy"
                                     className="w-full h-full object-cover brightness-[0.85] group-hover/still:brightness-100 group-hover/still:scale-[1.02] transition-all duration-700 ease-out"
                                 />
                             </div>

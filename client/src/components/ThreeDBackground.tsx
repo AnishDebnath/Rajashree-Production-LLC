@@ -60,7 +60,7 @@ export default function ThreeDBackground() {
       {/* 3D Depth Layer 3: Rotating glass prism box */}
       <motion.div
         style={{ x: layer3X, y: scrollY3 }}
-        className="absolute top-[85vh] left-[20%] w-16 h-16 bg-gradient-to-br from-gold/15 to-accent-red/5 rounded-2xl border border-white/10 backdrop-blur-[2px] opacity-25"
+        className="absolute top-[85vh] left-[20%] w-16 h-16 bg-linear-to-br from-gold/15 to-accent-red/5 rounded-2xl border border-white/10 backdrop-blur-[2px] opacity-25"
         animate={{
           rotateX: [0, 360],
           rotateY: [0, 360],
@@ -76,7 +76,7 @@ export default function ThreeDBackground() {
       {/* 3D Depth Layer 4: Deep Red neon glow ring */}
       <motion.div
         style={{ x: layer1Y, y: scrollY1 }}
-        className="absolute top-[135vh] right-[22%] w-28 h-28 bg-gradient-to-tr from-accent-red/10 to-gold/5 rounded-3xl border border-white/5 backdrop-blur-[1.5px] opacity-20"
+        className="absolute top-[135vh] right-[22%] w-28 h-28 bg-linear-to-tr from-accent-red/10 to-gold/5 rounded-3xl border border-white/5 backdrop-blur-[1.5px] opacity-20"
         animate={{
           rotateX: [0, -360],
           rotateY: [0, 360],
@@ -100,7 +100,7 @@ export default function ThreeDBackground() {
       {/* 3D Depth Layer 6: Floating translucent box at footer transition */}
       <motion.div
         style={{ x: layer3Y, y: scrollY3 }}
-        className="absolute top-[275vh] right-[14%] w-20 h-20 bg-gradient-to-br from-white/5 to-white/0 rounded-xl border border-white/5 backdrop-blur-[1px] opacity-10"
+        className="absolute top-[275vh] right-[14%] w-20 h-20 bg-linear-to-br from-white/5 to-white/0 rounded-xl border border-white/5 backdrop-blur-[1px] opacity-10"
         animate={{
           rotateX: [360, 0],
           rotateY: [0, 360],

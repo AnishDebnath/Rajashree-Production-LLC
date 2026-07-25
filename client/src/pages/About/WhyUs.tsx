@@ -27,6 +27,7 @@ export default function WhyUsSection({ usps }: WhyUsSectionProps) {
                                         src="/src/assets/images/cinematic-studio-hero.jpg"
                                         alt="Cinematic camera rig and studio setup"
                                         referrerPolicy="no-referrer"
+                                        loading="lazy"
                                         className="w-full h-full object-cover transition-all duration-700 ease-out brightness-90 group-hover:scale-[1.03] group-hover:brightness-105"
                                     />
                                     <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent pointer-events-none" />

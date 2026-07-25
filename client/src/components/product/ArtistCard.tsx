@@ -62,6 +62,7 @@ function SimilarVisual({ artist, onSelect, onCollaborateWithContext }: { artist:
                         src={artist.avatar}
                         alt={artist.name}
                         referrerPolicy="no-referrer"
+                        loading="lazy"
                         className="w-full h-full object-cover object-center scale-100 group-hover:scale-[1.015] transition-transform duration-1000 ease-out brightness-95 group-hover:brightness-100"
                     />
                 </div>

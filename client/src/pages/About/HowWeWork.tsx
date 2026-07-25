@@ -44,6 +44,7 @@ export default function HowWeWorkSection() {
                                         src="/src/assets/images/film-crew-set-kolkata.jpg"
                                         alt="Film crew working on location in Kolkata"
                                         referrerPolicy="no-referrer"
+                                        loading="lazy"
                                         className="w-full h-full object-cover transition-all duration-700 ease-out brightness-90 group-hover:scale-[1.03] group-hover:brightness-105"
                                     />
                                     <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent pointer-events-none" />

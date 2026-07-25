@@ -47,6 +47,7 @@ export default function AlbumsGrid({ onSelectAlbum }: AlbumsGridProps) {
                   src={album.photos[2]?.url || album.coverImage}
                   alt=""
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover object-center"
                 />
               </div>
@@ -57,6 +58,7 @@ export default function AlbumsGrid({ onSelectAlbum }: AlbumsGridProps) {
                   src={album.photos[1]?.url || album.coverImage}
                   alt=""
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover object-center"
                 />
               </div>
@@ -67,6 +69,7 @@ export default function AlbumsGrid({ onSelectAlbum }: AlbumsGridProps) {
                   src={album.coverImage}
                   alt={album.title}
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover object-center"
                 />
               </div>

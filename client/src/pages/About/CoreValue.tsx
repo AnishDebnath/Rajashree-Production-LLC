@@ -24,14 +24,14 @@ export default function CoreValueSection() {
                             className={`relative group flex flex-col ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} items-center gap-8 md:gap-12 lg:gap-16 w-full`}
                         >
                             {/* Image */}
-                            <div className="relative w-full md:w-[38%] aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shrink-0 shadow-xl">
+                            <div className="relative w-full md:w-[38%] aspect-4/3 rounded-2xl overflow-hidden border border-white/10 shrink-0 shadow-xl">
                                 <img
                                     src={item.image}
                                     alt={item.title}
                                     className="object-cover w-full h-full scale-100 group-hover:scale-[1.03] transition-transform duration-700 ease-out filter brightness-[0.85] group-hover:brightness-100"
                                     loading="lazy"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent" />
                             </div>
 
                             {/* Content */}

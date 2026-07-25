@@ -388,6 +388,7 @@ export default function SocialReels({ onShowMessage }: SocialReelsProps) {
                             <img
                                 src={selectedReel.imageUrl}
                                 alt="blur background"
+                                loading="lazy"
                                 className="w-full h-full object-cover filter blur-[80px]"
                             />
                         </div>
@@ -437,6 +438,7 @@ export default function SocialReels({ onShowMessage }: SocialReelsProps) {
                                     loop
                                     playsInline
                                     autoPlay
+                                    preload="metadata"
                                     className="w-full h-full object-cover filter brightness-[0.9]"
                                 />
 

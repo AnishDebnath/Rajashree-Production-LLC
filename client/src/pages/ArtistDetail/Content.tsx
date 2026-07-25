@@ -16,12 +16,13 @@ export default function CaseStudy({ artist, projects }: CaseStudyProps) {
             {/* Cinematic Still */}
             <ThreeDCardEffect
                 tiltMaxAngle={4}
-                className="w-full relative aspect-[21/9] sm:aspect-[21/8] bg-black rounded-3xl overflow-hidden border border-white/5 shadow-2xl mb-16"
+                className="w-full relative aspect-21/9 sm:aspect-21/8 bg-black rounded-3xl overflow-hidden border border-white/5 shadow-2xl mb-16"
             >
                 <img
                     src={stillSrc}
                     alt={`${artist.name} Cinematic Wide`}
                     referrerPolicy="no-referrer"
+                    loading="lazy"
                     className="w-full h-full object-cover brightness-[0.8]"
                     style={{ transform: 'translateZ(30px)' }}
                 />

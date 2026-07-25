@@ -174,6 +174,7 @@ export default function ProjectDetailPage({
             src={project.image}
             alt={`${project.title} Cinematic Wide`}
             referrerPolicy="no-referrer"
+            loading="lazy"
             className="w-full h-full object-cover brightness-[0.8]"
             style={{ transform: 'translateZ(30px)' }}
           />

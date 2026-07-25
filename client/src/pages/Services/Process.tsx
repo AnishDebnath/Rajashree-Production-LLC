@@ -46,6 +46,7 @@ export default function Process() {
                                                     src={img.url}
                                                     alt={img.alt}
                                                     referrerPolicy="no-referrer"
+                                                    loading="lazy"
                                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                                 />
                                             </div>
@@ -63,6 +64,7 @@ export default function Process() {
                                                     src={img.url}
                                                     alt={img.alt}
                                                     referrerPolicy="no-referrer"
+                                                    loading="lazy"
                                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                                 />
                                             </div>

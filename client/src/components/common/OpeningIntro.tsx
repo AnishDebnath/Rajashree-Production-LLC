@@ -58,6 +58,7 @@ export default function OpeningIntro({ onFinish }: OpeningIntroProps) {
                     ref={videoRef}
                     autoPlay
                     playsInline
+                    preload="auto"
                     onEnded={handleVideoEnd}
                     className="w-full h-full object-cover"
                 >

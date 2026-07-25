@@ -34,16 +34,17 @@ export default function Testimonial({
                     src="/src/assets/images/film-crew-set-kolkata.jpg"
                     alt="Film Production Set Background"
                     referrerPolicy="no-referrer"
+                    loading="lazy"
                     className="w-full h-full object-cover filter brightness-90 contrast-105 opacity-60"
                 />
                 {/* Main vertical gradient blend */}
-                <div className="absolute inset-0 bg-gradient-to-b from-[#050505] via-[#050505]/30 to-[#050505]" />
+                <div className="absolute inset-0 bg-linear-to-b from-bg-dark via-bg-dark/30 to-bg-dark" />
                 {/* Horizontal side vignette */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#050505]/80 via-transparent to-[#050505]/80" />
+                <div className="absolute inset-0 bg-linear-to-r from-bg-dark/80 via-transparent to-bg-dark/80" />
                 {/* Dedicated top fade mask */}
-                <div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-[#050505] to-transparent" />
+                <div className="absolute inset-x-0 top-0 h-36 bg-linear-to-b from-bg-dark to-transparent" />
                 {/* Dedicated bottom fade mask */}
-                <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#050505] to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 h-36 bg-linear-to-t from-bg-dark to-transparent" />
             </div>
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
@@ -56,7 +57,7 @@ export default function Testimonial({
                 </div>
 
                 {/* Testimonials Slider Area */}
-                <div className="w-full py-6 min-h-[460px] flex items-center justify-center">
+                <div className="w-full py-6 min-h-115 flex items-center justify-center">
 
                     <div className="relative w-full max-w-2xl mx-auto">
                         {/* Left Slider Arrow Button */}
@@ -69,7 +70,7 @@ export default function Testimonial({
                         </button>
 
                         {/* 3D Cards Stack Perspective Container */}
-                        <div className="relative w-full h-[460px] sm:h-[400px] md:h-[370px] lg:h-[350px] flex items-center justify-center" style={{ perspective: '1200px', transformStyle: 'preserve-3d' }}>
+                        <div className="relative w-full h-115 sm:h-100 md:h-92.5 lg:h-87.5 flex items-center justify-center" style={{ perspective: '1200px', transformStyle: 'preserve-3d' }}>
                             {testimonials.map((testimonial, idx) => {
                                 // Calculate dynamic relative offset with wrapping for any number of cards
                                 let offset = idx - activeTestimonial;
@@ -107,7 +108,7 @@ export default function Testimonial({
                                             if (isLeft) prevTestimonial();
                                             if (isRight) nextTestimonial();
                                         }}
-                                        className={`absolute w-full h-full flex flex-col justify-between p-6 sm:p-8 md:p-10 rounded-[28px] md:rounded-[32px] bg-[#0c0c0e]/65 backdrop-blur-xl border border-white/10 shadow-[0_24px_60px_rgba(0,0,0,0.6),0_1px_1px_rgba(255,255,255,0.08)_inset] select-none ${isActive ? 'pointer-events-auto cursor-default' : 'pointer-events-auto cursor-pointer hover:bg-[#0c0c0e]/80 hover:border-white/15 transition-all duration-300'
+                                        className={`absolute w-full h-full flex flex-col justify-between p-6 sm:p-8 md:p-10 rounded-[28px] md:rounded-4xl bg-[#0c0c0e]/65 backdrop-blur-xl border border-white/10 shadow-[0_24px_60px_rgba(0,0,0,0.6),0_1px_1px_rgba(255,255,255,0.08)_inset] select-none ${isActive ? 'pointer-events-auto cursor-default' : 'pointer-events-auto cursor-pointer hover:bg-[#0c0c0e]/80 hover:border-white/15 transition-all duration-300'
                                             } ${!isActive ? 'hidden md:flex' : 'flex'}`}
                                     >
                                         <div className="flex flex-col gap-3 sm:gap-4 md:gap-5">
