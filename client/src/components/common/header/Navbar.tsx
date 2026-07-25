@@ -69,7 +69,7 @@ export default function Navbar({ onCollaborateClick, activeTab, setActiveTab, on
                 >
                     <div className="flex items-center justify-between">
                         {/* Desktop - Logo + Nav + CTA */}
-                        <div className="hidden md:flex items-center justify-between w-full">
+                        <div className="hidden lg:flex items-center justify-between w-full">
                             {/* Logo */}
                             <motion.div
                                 initial={{ opacity: 0, x: -20 }}
@@ -136,7 +136,7 @@ export default function Navbar({ onCollaborateClick, activeTab, setActiveTab, on
                         </div>
 
                         {/* Mobile logo + toggle */}
-                        <div className="md:hidden flex items-center gap-2.5">
+                        <div className="lg:hidden flex items-center justify-between w-full">
                             <div className="flex items-center gap-2 cursor-pointer group shrink-0" onClick={() => setActiveTab('home')}>
                                 <div className="flex items-center justify-center w-6 h-6 rounded-lg bg-accent-red shadow-md shadow-accent-red/20">
                                     <span className="font-display font-black text-white text-[11px]">R</span>
@@ -173,7 +173,7 @@ export default function Navbar({ onCollaborateClick, activeTab, setActiveTab, on
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: -10, scale: 0.95 }}
                         transition={{ duration: 0.2 }}
-                        className="fixed top-20 left-4 right-4 z-40 bg-surface-dark/95 backdrop-blur-xl rounded-2xl p-5 shadow-[0_16px_40px_rgba(0,0,0,0.8)] md:hidden"
+                        className="fixed top-20 left-4 right-4 z-40 bg-surface-dark/95 backdrop-blur-xl rounded-2xl p-5 shadow-[0_16px_40px_rgba(0,0,0,0.8)] lg:hidden"
                     >
                         <nav className="flex flex-col gap-3">
                             {navItems.map((item, index) => {

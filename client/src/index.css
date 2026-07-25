@@ -30,7 +30,7 @@
   --text-hero-desc--letter-spacing: 0.01em;
 
   /* Typography Scale - Section Headings */
-  --text-section-heading: 2.25rem;
+  --text-section-heading: clamp(1.25rem, 1.5vw + 1rem, 2.25rem);
   --text-section-heading--line-height: 1.2;
   --text-section-heading--font-weight: 700;
   --text-section-heading--font-family: var(--font-display);

@@ -68,7 +68,7 @@ export default function BlogsSection({ blogsData, onSelectBlog, setActiveTab, on
                                     <span className="font-sans text-[11px] font-bold tracking-[0.14em] text-gold uppercase block leading-none transition-colors duration-300">
                                         {blog.category}
                                     </span>
-                                    <h3 className="font-sans font-semibold text-lg sm:text-[19px] text-white group-hover:text-neutral-100 transition-colors tracking-tight mt-3 mb-2.5 h-14 line-clamp-2 overflow-hidden text-ellipsis leading-snug">
+                                    <h3 className="font-sans font-semibold text-lg sm:text-[19px] text-white group-hover:text-neutral-100 transition-colors tracking-tight mt-3 mb-2.5 line-clamp-2 leading-snug">
                                         {blog.title}
                                     </h3>
                                     <div className="flex items-center gap-2 text-xs text-neutral-500 font-medium mt-1">

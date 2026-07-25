@@ -53,8 +53,26 @@ export default function IntroBanner({ heroSlides, currentHeroSlide, setCurrentHe
         >
             {/* Interactive Thumbnail Filmstrip Navigation at the Bottom - Positioned relative to showreel-section top to beat stacking context */}
             <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-12 sm:mb-16 z-30 flex items-center justify-center select-none pointer-events-auto">
-                {/* Sharp, Sleek Filmstrip Container with individual items (matching screenshot exactly) */}
-                <div className="flex items-center gap-1 sm:gap-1.5 overflow-visible">
+                {/* Mobile: Simple Dot Indicators */}
+                <div className="flex sm:hidden items-center gap-2">
+                    {heroSlides.map((_, idx) => {
+                        const isActive = idx === currentHeroSlide;
+                        return (
+                            <button
+                                key={idx}
+                                onClick={() => setCurrentHeroSlide(idx)}
+                                className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${isActive
+                                    ? 'bg-gold w-5'
+                                    : 'bg-white/30 hover:bg-white/60'
+                                    }`}
+                                aria-label={`Go to slide ${idx + 1}`}
+                            />
+                        );
+                    })}
+                </div>
+
+                {/* Tablet+: Filmstrip Thumbnails */}
+                <div className="hidden sm:flex items-center gap-1 sm:gap-1.5 overflow-visible">
                     {heroSlides.map((slide, idx) => {
                         const isActive = idx === currentHeroSlide;
                         return (
@@ -164,13 +182,9 @@ export default function IntroBanner({ heroSlides, currentHeroSlide, setCurrentHe
                     {/* Clean inner border bezel */}
                     <div className="absolute inset-0 border border-white/5 rounded-[inherit] z-20 pointer-events-none" />
 
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        poster="/src/assets/images/cinematic-studio-hero.jpg"
-                        src="/src/assets/intro-video.mp4"
+                    <img
+                        src="/src/assets/images/cinematic-studio-hero.jpg"
+                        alt=""
                         className="w-full h-full object-cover object-center"
                     />
                 </motion.div>
