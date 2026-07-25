@@ -1,5 +1,6 @@
 import React from 'react';
 import { Play, ArrowUpRight, MapPin, Mail, Phone, Clock, Instagram, Youtube, Video, Linkedin } from 'lucide-react';
+import { Watermark } from '../../Watermark';
 
 interface FooterProps {
     onCollaborateClick: () => void;
@@ -259,6 +260,9 @@ export default function Footer({ onCollaborateClick, onShowMessage, setActiveTab
                             ))}
                         </div>
                     </div>
+
+                    {/* Watermark - inside footer card */}
+                    <Watermark />
                 </div>
             </div>
         </footer>
