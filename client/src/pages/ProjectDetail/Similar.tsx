@@ -16,7 +16,7 @@ export default function ProjectSimilarSection({
     onBack
 }: ProjectSimilarSectionProps) {
     return (
-        <div className="w-full flex flex-col items-center my-14 px-6">
+        <div className="w-full flex flex-col items-center py-16 px-6">
             <div className="max-w-2xl w-full flex flex-col gap-5 text-left">
                 <h2 className="text-section-heading">
                     View Similar Projects

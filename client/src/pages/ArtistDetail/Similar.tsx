@@ -12,7 +12,7 @@ interface SimilarProps {
 
 export default function Similar({ otherArtists, onSelectArtist, onShowMessage, onBack }: SimilarProps) {
   return (
-    <div className="w-full flex flex-col items-center my-16 px-6">
+    <div className="w-full flex flex-col items-center py-16 px-6">
       <div className="max-w-2xl w-full flex flex-col gap-6 text-left">
         <h3 className="font-display font-bold text-2xl text-white tracking-tight px-1">
           View Other Production Artists

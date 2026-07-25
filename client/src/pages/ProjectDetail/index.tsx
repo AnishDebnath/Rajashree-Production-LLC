@@ -164,11 +164,11 @@ export default function ProjectDetailPage({
       <Header project={project} cardRotateX={cardRotateX} cardRotateY={cardRotateY} />
 
       {/* Sections Content ──────────────────────────── */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12 flex flex-col gap-6 md:gap-8">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12 flex flex-col">
 
         <ThreeDCardEffect
           tiltMaxAngle={4}
-          className="w-full relative aspect-21/9 sm:aspect-21/8 bg-black rounded-3xl overflow-hidden border border-white/5 shadow-2xl mb-16"
+          className="w-full relative aspect-21/9 sm:aspect-21/8 bg-black rounded-3xl overflow-hidden border border-white/5 shadow-2xl"
         >
           <img
             src={project.image}

@@ -20,7 +20,7 @@ export default function Intro({ onCollaborateClick, onShowMessage }: IntroProps)
     };
 
     return (
-        <section className="relative py-20 z-20 bg-transparent px-6 md:px-12" id="studio-awaits-section">
+        <section className="relative py-16 z-20 bg-transparent px-6 md:px-12" id="studio-awaits-section">
             {/* Seamless Melt/Blend Transition with the Hero's Fixed Background */}
             <div className="absolute top-0 left-0 right-0 h-48 -translate-y-full pointer-events-none z-10 overflow-hidden">
                 {/* Smooth color gradient from transparent to solid bg-bg-dark */}

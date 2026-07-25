@@ -7,7 +7,7 @@ interface ProjectGallerySectionProps {
 export default function ProjectGallerySection({ relatedStills }: ProjectGallerySectionProps) {
     return (
         <>
-            <div className="max-w-4xl mx-auto w-full my-12 px-6">
+            <div className="max-w-4xl mx-auto w-full py-16 px-6">
                 <div className="text-left flex flex-col items-start w-full">
                     <span className="font-mono text-[10px] md:text-[11px] tracking-[0.3em] text-gold font-bold uppercase mb-2 block">
                         GALLERY
@@ -21,7 +21,7 @@ export default function ProjectGallerySection({ relatedStills }: ProjectGalleryS
                 </div>
             </div>
 
-            <div className="max-w-4xl mx-auto w-full flex flex-col gap-12 md:gap-16 mb-32 px-6">
+            <div className="max-w-4xl mx-auto w-full flex flex-col gap-12 md:gap-16 pb-16 px-6">
                 {relatedStills.map((still, idx) => (
                     <div
                         key={idx}

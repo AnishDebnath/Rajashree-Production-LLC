@@ -26,7 +26,7 @@ export default function Testimonial({
     nextTestimonial,
 }: TestimonialProps) {
     return (
-        <section className="relative py-24 z-10 bg-transparent overflow-hidden" id="client-chronicles">
+        <section className="relative py-16 z-10 bg-transparent overflow-hidden" id="client-chronicles">
 
             {/* Immersive cinematic background image and gradients */}
             <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">

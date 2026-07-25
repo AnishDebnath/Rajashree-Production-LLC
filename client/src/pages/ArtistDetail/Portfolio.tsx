@@ -65,7 +65,7 @@ export default function Portfolio({ projects, onSelectProject }: PortfolioProps)
     <section
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
-      className="max-w-7xl mx-auto w-full my-24 px-6 md:px-12"
+      className="max-w-7xl mx-auto w-full py-16 px-6 md:px-12"
     >
       {/* Heading */}
       <div className="text-left mb-12 flex flex-col items-start w-full">

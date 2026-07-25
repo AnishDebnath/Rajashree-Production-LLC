@@ -12,7 +12,7 @@ interface BlogsSectionProps {
 
 export default function BlogsSection({ blogsData, onSelectBlog, setActiveTab, onShowMessage }: BlogsSectionProps) {
     return (
-        <section className="relative py-24 md:py-32 bg-transparent z-20">
+        <section className="relative py-16 bg-transparent z-20">
             <div className="max-w-6xl mx-auto px-6 space-y-12">
                 <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 pb-4">
                     <div className="space-y-3">

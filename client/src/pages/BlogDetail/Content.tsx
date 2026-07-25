@@ -8,7 +8,7 @@ interface BlogContentProps {
 
 export default function BlogContent({ blog }: BlogContentProps) {
   return (
-    <section className="relative z-20 px-6 pt-16 sm:pt-24 pb-20" id="blog-detail-content-section">
+    <section className="relative z-20 px-6 py-16" id="blog-detail-content-section">
       <div className="max-w-3xl mx-auto">
 
         {/* Centered Highlights Blockquote inside outline card */}

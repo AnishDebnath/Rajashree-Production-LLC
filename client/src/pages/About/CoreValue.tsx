@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 export default function CoreValueSection() {
     return (
-        <section className="relative py-24 px-4 sm:px-6 md:px-12 z-10 bg-transparent" id="secret-sauce">
+        <section className="relative py-16 px-4 sm:px-6 md:px-12 z-10 bg-transparent" id="secret-sauce">
             <div className="max-w-6xl mx-auto bg-neutral-950/40 backdrop-blur-md rounded-3xl border border-white/10 p-6 sm:p-10 lg:p-14 shadow-2xl relative z-10">
 
                 <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">

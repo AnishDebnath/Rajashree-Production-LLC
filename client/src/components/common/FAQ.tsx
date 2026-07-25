@@ -13,7 +13,7 @@ export default function FAQ({ faqs, onShowMessage, sectionId, className = 'bg-tr
     const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
     return (
-        <section className={`relative z-20 ${className} pt-24 pb-8 px-6 md:px-12`} id={sectionId}>
+        <section className={`relative z-20 ${className} py-16 px-6 md:px-12`} id={sectionId}>
             <div className="max-w-4xl mx-auto space-y-16">
                 <div className="text-center space-y-4">
                     <h2 className="text-section-heading">

@@ -12,7 +12,7 @@ export default function CaseStudy({ artist, projects }: CaseStudyProps) {
     const stillSrc = projects[0]?.image || artist.avatar;
 
     return (
-        <>
+        <div className="py-16">
             {/* Cinematic Still */}
             <ThreeDCardEffect
                 tiltMaxAngle={4}
@@ -29,7 +29,7 @@ export default function CaseStudy({ artist, projects }: CaseStudyProps) {
             </ThreeDCardEffect>
 
             {/* Philosophy Content */}
-            <div className="max-w-3xl mx-auto w-full flex flex-col gap-8 text-left text-neutral-300 font-sans text-sm sm:text-base leading-relaxed font-light mb-20 px-6">
+            <div className="max-w-3xl mx-auto w-full flex flex-col gap-8 text-left text-neutral-300 font-sans text-sm sm:text-base leading-relaxed font-light px-6">
                 <div className="flex flex-col gap-4">
                     <h4 className="font-display font-bold text-lg text-white">Creative Philosophy:</h4>
                     <p className="text-neutral-400">
@@ -63,6 +63,6 @@ export default function CaseStudy({ artist, projects }: CaseStudyProps) {
                     &ldquo;Art is not just what you capture; it is how you orchestrate the silent spaces between frames.&rdquo; — {artist.name}
                 </p>
             </div>
-        </>
+        </div>
     );
 }

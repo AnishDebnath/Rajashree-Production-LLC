@@ -9,7 +9,7 @@ interface GalleryProps {
 
 export default function Gallery({ album }: GalleryProps) {
   return (
-    <div className="flex flex-col gap-12 sm:gap-20 mb-24 sm:mb-28">
+    <div className="flex flex-col gap-12 sm:gap-20 py-16">
       {album.photos.map((photo, index) => (
         <motion.div
           key={photo.id}

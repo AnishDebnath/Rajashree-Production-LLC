@@ -2,7 +2,7 @@ import { coreValues } from '../../data/about';
 
 export default function CoreValueSection() {
     return (
-        <section className="relative pt-24 pb-32 z-10 bg-transparent overflow-hidden" id="secret-sauce">
+        <section className="relative py-16 z-10 bg-transparent overflow-hidden" id="secret-sauce">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
 
                 <div className="text-center max-w-2xl mx-auto mb-20 md:mb-28">

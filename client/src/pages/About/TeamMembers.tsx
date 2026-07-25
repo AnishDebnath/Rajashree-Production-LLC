@@ -10,7 +10,7 @@ interface TeamMembersSectionProps {
 
 export default function TeamMembersSection({ teamMembers, onShowMessage }: TeamMembersSectionProps) {
     return (
-        <section className="relative py-24 z-10 bg-transparent" id="fantastic-team">
+        <section className="relative py-16 z-10 bg-transparent" id="fantastic-team">
             <div className="max-w-5xl mx-auto px-6 md:px-12">
 
                 <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">

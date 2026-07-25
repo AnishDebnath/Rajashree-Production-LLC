@@ -3,7 +3,7 @@ import { storytellerImages } from '../../data/about/storyteller';
 
 export default function StorytellersSection() {
     return (
-        <section className="relative pt-20 pb-8 z-10 bg-transparent">
+        <section className="relative py-16 z-10 bg-transparent">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
 
                 {/* Main Card with thick styled boundaries and custom off-white border */}

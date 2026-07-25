@@ -22,7 +22,7 @@ export default function ProjectTestimonialsSection({
 }: ProjectTestimonialsSectionProps) {
     return (
         <div
-            className="max-w-4xl mx-auto my-28 px-6 overflow-hidden relative"
+            className="max-w-4xl mx-auto py-16 px-6 overflow-hidden relative"
             onMouseEnter={() => setIsTestimonialPaused(true)}
             onMouseLeave={() => setIsTestimonialPaused(false)}
         >

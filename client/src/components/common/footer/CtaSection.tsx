@@ -38,7 +38,7 @@ export default function CtaSection({ onCollaborateClick }: CtaSectionProps) {
             ref={sectionRef}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className="relative w-full py-16 md:py-18 overflow-hidden flex items-center justify-center bg-transparent select-none"
+            className="relative w-full py-16 overflow-hidden flex items-center justify-center bg-transparent select-none"
         >
             <motion.div
                 style={{ x: driftX, y: driftY }}

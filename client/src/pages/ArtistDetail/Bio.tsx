@@ -7,7 +7,7 @@ interface BioProps {
 
 export default function Bio({ artist }: BioProps) {
   return (
-    <div className="max-w-3xl mx-auto w-full flex flex-col items-start text-left mt-12 sm:mt-16">
+    <div className="max-w-3xl mx-auto w-full flex flex-col items-start text-left py-16">
       <p className="font-sans text-neutral-300 text-sm sm:text-base leading-relaxed font-light mb-10">
         {artist.bio}
       </p>

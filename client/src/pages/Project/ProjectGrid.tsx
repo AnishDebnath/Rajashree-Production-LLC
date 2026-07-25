@@ -45,7 +45,7 @@ export default function ProjectGrid({ projects, selectedCategory, onSelectCatego
     };
 
     return (
-        <section className="relative py-20 md:py-32 z-20 bg-transparent">
+        <section className="relative py-16 z-20 bg-transparent">
             {/* Ambient background */}
             <div
                 className="absolute inset-0 z-0 pointer-events-none"

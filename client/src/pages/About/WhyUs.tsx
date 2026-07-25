@@ -8,7 +8,7 @@ interface WhyUsSectionProps {
 
 export default function WhyUsSection({ usps }: WhyUsSectionProps) {
     return (
-        <section className="relative py-24 z-10 bg-transparent" id="why-us">
+        <section className="relative py-16 z-10 bg-transparent" id="why-us">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
                 <div className="p-8 md:p-12 rounded-3xl bg-[#090909]/40 border border-white/5 shadow-2xl">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">

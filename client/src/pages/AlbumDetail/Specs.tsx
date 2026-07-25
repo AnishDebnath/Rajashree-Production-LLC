@@ -8,7 +8,7 @@ interface SpecsProps {
 
 export default function Specs({ album }: SpecsProps) {
   return (
-    <div className="max-w-5xl mx-auto px-6 sm:px-10 mb-16 sm:mb-20">
+    <div className="max-w-5xl mx-auto px-6 sm:px-10 py-16">
       <div className="space-y-4">
         {/* Single-Column Specification Details */}
         <div className="bg-neutral-950/60 border border-white/5 rounded-3xl">

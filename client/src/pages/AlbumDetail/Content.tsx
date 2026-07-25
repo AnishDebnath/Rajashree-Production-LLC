@@ -7,7 +7,7 @@ interface CaseStudyProps {
 
 export default function CaseStudy({ album }: CaseStudyProps) {
   return (
-    <div className="max-w-2xl mx-auto text-left mt-8 mb-16 space-y-12 px-4 sm:px-6">
+    <div className="max-w-2xl mx-auto text-left py-16 space-y-12 px-4 sm:px-6">
       {/* Highlights */}
       <div className="space-y-4">
         <h3 className="text-gold font-bold text-sm tracking-wider uppercase">Highlights:</h3>

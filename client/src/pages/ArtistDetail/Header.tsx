@@ -38,7 +38,7 @@ export default function Header({ artist, cardRotateX, cardRotateY, children }: H
       </div>
 
       {/* Main Page Layout Container */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12 pt-32 md:pt-36 flex flex-col gap-6 md:gap-8">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12 pt-32 md:pt-36 flex flex-col">
 
         {/* Intro Meta Info Overlaying Parallax */}
         <div className="max-w-3xl flex flex-col gap-5 text-left">

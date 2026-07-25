@@ -3,7 +3,7 @@ import { homePartners } from '../../data/about/partner';
 
 export default function BrandPartnersSection() {
     return (
-        <section className="relative py-16 bg-transparent z-20 select-none" id="brand-marquee-section">
+        <section className="relative pt-30 bg-transparent z-20 select-none" id="brand-marquee-section">
             <div className="max-w-6xl mx-auto px-6 mb-8 sm:mb-12 flex flex-col items-center text-center">
                 <div className="space-y-3 flex flex-col items-center">
                     <h2 className="text-section-heading">

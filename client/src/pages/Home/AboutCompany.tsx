@@ -31,7 +31,7 @@ interface AboutCompanyProps {
 
 export default function AboutCompany({ setActiveTab, onShowMessage }: AboutCompanyProps) {
     return (
-        <section className="relative py-24 z-20 bg-transparent" id="about-our-agency">
+        <section className="relative py-16 z-20 bg-transparent" id="about-our-agency">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                     <div className="lg:col-span-4 flex flex-col items-start gap-6">

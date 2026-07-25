@@ -40,7 +40,7 @@ export default function BlogSimilar({ similarBlogs, onSelectBlog, onShowMessage,
   return (
     <>
       {/* 3. SIMILAR BLOGS SECTION */}
-      <div className="pt-16 mt-16 pb-16">
+      <div className="py-16">
         <div className="max-w-3xl mx-auto px-6 sm:px-10 md:px-12">
           <h2 className="text-section-heading">
             Similar Blog Posts

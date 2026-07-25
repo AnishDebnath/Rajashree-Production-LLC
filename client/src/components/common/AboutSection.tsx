@@ -18,7 +18,7 @@ export default function AboutSection({
     onShowMessage,
 }: AboutSectionProps) {
     return (
-        <section className="relative py-24 z-20 bg-transparent" id="about-our-agency">
+        <section className="relative py-16 z-20 bg-transparent" id="about-our-agency">
             {showBlendTransition && (
                 <div className="absolute top-0 left-0 right-0 h-48 -translate-y-full pointer-events-none z-10 overflow-hidden">
                     <div className="w-full h-full absolute inset-0 bg-linear-to-t from-bg-dark via-bg-dark/85 to-transparent" />

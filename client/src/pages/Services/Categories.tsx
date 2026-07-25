@@ -10,7 +10,7 @@ interface CategoriesProps {
 
 export default function Categories({ globalStep, onCollaborateClick, onShowMessage, onCollaborateWithContext }: CategoriesProps) {
     return (
-        <section className="relative py-24 px-4 sm:px-6 md:px-12" id="categories-section">
+        <section className="relative py-16 px-4 sm:px-6 md:px-12" id="categories-section">
             <div className="max-w-6xl mx-auto bg-neutral-950/40 backdrop-blur-md rounded-3xl border border-white/10 p-6 sm:p-10 lg:p-14 space-y-20 shadow-2xl">
                 <div className="text-center space-y-4 max-w-2xl mx-auto">
                     <h2 className="text-section-heading">

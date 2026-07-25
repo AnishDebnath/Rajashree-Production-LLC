@@ -253,7 +253,7 @@ export default function SocialReels({ onShowMessage }: SocialReelsProps) {
 
     return (
         <section
-            className="relative py-24 bg-transparent overflow-hidden z-20"
+            className="relative py-16 bg-transparent overflow-hidden z-20"
             id="social-reels-section"
         >
             {/* Background Decorative glow */}

@@ -83,7 +83,7 @@ export default function Footer({ onCollaborateClick, onShowMessage, setActiveTab
 
     return (
         <footer
-            className={`relative z-30 w-full select-none text-neutral-400 font-sans ${transparentBg ? 'bg-transparent pt-4 pb-10' : 'bg-[#0b0b0c] pt-24 pb-10 shadow-[0_-15px_40px_rgba(0,0,0,0.8)]'
+            className={`relative z-30 w-full select-none text-neutral-400 font-sans ${transparentBg ? 'bg-transparent pt-16 pb-10' : 'bg-[#0b0b0c] pt-16 pb-10 shadow-[0_-15px_40px_rgba(0,0,0,0.8)]'
                 }`}
         >
             {/* Seamless Melt/Blend Transition with the CTA's Fixed Background at the top */}

@@ -5,7 +5,7 @@ export default function Stages() {
     return (
         <>
             {/* PRE-PRODUCTION STAGE */}
-            <section className="relative py-24 px-4 sm:px-6 md:px-12" id="pre-production">
+            <section className="relative py-16 px-4 sm:px-6 md:px-12" id="pre-production">
                 <div className="max-w-6xl mx-auto bg-neutral-950/40 backdrop-blur-md rounded-3xl border border-white/10 p-6 sm:p-10 lg:p-14 space-y-12 shadow-2xl">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
                         {/* Left Column: Descriptions and Marquee */}
@@ -46,7 +46,7 @@ export default function Stages() {
             </section>
 
             {/* PRODUCTION STAGE */}
-            <section className="relative py-24 px-4 sm:px-6 md:px-12" id="production">
+            <section className="relative py-16 px-4 sm:px-6 md:px-12" id="production">
                 <div className="max-w-6xl mx-auto bg-neutral-950/40 backdrop-blur-md rounded-3xl border border-white/10 p-6 sm:p-10 lg:p-14 space-y-12 shadow-2xl">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
@@ -89,7 +89,7 @@ export default function Stages() {
             </section>
 
             {/* POST-PRODUCTION STAGE */}
-            <section className="relative py-24 px-4 sm:px-6 md:px-12" id="post-production">
+            <section className="relative py-16 px-4 sm:px-6 md:px-12" id="post-production">
                 <div className="max-w-6xl mx-auto bg-neutral-950/40 backdrop-blur-md rounded-3xl border border-white/10 p-6 sm:p-10 lg:p-14 space-y-12 shadow-2xl">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
                         {/* Left Column: Descriptions and Marquee */}

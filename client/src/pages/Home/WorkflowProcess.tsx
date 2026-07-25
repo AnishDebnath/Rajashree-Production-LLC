@@ -18,7 +18,7 @@ export default function WorkflowProcess({
     postProductionCarouselImages,
 }: WorkflowProcessProps) {
     return (
-        <section className="relative py-24 md:py-32 bg-transparent z-20">
+        <section className="relative pb-16 bg-transparent z-20">
             <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
                 <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-32">
                     <div className="space-y-4">

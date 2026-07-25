@@ -6,7 +6,7 @@ interface ProjectCaseStudySectionProps {
 
 export default function ProjectCaseStudySection({ study }: ProjectCaseStudySectionProps) {
     return (
-        <div className="max-w-3xl mx-auto w-full flex flex-col gap-8 text-left text-neutral-300 font-sans text-sm sm:text-base leading-relaxed font-light mb-20">
+        <div className="max-w-3xl mx-auto w-full flex flex-col gap-8 text-left text-neutral-300 font-sans text-sm sm:text-base leading-relaxed font-light py-16">
 
             {/* Objectives */}
             <div className="flex flex-col gap-4">

@@ -58,7 +58,7 @@ export default function ArtistsPage({ onShowMessage, onSelectArtist }: ArtistsPa
 
       {/* 3. ARTISTS GRID CONTAINER */}
       <section
-        className="relative py-24 md:py-36 z-20"
+        className="relative py-16 z-20"
         id="artists-grid-section"
         style={{
           background: 'linear-gradient(180deg, #050505 0%, #100e07 50%, #030303 100%)'

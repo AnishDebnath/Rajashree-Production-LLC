@@ -8,7 +8,7 @@ interface BrandPartnersSectionProps {
 
 export default function BrandPartnersSection({ partners }: BrandPartnersSectionProps) {
     return (
-        <section className="relative py-24 z-10 bg-transparent" id="creative-playground">
+        <section className="relative py-16 z-10 bg-transparent" id="creative-playground">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
 
                 <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">

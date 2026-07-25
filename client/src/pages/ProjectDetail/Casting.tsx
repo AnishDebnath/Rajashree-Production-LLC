@@ -22,7 +22,7 @@ export default function ProjectCastingSection({
     onShowMessage
 }: ProjectCastingSectionProps) {
     return (
-        <div className="max-w-5xl mx-auto w-full my-20 px-6 md:px-12">
+        <div className="max-w-5xl mx-auto w-full py-16 px-6 md:px-12">
             <div className="text-left mb-10 flex flex-col items-start w-full">
                 <span className="font-mono text-[10px] md:text-[11px] tracking-[0.3em] text-gold font-bold uppercase mb-2 block">
                     COLLABORATORS
