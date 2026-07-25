@@ -261,8 +261,8 @@ export default function SocialReels({ onShowMessage }: SocialReelsProps) {
 
             <div className="max-w-6xl mx-auto px-6 mb-12 flex flex-col items-center text-center">
                 <div className="space-y-4 flex flex-col items-center">
-                    <h2 className="font-sans font-bold text-3xl sm:text-4.5xl text-white tracking-tight leading-[1.1]">
-                        Social Reels & Shorts Wave
+                    <h2 className="text-section-heading">
+                        Our Digital Content & Social Shorts
                     </h2>
                     <div className="h-0.5 w-16 bg-gold" />
                 </div>
@@ -370,7 +370,7 @@ export default function SocialReels({ onShowMessage }: SocialReelsProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => onShowMessage("Redirecting to Instagram...", "info")}
-                    className="px-8 py-3.5 rounded-full bg-gold hover:bg-white text-black font-sans font-bold text-[11px] tracking-widest uppercase hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 shrink-0 cursor-pointer inline-flex items-center gap-2.5 shadow-[0_12px_40px_rgba(212,175,55,0.15)] hover:shadow-[0_12px_40px_rgba(255,255,255,0.2)]"
+                    className="px-8 py-3.5 rounded-full bg-gold hover:bg-white text-black font-sans font-bold text-xs tracking-widest uppercase hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 shrink-0 cursor-pointer inline-flex items-center gap-2.5 shadow-[0_12px_40px_rgba(212,175,55,0.15)] hover:shadow-[0_12px_40px_rgba(255,255,255,0.2)]"
                 >
                     <Instagram className="w-4 h-4 text-black" />
                     <span>Follow @rajashree_prod</span>

@@ -4,16 +4,16 @@ export const behindTheScenes: BlogPost = {
     id: 'lights-camera-action-behind-scenes-production',
     category: 'STORIES',
     title: 'Lights, Camera, Action! Behind the Scenes of a Rajashree Production Film Shoot',
-    author: 'MARCUS THORNE',
+    author: 'Marcus Thorne',
     date: 'OCT 16, 2025',
     image: '/src/assets/images/kumartuli-sculptor-film.jpg',
-    excerpt: 'Step onto the bustling set in Kumartuli and North Kolkata to witness the coordinated team of gaffers, grips, and directors.',
-    introduction: "What happens when Director Vikramaditya Roy calls 'Action!'? Step onto our set and explore the dynamic ecosystem of a live film production.",
+    excerpt: 'Step onto a film set in Kumartuli and North Kolkata to see the team of gaffers, grips, and directors at work.',
+    introduction: "What happens when Director Vikramaditya Roy calls 'Action!'? Step onto our set and see how a live film production works.",
     sections: [
         {
-            title: 'The Symphony on Set',
-            content: 'From lighting key setups to camera dolly moves, every second is a joint effort between passionate film artists.'
+            title: 'The Team at Work',
+            content: 'From lighting setups to camera dolly moves, every second is a team effort between passionate film professionals.'
         }
     ],
-    conclusion: "At Rajashree Production LLC, every frame is crafted with dedication to cinema."
+    conclusion: "At Rajashree Production LLP, every frame is crafted with dedication to cinema."
 };

@@ -11,7 +11,7 @@ export default function Stages() {
                         {/* Left Column: Descriptions and Marquee */}
                         <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
                             <div className="space-y-4">
-                                <h2 className="font-sans font-bold text-3xl sm:text-4xl text-white tracking-tight">Pre-Production</h2>
+                                <h2 className="text-section-heading">Pre-Production</h2>
                                 <div className="h-0.5 w-12 bg-gold" />
                                 <p className="font-sans text-neutral-400 text-xs sm:text-sm leading-relaxed">
                                     Before the cameras roll, the magic of video production begins with pre-production. This is where your ideas take shape, scripts are written, and plans are made.
@@ -71,7 +71,7 @@ export default function Stages() {
                         {/* Right Column: Descriptions and Marquee */}
                         <div className="lg:col-span-5 order-1 lg:order-2 space-y-6 lg:sticky lg:top-24">
                             <div className="space-y-4">
-                                <h2 className="font-sans font-bold text-3xl sm:text-4xl text-white tracking-tight">Production</h2>
+                                <h2 className="text-section-heading">Production</h2>
                                 <div className="h-0.5 w-12 bg-gold" />
                                 <p className="font-sans text-neutral-400 text-xs sm:text-sm leading-relaxed">
                                     The heart of video production lies in the production phase. This is where we turn your vision into reality.
@@ -95,7 +95,7 @@ export default function Stages() {
                         {/* Left Column: Descriptions and Marquee */}
                         <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
                             <div className="space-y-4">
-                                <h2 className="font-sans font-bold text-3xl sm:text-4xl text-white tracking-tight">Post-Production</h2>
+                                <h2 className="text-section-heading">Post-Production</h2>
                                 <div className="h-0.5 w-12 bg-gold" />
                                 <p className="font-sans text-neutral-400 text-xs sm:text-sm leading-relaxed">
                                     The real magic happens in post-production. This is where we take the raw footage and craft it into a polished, engaging video.

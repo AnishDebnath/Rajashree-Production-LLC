@@ -65,7 +65,7 @@ export default function InfoForm({ onShowMessage, prepopulatedContext, onClearCo
         {/* Left Column: Visit Us */}
         <div className="md:col-span-5 space-y-10">
           <div className="space-y-4">
-            <h2 className="font-sans font-bold text-2xl text-white tracking-tight">Visit us</h2>
+            <h2 className="text-section-heading">Visit us</h2>
             <div className="h-0.5 w-12 bg-gold" />
           </div>
 
@@ -127,7 +127,7 @@ export default function InfoForm({ onShowMessage, prepopulatedContext, onClearCo
         {/* Right Column: Contact Form */}
         <div className="md:col-span-7 space-y-8">
           <div className="space-y-4">
-            <h2 className="font-sans font-bold text-2xl text-white tracking-tight">Question? Send us a message. Don't be shy</h2>
+            <h2 className="text-section-heading">Question? Send us a message. Don't be shy</h2>
             <div className="h-0.5 w-12 bg-gold" />
           </div>
 
@@ -188,7 +188,7 @@ export default function InfoForm({ onShowMessage, prepopulatedContext, onClearCo
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full relative group inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-accent-red hover:bg-[#ff3b3b] text-white font-sans font-bold text-[10px] tracking-widest uppercase cursor-pointer select-none overflow-hidden transition-all duration-300 shadow-[0_12px_40px_rgba(214,40,40,0.25)] hover:shadow-[0_16px_50px_rgba(214,40,40,0.45)] hover:-translate-y-0.5 active:scale-98 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full relative group inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-accent-red hover:bg-[#ff3b3b] text-white font-sans font-bold text-xs tracking-widest uppercase cursor-pointer select-none overflow-hidden transition-all duration-300 shadow-[0_12px_40px_rgba(214,40,40,0.25)] hover:shadow-[0_16px_50px_rgba(214,40,40,0.45)] hover:-translate-y-0.5 active:scale-98 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               {isSubmitting ? (

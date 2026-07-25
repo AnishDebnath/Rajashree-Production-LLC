@@ -1,17 +1,17 @@
 import type { BlogPost } from './index';
 
 export const careerOpportunities: BlogPost = {
-    id: 'storystreams-video-production-career-opportunities',
+    id: 'join-rajashree-production-career-opportunities',
     category: 'NEWS',
-    title: "Join Rajashree Production LLC: Career Opportunities in Kolkata Film Industry",
-    author: 'ELINA ROY',
+    title: 'Join Rajashree Production LLP: Career Opportunities in Kolkata Film Industry',
+    author: 'Elina Roy',
     date: 'DEC 12, 2025',
     image: '/src/assets/images/film-crew-set-kolkata.jpg',
-    excerpt: 'Join our award-winning production house. Learn about open roles in direction, cinematography, editing, and sound design.',
-    introduction: "Rajashree Production LLC is expanding! We are looking for passionate, vision-driven creators who want to build a career in feature films, commercials, and OTT web series.",
+    excerpt: 'Join our production house. Learn about open roles in direction, cinematography, editing, and sound design.',
+    introduction: "Rajashree Production LLP is growing! We are looking for passionate, creative people who want to build a career in feature films, commercials, and OTT web series.",
     sections: [
         {
-            title: 'Open Roles & Recruitment Pipeline',
+            title: 'Open Roles & Recruitment',
             content: 'We are accepting portfolios for multiple roles across pre-production, production, and post-production crews.'
         },
         {
@@ -29,5 +29,5 @@ export const careerOpportunities: BlogPost = {
             ]
         }
     ],
-    conclusion: "Submit your showreel through our contact portal to connect with our lead film producers."
+    conclusion: "Send your showreel through our contact page to connect with our lead film producers."
 };

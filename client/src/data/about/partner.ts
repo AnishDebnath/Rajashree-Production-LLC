@@ -4,34 +4,34 @@ export interface Partner {
 }
 
 export const partners: Partner[] = [
-    { name: 'Apex Corp', symbol: 'A' },
-    { name: 'HorizonTech', symbol: 'H' },
-    { name: 'CineWave', symbol: 'C' },
-    { name: 'Eastern Winds', symbol: 'E' },
-    { name: 'Vanguard Media', symbol: 'V' },
-    { name: 'Zenith Group', symbol: 'Z' },
-    { name: 'Nova Digital', symbol: 'N' },
-    { name: 'PixelForge', symbol: 'P' },
-    { name: 'Stellar Agency', symbol: 'S' },
-    { name: 'Summit Studios', symbol: 'S' },
-    { name: 'Aether Films', symbol: 'A' },
-    { name: 'Eclipse Media', symbol: 'E' },
-    { name: 'Chronos Co', symbol: 'C' },
-    { name: 'Ignite Brand', symbol: 'I' },
-    { name: 'Aura Interactive', symbol: 'A' },
-    { name: 'Optima Vision', symbol: 'O' }
+    { name: 'Brands & Advertisers', symbol: 'B' },
+    { name: 'Creative Agencies', symbol: 'C' },
+    { name: 'Film Studios', symbol: 'F' },
+    { name: 'OTT Platforms', symbol: 'O' },
+    { name: 'Corporate Clients', symbol: 'C' },
+    { name: 'Production Companies', symbol: 'P' },
+    { name: 'Music Labels', symbol: 'M' },
+    { name: 'Government & NGOs', symbol: 'G' },
+    { name: 'Educational Institutions', symbol: 'E' },
+    { name: 'Event Organizers', symbol: 'E' },
+    { name: 'Fashion & Lifestyle Brands', symbol: 'F' },
+    { name: 'Real Estate Developers', symbol: 'R' },
+    { name: 'Tourism Boards', symbol: 'T' },
+    { name: 'Tech Companies', symbol: 'T' },
+    { name: 'Healthcare Organizations', symbol: 'H' },
+    { name: 'Startups & SMEs', symbol: 'S' }
 ];
 
 /** Subset for Home page brand marquee */
 export const homePartners: Partner[] = [
-    { name: 'Apex Corp', symbol: 'A' },
-    { name: 'CineWave', symbol: 'C' },
-    { name: 'Vanguard Media', symbol: 'V' },
-    { name: 'Zenith Group', symbol: 'Z' },
-    { name: 'Nova Digital', symbol: 'N' },
-    { name: 'PixelForge', symbol: 'P' },
-    { name: 'Stellar Agency', symbol: 'S' },
-    { name: 'Ignite Brand', symbol: 'I' },
-    { name: 'Aether Films', symbol: 'A' },
-    { name: 'Optima Vision', symbol: 'O' }
+    { name: 'Brands & Advertisers', symbol: 'B' },
+    { name: 'Creative Agencies', symbol: 'C' },
+    { name: 'Film Studios', symbol: 'F' },
+    { name: 'OTT Platforms', symbol: 'O' },
+    { name: 'Corporate Clients', symbol: 'C' },
+    { name: 'Production Companies', symbol: 'P' },
+    { name: 'Music Labels', symbol: 'M' },
+    { name: 'Government & NGOs', symbol: 'G' },
+    { name: 'Fashion & Lifestyle Brands', symbol: 'F' },
+    { name: 'Startups & SMEs', symbol: 'S' }
 ];

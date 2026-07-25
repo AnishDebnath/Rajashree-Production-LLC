@@ -86,7 +86,7 @@ function SimilarVisual({ artist, onSelect, onCollaborateWithContext }: { artist:
                                 e.stopPropagation();
                                 onCollaborateWithContext(artist.name);
                             }}
-                            className="group inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-red hover:bg-[#ff3b3b] text-white font-sans font-bold text-[9px] tracking-widest uppercase cursor-pointer select-none transition-all duration-300"
+                            className="group inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-red hover:bg-[#ff3b3b] text-white font-sans font-bold text-xs tracking-widest uppercase cursor-pointer select-none transition-all duration-300"
                         >
                             <span>Collaborate</span>
                             <ArrowRight className="w-3 h-3" />

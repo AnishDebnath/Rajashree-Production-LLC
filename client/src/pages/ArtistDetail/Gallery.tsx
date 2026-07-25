@@ -20,10 +20,10 @@ export default function Gallery({ artist }: GalleryProps) {
             GALLERY
           </span>
           <div className="flex items-center gap-6 w-full">
-            <h2 className="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight whitespace-nowrap">
+            <h2 className="text-section-heading">
               Production Frames & Stills
             </h2>
-            <div className="grow h-px bg-white/10" />
+            <div className="grow h-0.5 bg-gold/40" />
           </div>
         </div>
       </div>

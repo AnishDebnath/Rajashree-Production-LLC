@@ -11,12 +11,10 @@ import {
     Radio,
     Activity,
     Sparkles,
-    MessageSquare,
     Film,
     Sliders,
     Volume2,
     Type,
-    Disc,
     Database,
     type LucideIcon
 } from 'lucide-react';
@@ -48,147 +46,137 @@ export const preProductionItems: PreProductionItem[] = [
     {
         icon: Lightbulb,
         title: "Concept Development",
-        desc: "We work closely with you to brainstorm ideas, themes, and concepts that align with your goals and vision. This is where the creative magic begins."
+        desc: "We work with you to understand your goals, audience, and message — then develop creative concepts that fit your vision and budget."
     },
     {
         icon: PenTool,
-        title: "Scriptwriting",
-        desc: "Our experienced scriptwriters craft compelling narratives that effectively convey your message. Whether it's a commercial, corporate video, or any other format, we ensure that the script resonates with your target audience."
+        title: "Scriptwriting & Treatment",
+        desc: "Our writers craft compelling scripts, treatments, and shooting outlines for your format — whether it's a 30-second commercial, a corporate film, or a feature documentary."
     },
     {
         icon: Layers,
-        title: "Storyboarding",
-        desc: "Visual storytelling is key to engaging your audience. We create storyboards that outline the visual sequence, shot angles, and transitions, providing a blueprint for the shoot."
+        title: "Storyboarding & Shot Planning",
+        desc: "We visualize every scene with detailed storyboards, shot lists, and lighting diagrams — giving the whole crew a clear blueprint before cameras roll."
     },
     {
         icon: MapPin,
-        title: "Location Scouting",
-        desc: "The right location can make or break a video. We scout and select the ideal settings, whether it's a studio, outdoor location, or a unique environment that suits your project."
+        title: "Location Scouting & Recce",
+        desc: "We find and secure the perfect locations — studios, heritage buildings, outdoor landscapes, or virtual production stages — with permits, power, and logistics handled."
     },
     {
         icon: Users,
-        title: "Casting and Talent Management",
-        desc: "We handle talent auditions, casting, and management. Our goal is to select the perfect actors, presenters, or hosts who bring your script to life."
+        title: "Casting & Talent Coordination",
+        desc: "From professional actors and presenters to real people and voice artists — we handle auditions, callbacks, contracts, and on-set talent management."
     },
     {
         icon: Settings,
-        title: "Equipment and Crew Planning",
-        desc: "We ensure that the right equipment and skilled crew members are in place for a successful shoot. This includes camera selection, lighting setup, and more."
+        title: "Technical Planning & Gear Prep",
+        desc: "Camera packages, lens sets, lighting plots, grip equipment, sound kits, and backup plans — all specified, tested, and prepped for shoot day."
     },
     {
         icon: Clock,
-        title: "Production Timeline",
-        desc: "We establish a clear timeline for the pre-production phase to keep everything on track and ensure timely project delivery."
+        title: "Scheduling & Budget Management",
+        desc: "Detailed shooting schedules, call sheets, day-out-of-days, and budget tracking — ensuring efficient production with no surprises."
     }
 ];
 
 export const productionItems: ProductionItem[] = [
     {
         icon: Video,
-        title: "Cinematography",
-        desc: "Our skilled cinematographers expertly frame and capture your content, ensuring that every shot is visually stunning and engaging."
+        title: "Principal Photography",
+        desc: "Our directors and cinematographers capture your story with precision — blocking, lighting, framing, and directing talent for every shot on the shot list."
     },
     {
         icon: Tv,
-        title: "Drone Videography",
-        desc: "Elevate your visuals with breathtaking aerial footage. Our drone videography services provide stunning perspectives that add a dynamic dimension to your videos."
+        title: "Drone & Aerial Cinematography",
+        desc: "Licensed drone operators capture stunning aerial perspectives — cityscapes, landscapes, establishing shots, and dynamic tracking — with full permits and safety compliance."
     },
     {
         icon: Radio,
-        title: "Live Streaming",
-        desc: "We're well-versed in live streaming, enabling you to broadcast events, presentations, and content in real-time to a global audience."
+        title: "Live Streaming & Multi-Cam Events",
+        desc: "Professional multi-camera switching, graphics, lower-thirds, and simultaneous recording for live broadcasts, hybrid events, and webcasts to any platform."
     },
     {
         icon: Activity,
-        title: "Steadicam and Gimbal Work",
-        desc: "For silky-smooth and stabilized footage, our Steadicam and gimbal work ensures that every shot is free from shaky distractions."
+        title: "Stabilized Camera Movement",
+        desc: "Ronin 2 gimbals, Steadicam, dolly, slider, and crane — smooth, intentional camera motion that adds production value without drawing attention to itself."
     },
     {
         icon: Layers,
-        title: "Multi-Camera Setup",
-        desc: "Multi-camera setups add versatility and dynamism to your video. We utilize multiple cameras to capture different angles and perspectives, enhancing your storytelling."
+        title: "Multi-Camera Production",
+        desc: "Synchronized multi-cam setups for interviews, performances, panels, and events — giving editors maximum coverage and creative flexibility in post."
     },
     {
         icon: Clock,
-        title: "Time-Lapse and Slow Motion",
-        desc: "Time-lapse and slow-motion techniques are powerful storytelling tools. Our team excels in creating time-lapse sequences and slow-motion footage that captivate audiences."
+        title: "Time-Lapse & High-Speed Capture",
+        desc: "Controlled time-lapse sequences and high-frame-rate slow motion for dramatic effect, product reveals, and visual storytelling punctuation."
     },
     {
         icon: Sparkles,
-        title: "Green Screen and Chroma Key",
-        desc: "For projects that require background replacement or visual effects, our green screen and chroma key services allow us to create virtually any environment, enhancing your storytelling."
+        title: "Green Screen & Virtual Production",
+        desc: "Full cyclorama green screen, LED volume walls, camera tracking, and real-time compositing — enabling virtual locations, set extensions, and ICVFX workflows."
     },
     {
-        icon: MessageSquare,
-        title: "Dynamic Webinars",
-        desc: "Webinars are an essential tool for online engagement. We can create and manage dynamic webinars, making sure your content is engaging and informative."
+        icon: Video,
+        title: "Second Unit & B-Roll Acquisition",
+        desc: "Dedicated second unit captures insert shots, cutaways, establishing shots, and atmospheric B-roll — maximizing coverage while first unit focuses on principal scenes."
     }
 ];
 
 export const postProductionItems: PostProductionItem[] = [
     {
         icon: Film,
-        title: "Video Editing",
-        desc: "Our skilled editors meticulously assemble and edit the footage, creating a seamless, coherent, and compelling narrative that captivates your audience."
+        title: "Offline & Online Editing",
+        desc: "Rough cut to fine cut to picture lock — narrative pacing, structural refinement, and creative editing decisions that serve the story and engage the viewer."
     },
     {
         icon: Sliders,
-        title: "Color Grading",
-        desc: "We enhance the visuals by applying color grading techniques, ensuring that your video looks its best with vibrant colors, a consistent mood, and a professional finish."
+        title: "Color Grading & Finishing",
+        desc: "DaVinci Resolve color suites with calibrated monitors — primary and secondary grading, LUT creation, HDR/SDR delivery, and final mastering for broadcast and digital."
     },
     {
         icon: Volume2,
-        title: "Audio Enhancement",
-        desc: "Clear and impactful audio is vital for a memorable video. We provide audio enhancement services to make sure your message is conveyed with crystal clarity."
+        title: "Sound Design & Audio Mixing",
+        desc: "Dialogue editing, ADR, Foley, sound effects, music licensing, and 5.1/stereo mastering — immersive audio that elevates every frame."
     },
     {
         icon: Layers,
-        title: "3D Animation and CGI",
-        desc: "To add a touch of magic to your project, we offer 3D animation and CGI services that create stunning visual effects and immersive 3D elements."
+        title: "Visual Effects & Compositing",
+        desc: "Rotoscoping, keying, tracking, 3D integration, matte painting, and motion graphics — seamless VFX that serve the story, not spectacle."
     },
     {
         icon: Type,
-        title: "Subtitles and Closed Captions",
-        desc: "We can add subtitles and closed captions to make your content accessible to a broader audience, ensuring that your message reaches everyone."
-    },
-    {
-        icon: PenTool,
-        title: "Whiteboard Animation",
-        desc: "Whiteboard animation is an engaging way to convey complex ideas. Our whiteboard animation services turn your concepts into captivating visuals that resonate with your audience."
-    },
-    {
-        icon: Disc,
-        title: "DVD and Blu-ray Authoring",
-        desc: "If your project is intended for physical distribution, we provide DVD and Blu-ray authoring services, ensuring your content is professionally presented."
+        title: "Subtitles, Captions & Localization",
+        desc: "Burned-in and sidecar subtitles (SRT, VTT, STL), closed captions for accessibility, and multi-language versions for regional and international distribution."
     },
     {
         icon: Database,
-        title: "Archiving and Backup",
-        desc: "We understand the importance of preserving your valuable content. Our archiving and backup services ensure that your video assets are securely stored and easily retrievable for future use."
+        title: "Mastering, Delivery & Archival",
+        desc: "Multi-format exports (ProRes, DNxHR, H.264/HEVC, IMF, DCP), QC reports, secure cloud delivery, and long-term LTO archival with checksum verification."
     }
 ];
 
 export const preProdMarqueeImages: MarqueeImage[] = [
-    { url: "/src/assets/images/bengali-heritage-mansion.jpg", alt: "STORYBOARD DRAFTS" },
-    { url: "/src/assets/images/film-crew-set-kolkata.jpg", alt: "PRODUCTION PLANNING" },
-    { url: "/src/assets/images/kumartuli-sculptor-film.jpg", alt: "SCRIPT DRAFTING" },
-    { url: "/src/assets/images/project-biopic-1920s.jpg", alt: "LENS & RIG SELECTION" },
-    { url: "/src/assets/images/princep-ghat-film.jpg", alt: "CREATIVE RECON" },
-    { url: "/src/assets/images/victoria-memorial-film.jpg", alt: "SET CONCEPTUALIZATION" }
+    { url: "/src/assets/images/bengali-heritage-mansion.jpg", alt: "CONCEPT & MOOD BOARDS" },
+    { url: "/src/assets/images/film-crew-set-kolkata.jpg", alt: "PRODUCTION DESIGN" },
+    { url: "/src/assets/images/kumartuli-sculptor-film.jpg", alt: "SCRIPT & BREAKDOWN" },
+    { url: "/src/assets/images/project-biopic-1920s.jpg", alt: "CAMERA & LENS TESTS" },
+    { url: "/src/assets/images/princep-ghat-film.jpg", alt: "LOCATION RECCE" },
+    { url: "/src/assets/images/victoria-memorial-film.jpg", alt: "SCHEDULE & BUDGET" }
 ];
 
 export const prodMarqueeImages: MarqueeImage[] = [
-    { url: "/src/assets/images/kolkata-film-hero.jpg", alt: "Production 1" },
-    { url: "/src/assets/images/howrah-bridge-dusk.jpg", alt: "Production 2" },
-    { url: "/src/assets/images/durga-puja-cinematic.jpg", alt: "Production 3" },
-    { url: "/src/assets/images/kolkata-tram-night.jpg", alt: "Production 4" },
-    { url: "/src/assets/images/project-doc-sundarbans.jpg", alt: "Production 5" }
+    { url: "/src/assets/images/kolkata-film-hero.jpg", alt: "PRINCIPAL PHOTOGRAPHY" },
+    { url: "/src/assets/images/howrah-bridge-dusk.jpg", alt: "AERIAL CINEMATOGRAPHY" },
+    { url: "/src/assets/images/durga-puja-cinematic.jpg", alt: "LIVE EVENT COVERAGE" },
+    { url: "/src/assets/images/kolkata-tram-night.jpg", alt: "NIGHT EXTERIORS" },
+    { url: "/src/assets/images/project-doc-sundarbans.jpg", alt: "DOCUMENTARY SHOOT" }
 ];
 
 export const postProdMarqueeImages: MarqueeImage[] = [
-    { url: "/src/assets/images/project-ott-thriller.jpg", alt: "Post 1" },
-    { url: "/src/assets/images/project-commercial-gold.jpg", alt: "Post 2" },
-    { url: "/src/assets/images/project-bengali-drama.jpg", alt: "Post 3" },
-    { url: "/src/assets/images/project-music-video.jpg", alt: "Post 4" },
-    { url: "/src/assets/images/project-short-film-tea.jpg", alt: "Post 5" }
+    { url: "/src/assets/images/project-ott-thriller.jpg", alt: "EDITORIAL & PACING" },
+    { url: "/src/assets/images/project-commercial-gold.jpg", alt: "COLOR GRADING" },
+    { url: "/src/assets/images/project-bengali-drama.jpg", alt: "SOUND DESIGN" },
+    { url: "/src/assets/images/project-music-video.jpg", alt: "VFX & COMPOSITING" },
+    { url: "/src/assets/images/project-short-film-tea.jpg", alt: "FINAL DELIVERY" }
 ];

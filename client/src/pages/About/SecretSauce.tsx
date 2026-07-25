@@ -6,7 +6,7 @@ export default function CoreValueSection() {
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
 
                 <div className="text-center max-w-2xl mx-auto mb-20 md:mb-28">
-                    <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight">
+                    <h2 className="text-section-heading">
                         Our Core Values
                     </h2>
                     <div className="w-16 h-[1.5px] bg-gold mx-auto mt-6" />

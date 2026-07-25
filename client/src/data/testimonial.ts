@@ -8,31 +8,31 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
     {
-        text: 'We are thrilled with our new corporate videos. The team was incredibly calm, patient, and fostered a pleasant atmosphere. Everything came together seamlessly! We wholeheartedly endorse and would recommend them anytime.',
-        author: 'SARAH ADAMS',
-        role: 'Chief Marketing Officer, HorizonTech Solutions',
-        company: 'HORIZONTECH',
+        text: 'The team at Rajashree Production delivered our brand film with exceptional professionalism. They understood our vision, managed the entire production seamlessly, and the final output exceeded our expectations. The color grading and sound design elevated our story beautifully.',
+        author: 'Marketing Director',
+        role: 'Consumer Goods Brand',
+        company: 'Kolkata',
         iconType: 'film'
     },
     {
-        text: 'StoryStream completely reinvented our advertising layout. They delivered on brief, exceeded on timelines, and elevated our raw script into a commercial masterpiece. The response metrics speak for themselves!',
-        author: 'MICHAEL LEE',
-        role: 'Director of Brand Communications, Apex Corp',
-        company: 'APEX CORP',
+        text: 'We partnered with them for a documentary series on Bengal\'s heritage crafts. Their crew\'s sensitivity to the subject, technical excellence with limited locations, and post-production finesse resulted in a film that premiered at festivals and aired on a major OTT platform.',
+        author: 'Executive Producer',
+        role: 'Documentary Production',
+        company: 'Mumbai',
         iconType: 'award'
     },
     {
-        text: 'Their coloring pipelines and high-fidelity spatial sound design make corporate content look like theatrical releases. The attention to acoustic waves is simply staggering.',
-        author: 'RAJESH SHARMA',
-        role: 'Founder, Eastern Winds Media',
-        company: 'EASTERN WINDS',
+        text: 'Their cinematography and lighting brought a cinematic quality to our corporate video that we rarely see in this category. The drone work over our facilities, the interview setups, the color grade — every technical decision served the narrative. Highly recommended.',
+        author: 'Head of Communications',
+        role: 'Manufacturing Company',
+        company: 'Kolkata',
         iconType: 'sparkles'
     },
     {
-        text: 'Working with them was an absolute game-changer. Their creative visual scripting and unmatched soundscapes transformed our brand story from ordinary to truly breathtaking.',
-        author: 'ELENA ROSTOVA',
-        role: 'VP of Product, Lumiere Global',
-        company: 'LUMIERE GLOBAL',
+        text: 'Fast turnaround, clear communication, and zero drama. We needed a series of social media shorts for a product launch. They concepted, shot, and delivered 15 vertical videos in under two weeks. The content performed 3x our benchmark. Will definitely work together again.',
+        author: 'Digital Marketing Lead',
+        role: 'Fashion & Lifestyle Brand',
+        company: 'Delhi',
         iconType: 'sparkles'
     }
 ];

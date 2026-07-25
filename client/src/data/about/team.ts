@@ -9,42 +9,42 @@ export interface TeamMember {
 export const teamMembers: TeamMember[] = [
     {
         name: 'Vikramaditya Roy',
-        role: 'PRINCIPAL FILM DIRECTOR',
+        role: 'Principal Film Director',
         image: '/src/assets/images/artist-vikram-roy.jpg',
         facebook: '#',
         linkedin: '#'
     },
     {
         name: 'Elina Roy',
-        role: 'DIRECTOR OF PHOTOGRAPHY',
+        role: 'Director of Photography',
         image: '/src/assets/images/artist-elina-roy.jpg',
         facebook: '#',
         linkedin: '#'
     },
     {
         name: 'Aisha Sen',
-        role: 'CREATIVE DIRECTOR & PRODUCER',
+        role: 'Creative Director & Producer',
         image: '/src/assets/images/artist-aisha-sen.jpg',
         facebook: '#',
         linkedin: '#'
     },
     {
         name: 'Kabir Mehta',
-        role: 'LEAD SOUND DESIGNER & COMPOSER',
+        role: 'Lead Sound Designer & Composer',
         image: '/src/assets/images/artist-kabir-mehta.jpg',
         facebook: '#',
         linkedin: '#'
     },
     {
         name: 'Sarah Sen',
-        role: 'SENIOR VFX SUPERVISOR',
+        role: 'Senior VFX Supervisor',
         image: '/src/assets/images/artist-sarah-sen.jpg',
         facebook: '#',
         linkedin: '#'
     },
     {
         name: 'Marcus Thorne',
-        role: 'PRINCIPAL FILM EDITOR',
+        role: 'Principal Film Editor',
         image: '/src/assets/images/artist-marcus-thorne.jpg',
         facebook: '#',
         linkedin: '#'

@@ -42,7 +42,7 @@ export default function BlogHeader({ blog, onBack }: BlogHeaderProps) {
       <div className="relative z-10 w-full h-dvh flex flex-col justify-end max-w-6xl mx-auto px-6 sm:px-10 md:px-12 pb-12 sm:pb-16 pt-36">
 
         {/* Editorial Blog Title */}
-        <h1 className="font-sans font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[54px] leading-[1.12] tracking-tight text-white mb-6 max-w-5xl line-clamp-2 overflow-hidden text-ellipsis">
+        <h1 className="font-sans font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[54px] leading-[1.12] tracking-tight text-white mb-6 max-w-5xl">
           {blog.title}
         </h1>
 

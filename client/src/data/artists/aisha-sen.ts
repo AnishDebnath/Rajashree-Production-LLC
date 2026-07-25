@@ -6,7 +6,7 @@ const artist: Artist = {
     name: 'Aisha Sen',
     role: 'Creative Director & Producer',
     avatar: '/src/assets/images/artist-aisha-sen.jpg',
-    bio: 'Aisha bridges artistic vision and physical film production in Kolkata. She excels at conceptualizing narrative arcs, art direction, and leading Rajashree Production LLC line management.',
+    bio: 'Aisha bridges artistic vision and physical film production in Kolkata. She excels at conceptualizing narrative arcs, art direction, and leading Rajashree Production LLP line management.',
     specialties: ['Art Direction', 'Visual Strategy', 'Talent Casting'],
     experience: '10 Years',
     instagram: '#',

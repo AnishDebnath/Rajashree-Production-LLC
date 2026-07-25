@@ -38,7 +38,7 @@ export default function Footer({ onCollaborateClick, onShowMessage, setActiveTab
         {
             name: 'Instagram',
             url: '#instagram',
-            stats: '245K',
+            stats: '12.5K',
             icon: Instagram,
             color: 'text-pink-500',
             hoverColor: 'group-hover:text-pink-400',
@@ -49,7 +49,7 @@ export default function Footer({ onCollaborateClick, onShowMessage, setActiveTab
         {
             name: 'YouTube',
             url: '#youtube',
-            stats: '1.2M',
+            stats: '8.2K',
             icon: Youtube,
             color: 'text-red-600',
             hoverColor: 'group-hover:text-red-500',
@@ -60,7 +60,7 @@ export default function Footer({ onCollaborateClick, onShowMessage, setActiveTab
         {
             name: 'Vimeo',
             url: '#vimeo',
-            stats: '48K',
+            stats: '3.1K',
             icon: Video,
             color: 'text-sky-400',
             hoverColor: 'group-hover:text-sky-300',
@@ -71,7 +71,7 @@ export default function Footer({ onCollaborateClick, onShowMessage, setActiveTab
         {
             name: 'LinkedIn',
             url: '#linkedin',
-            stats: '15K',
+            stats: '4.8K',
             icon: Linkedin,
             color: 'text-blue-600',
             hoverColor: 'group-hover:text-blue-500',
@@ -126,17 +126,16 @@ export default function Footer({ onCollaborateClick, onShowMessage, setActiveTab
                                 </div>
                                 <div className="flex flex-col text-left">
                                     <span className="font-display font-extrabold tracking-tight text-white text-base leading-none">
-                                        StoryStream
+                                        Rajashree
                                     </span>
-                                    <span className="font-mono text-[8px] tracking-[0.3em] text-accent-red font-bold uppercase leading-none mt-1">
-                                        STUDIOS
+                                    <span className="font-mono text-[8px] tracking-[0.3em] text-gold font-bold uppercase leading-none mt-1">
+                                        PRODUCTION LLP
                                     </span>
                                 </div>
                             </div>
 
                             <p className="font-sans text-neutral-400 text-xs sm:text-sm leading-relaxed max-w-sm">
-                                We are a premium cinematic production house dedicated to shaping unforgettable visual experiences.
-                                Collaborating globally to direct, produce, and edit legacy content.
+                                Kolkata-based professional film & creative production house. We create feature films, TV commercials, brand films, corporate videos, documentaries, music videos, web series, and digital content with full-service production support.
                             </p>
 
                             <div className="flex items-center gap-2 mt-2">
@@ -184,18 +183,18 @@ export default function Footer({ onCollaborateClick, onShowMessage, setActiveTab
                                 <div className="flex flex-col gap-3.5 text-xs text-neutral-400 font-semibold leading-relaxed">
                                     <div className="flex items-start gap-2.5">
                                         <MapPin className="w-4 h-4 text-accent-red shrink-0 mt-0.5" />
-                                        <span>123 Artistic Lane, NY, USA</span>
+                                        <span>Salt Lake, Sector V, Kolkata, West Bengal 700091, India</span>
                                     </div>
                                     <div className="flex items-center gap-2.5">
                                         <Mail className="w-4 h-4 text-accent-red shrink-0" />
-                                        <a href="mailto:contact@storystream.com" className="hover:text-white transition-colors">
-                                            contact@storystream.com
+                                        <a href="mailto:contact@rajashreeproduction.com" className="hover:text-white transition-colors">
+                                            contact@rajashreeproduction.com
                                         </a>
                                     </div>
                                     <div className="flex items-center gap-2.5">
                                         <Phone className="w-4 h-4 text-accent-red shrink-0" />
-                                        <a href="tel:+14165551234" className="hover:text-white transition-colors">
-                                            (416) 555-1234
+                                        <a href="tel:+913312345678" className="hover:text-white transition-colors">
+                                            +91 33 1234 5678
                                         </a>
                                     </div>
                                     <div className="flex items-start gap-2.5 text-neutral-500">
@@ -221,7 +220,7 @@ export default function Footer({ onCollaborateClick, onShowMessage, setActiveTab
                                     href={soc.url}
                                     onClick={(e) => {
                                         e.preventDefault();
-                                        onShowMessage(`Connecting to StoryStream's official ${soc.name} page...`);
+                                        onShowMessage(`Connecting to Rajashree Production LLP's official ${soc.name} page...`);
                                     }}
                                     className={`group flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-[#0d0d0f] hover:bg-[#131316] border border-white/5 ${soc.borderColor} transition-all duration-300 shadow-md ${soc.glow} text-[11px] sm:text-xs`}
                                 >
@@ -243,7 +242,7 @@ export default function Footer({ onCollaborateClick, onShowMessage, setActiveTab
 
                     {/* Bottom Bar */}
                     <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-white/5 text-[11px] font-semibold text-neutral-500">
-                        <div>© {new Date().getFullYear()} StoryStream Studios. All Right Reserved</div>
+                        <div>© {new Date().getFullYear()} Rajashree Production LLP. All Rights Reserved</div>
                         <div className="flex flex-wrap gap-x-6 gap-y-2">
                             {['Privacy Policy', 'Terms of Service', 'Cookie Settings'].map((item) => (
                                 <a

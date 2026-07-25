@@ -7,123 +7,123 @@ export interface CategoryItem {
 
 export const categoriesData: CategoryItem[] = [
     {
-        title: "Corporate Video",
+        title: "Feature Films & Web Series",
         serial: "01",
         images: [
-            "/src/assets/images/victoria-memorial-film.jpg",
+            "/src/assets/images/kolkata-film-hero.jpg",
             "/src/assets/images/bengali-heritage-mansion.jpg",
-            "/src/assets/images/princep-ghat-film.jpg"
+            "/src/assets/images/project-bengali-drama.jpg"
         ],
-        desc: "Our Corporate Video Production service is a comprehensive solution for organizations seeking effective internal and external communication tools. From employee training and company profiles to marketing messages and investor communications, our corporate videos convey your company's values, mission, and key messages to various stakeholders."
+        desc: "We make feature films and web series from start to finish — script, casting, shooting, editing, and final delivery for theaters or OTT platforms. We bring stories to life with cinema quality."
     },
     {
-        title: "Commercial Video",
+        title: "TV Commercials & Brand Films",
         serial: "02",
         images: [
             "/src/assets/images/project-commercial-gold.jpg",
             "/src/assets/images/howrah-bridge-dusk.jpg",
             "/src/assets/images/kolkata-film-hero.jpg"
         ],
-        desc: "High-impact commercial video productions tailored for brands that want to command attention. We design visually striking, narratively rich advertising films and social commercials that capture consumer interest and drive actionable results."
+        desc: "High-impact TV ads and brand films that grab attention and drive action. We handle concept, production, and post-production for brands that want to make a lasting impression."
     },
     {
-        title: "Documentary Film",
+        title: "Corporate Videos & Brand Content",
         serial: "03",
+        images: [
+            "/src/assets/images/victoria-memorial-film.jpg",
+            "/src/assets/images/bengali-heritage-mansion.jpg",
+            "/src/assets/images/princep-ghat-film.jpg"
+        ],
+        desc: "Professional corporate videos — company profiles, training videos, investor presentations, internal communications, and brand stories. Clear messaging, polished execution, delivered on time."
+    },
+    {
+        title: "Documentaries & Non-Fiction",
+        serial: "04",
         images: [
             "/src/assets/images/project-doc-sundarbans.jpg",
             "/src/assets/images/kumartuli-sculptor-film.jpg",
             "/src/assets/images/durga-puja-cinematic.jpg"
         ],
-        desc: "Deep-dive investigative documentaries and emotional human-interest stories. We bring a cinematic patience and editorial integrity to real-world storytelling, uncovering facts and feelings in unscripted environments."
+        desc: "Real documentaries — from short films to feature-length. We specialize in cultural, social, environmental, and corporate documentaries with cinematic storytelling and editorial integrity."
     },
     {
-        title: "Product Video",
-        serial: "04",
+        title: "Music Videos & Artist Content",
+        serial: "05",
+        images: [
+            "/src/assets/images/project-music-video.jpg",
+            "/src/assets/images/kolkata-tram-night.jpg",
+            "/src/assets/images/film-crew-set-kolkata.jpg"
+        ],
+        desc: "Creative music videos, lyric videos, and artist visual content. We work with musicians, labels, and managers to create visually striking content that amplifies the music and connects with fans."
+    },
+    {
+        title: "Short Films & Creative Stories",
+        serial: "06",
+        images: [
+            "/src/assets/images/project-short-film-tea.jpg",
+            "/src/assets/images/bengali-heritage-mansion.jpg",
+            "/src/assets/images/project-biopic-1920s.jpg"
+        ],
+        desc: "Narrative short films, experimental cinema, and creative storytelling. Perfect for film festivals, brand stories, proof-of-concept pilots, and artistic expression. Full production from concept to festival submission."
+    },
+    {
+        title: "Product Videos & Commercial Showcases",
+        serial: "07",
         images: [
             "/src/assets/images/project-commercial-gold.jpg",
             "/src/assets/images/project-short-film-tea.jpg",
             "/src/assets/images/film-crew-set-kolkata.jpg"
         ],
-        desc: "Stunning close-up showcases, sleek exploded-view features, and high-fidelity studio shoots. We highlight your product's textures, design nuances, and core mechanics using precision camera motion and customized lighting rigs."
+        desc: "Premium product demo videos, feature highlights, and commercial showcases. We use precision lighting, macro cinematography, and motion control to show product details, textures, and features clearly."
     },
     {
-        title: "Animation",
-        serial: "05",
+        title: "Animation, VFX & Motion Graphics",
+        serial: "08",
         images: [
             "/src/assets/images/kolkata-tram-night.jpg",
             "/src/assets/images/project-ott-thriller.jpg",
             "/src/assets/images/howrah-bridge-dusk.jpg"
         ],
-        desc: "Immersive 3D motion graphics, stylized 2D explanatory loops, and high-fidelity CGI composites. We explain complex technological pipelines or build impossible creative universes from the ground up."
+        desc: "3D animation, visual effects, motion graphics, and CGI. From explainer videos and title sequences to full VFX for films and commercials. We build impossible worlds and explain complex ideas visually."
     },
     {
-        title: "Event Video",
-        serial: "06",
+        title: "Event Coverage & Live Streaming",
+        serial: "09",
         images: [
             "/src/assets/images/durga-puja-cinematic.jpg",
             "/src/assets/images/princep-ghat-film.jpg",
             "/src/assets/images/victoria-memorial-film.jpg"
         ],
-        desc: "Comprehensive multi-camera coverage for high-profile summits, live concerts, global summits, and product announcements. We capture the energy, keynote highlights, and attendee experiences in highly polished highlights packages."
+        desc: "Multi-camera event coverage, live streaming, and highlight films for conferences, concerts, product launches, cultural festivals, and corporate events. Professional audio, real-time switching, and same-day deliverables."
     },
     {
-        title: "Educational Video",
-        serial: "07",
+        title: "Educational & Training Videos",
+        serial: "10",
         images: [
             "/src/assets/images/project-biopic-1920s.jpg",
             "/src/assets/images/bengali-heritage-mansion.jpg",
             "/src/assets/images/project-short-film-tea.jpg"
         ],
-        desc: "Clear, structured, and informative content engineered for maximum learning retention. We turn complex academic curriculum, technical manuals, and corporate training slides into engaging cinematic formats."
+        desc: "Clear, structured educational content — e-learning modules, corporate training videos, academic films, and instructional content. We simplify complex topics with visual storytelling for better retention."
     },
     {
-        title: "Entertainment Video",
-        serial: "08",
-        images: [
-            "/src/assets/images/project-bengali-drama.jpg",
-            "/src/assets/images/project-ott-thriller.jpg",
-            "/src/assets/images/project-music-video.jpg"
-        ],
-        desc: "High-energy variety shows, creative performance segments, music videos, and scripted episodic content. We supply complete creative planning, staging, and colorgrading to capture pure audience excitement."
-    },
-    {
-        title: "Fashion Video",
-        serial: "09",
-        images: [
-            "/src/assets/images/project-fashion-saree.jpg",
-            "/src/assets/images/bengali-heritage-mansion.jpg",
-            "/src/assets/images/victoria-memorial-film.jpg"
-        ],
-        desc: "Avant-garde editorial films, runway lookbooks, and high-fashion brand teasers. We play with dynamic contrast, lighting, shadows, and expressive editing rhythms to craft a captivating luxury aesthetic."
-    },
-    {
-        title: "Lifestyle",
-        serial: "10",
-        images: [
-            "/src/assets/images/project-short-film-tea.jpg",
-            "/src/assets/images/princep-ghat-film.jpg",
-            "/src/assets/images/kumartuli-sculptor-film.jpg"
-        ],
-        desc: "Authentic, relatable content focused on wellness, travel, home aesthetics, and organic daily experiences. We emphasize natural lighting, spontaneous smiles, and warm color grading to evoke comfort and aspiration."
-    },
-    {
-        title: "Interview Video",
+        title: "Interview & Testimonial Videos",
         serial: "11",
         images: [
             "/src/assets/images/bengali-heritage-mansion.jpg",
             "/src/assets/images/film-crew-set-kolkata.jpg",
             "/src/assets/images/project-biopic-1920s.jpg"
         ],
-        desc: "High-fidelity talking-head interviews, podcast captures, and executive panels. We utilize multi-mic arrays and complementary face-key lighting to deliver pristine dialog and warm, professional presence."
+        desc: "Professional talking-head interviews, customer testimonials, executive profiles, and podcast-style videos. Multi-camera setup, professional lighting, broadcast-quality audio, and polished editing."
     },
     {
-        title: "Social Media Video",
+        title: "Social Media Content & Digital Shorts",
         serial: "12",
         images: [
             "/src/assets/images/project-music-video.jpg",
             "/src/assets/images/kolkata-tram-night.jpg",
             "/src/assets/images/project-short-film-tea.jpg"
         ],
-        desc: "Vibrant, high-tempo vertical edits (9:16) optimized for TikTok, Instagram Reels, and YouTube Shorts. Engineered with instantly hooky intros, custom captions, and high energy to maximize algorithmic reach."
+        desc: "Vertical videos (9:16) for Instagram Reels, YouTube Shorts, TikTok, and LinkedIn. Fast turnaround, platform-specific formatting, custom captions, and high-energy editing designed for algorithm reach."
     }
 ];

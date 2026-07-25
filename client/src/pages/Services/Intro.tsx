@@ -46,20 +46,21 @@ export default function Intro({ onCollaborateClick, onShowMessage }: IntroProps)
             <div className="max-w-6xl mx-auto text-center space-y-12">
 
                 <div className="space-y-4 max-w-3xl mx-auto">
-                    <h2 className="font-sans font-extrabold text-2xl sm:text-4xl text-white tracking-tight">
-                        Rent, Shoot, Wow: Our Studio Awaits!
+                    <h2 className="text-section-heading">
+                        Professional Production Facilities & Equipment
                     </h2>
+                    <div className="w-16 h-[1.5px] bg-gold mx-auto mt-6" />
                     <p className="font-sans text-xs sm:text-sm text-neutral-400 leading-relaxed">
-                        We've got the coolest tech and all the resources to bring your ideas to life. Book a tour and come be a part of the excitement – we're eager to show you around with a smile!
+                        Access cinema-grade cameras, lighting, grip, sound recording suites, green screen studio, LED volume wall, and DaVinci Resolve color grading theaters. Book a facility tour to explore our production infrastructure.
                     </p>
 
                     <div className="pt-4">
                         <button
                             onClick={() => {
                                 onCollaborateClick();
-                                onShowMessage("Scheduling a Studio Tour Briefing with our team!", "success");
+                                onShowMessage("Scheduling a facility tour with our team!", "success");
                             }}
-                            className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent-red hover:bg-[#ff3b3b] text-white font-sans font-bold text-[10px] sm:text-xs tracking-widest uppercase cursor-pointer select-none transition-all duration-300"
+                            className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent-red hover:bg-[#ff3b3b] text-white font-sans font-bold text-xs tracking-widest uppercase cursor-pointer select-none transition-all duration-300"
                         >
                             <span>Book a Tour</span>
                         </button>

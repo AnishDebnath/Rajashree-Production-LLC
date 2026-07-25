@@ -3,7 +3,7 @@ import type { Album } from './index';
 const album: Album = {
     id: 'misty-palms',
     title: 'Sundarbans & Bengal Backwaters',
-    description: 'A cinematic odyssey through the misty channels of the Sundarbans and Bengal backwaters at sunrise. Soft fog blending with golden morning rays to create an ethereal, quiet world.',
+    description: 'A cinematic journey through the misty channels of the Sundarbans and Bengal backwaters at sunrise. Soft fog blending with golden morning rays to create a peaceful, quiet world.',
     coverImage: '/src/assets/images/project-doc-sundarbans.jpg',
     location: 'Sundarbans, Bengal',
     year: '2026',
@@ -18,9 +18,9 @@ const album: Album = {
         'Capturing the immense scale of Bengal coastal wilderness.'
     ],
     challenges: [
-        'Dealing with high humidity levels and sudden mist on cinema camera lenses.',
-        'Navigating wooden boats through tidal channels in pre-dawn dark to set up before mist dissipates.',
-        'Capturing subtle gradations of mangrove greens without losing structural details.'
+        'Dealing with high humidity and sudden mist on cinema camera lenses.',
+        'Navigating wooden boats through tidal channels in pre-dawn dark to set up before mist clears.',
+        'Capturing subtle shades of mangrove greens without losing structural details.'
     ],
     behindTheScenes: [
         'Spending four days on a house-boat, waking up before dawn to catch river mist at its peak.',

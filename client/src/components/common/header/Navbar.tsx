@@ -127,7 +127,7 @@ export default function Navbar({ onCollaborateClick, activeTab, setActiveTab, on
                             >
                                 <button
                                     onClick={onCollaborateClick}
-                                    className="group relative inline-flex items-center gap-1.5 px-4.5 py-2 rounded-full bg-white/5 border border-white/10 hover:border-white/20 text-white font-sans font-bold text-[10px] tracking-widest uppercase transition-all duration-300 hover:bg-white hover:text-black hover:scale-[1.02] active:scale-[0.98] shadow-[0_4px_15px_rgba(0,0,0,0.4)] cursor-pointer"
+                                    className="group relative inline-flex items-center gap-1.5 px-4.5 py-2 rounded-full bg-white/5 border border-white/10 hover:border-white/20 text-white font-sans font-bold text-xs tracking-widest uppercase transition-all duration-300 hover:bg-white hover:text-black hover:scale-[1.02] active:scale-[0.98] shadow-[0_4px_15px_rgba(0,0,0,0.4)] cursor-pointer"
                                 >
                                     Let's Talk
                                     <span className="text-xs font-sans transition-transform duration-300 group-hover:translate-x-0.5">→</span>

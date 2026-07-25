@@ -10,7 +10,7 @@ export default function Process() {
                     {/* Left Column: Descriptions and Marquee */}
                     <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
                         <div className="space-y-4">
-                            <h2 className="font-sans font-bold text-3xl sm:text-4xl text-white tracking-tight">
+                            <h2 className="text-section-heading">
                                 Pre-Production
                             </h2>
                             <div className="h-0.5 w-12 bg-gold" />

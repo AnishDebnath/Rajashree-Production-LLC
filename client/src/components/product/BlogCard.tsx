@@ -36,7 +36,7 @@ export default function BlogCard({ blog, onClick }: BlogCardProps) {
                     {blog.category}
                 </span>
 
-                <h3 className="font-sans font-semibold text-lg sm:text-[19px] text-white group-hover:text-neutral-100 transition-colors tracking-tight mt-3 mb-2.5 h-14 line-clamp-2 overflow-hidden text-ellipsis leading-snug">
+                <h3 className="font-sans font-semibold text-lg sm:text-[19px] text-white group-hover:text-neutral-100 transition-colors tracking-tight mt-3 mb-2.5 leading-snug">
                     {blog.title}
                 </h3>
 

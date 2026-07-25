@@ -35,9 +35,10 @@ export default function AboutCompany({ setActiveTab, onShowMessage }: AboutCompa
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                     <div className="lg:col-span-4 flex flex-col items-start gap-6">
-                        <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight">
+                        <h2 className="text-section-heading">
                             About Our Agency
                         </h2>
+                        <div className="h-0.5 w-12 bg-gold" />
                         <motion.button
                             whileHover={{ scale: 1.03 }}
                             whileTap={{ scale: 0.98 }}
@@ -46,7 +47,7 @@ export default function AboutCompany({ setActiveTab, onShowMessage }: AboutCompa
                                 window.scrollTo({ top: 0, behavior: 'instant' });
                                 onShowMessage("Discovering Rajashree Production agency story!", "info");
                             }}
-                            className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gold hover:bg-white text-black font-sans font-bold text-[10px] sm:text-xs tracking-widest uppercase cursor-pointer select-none transition-all duration-300 shrink-0"
+                            className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gold hover:bg-white text-black font-sans font-bold text-xs tracking-widest uppercase cursor-pointer select-none transition-all duration-300 shrink-0"
                         >
                             <span>About Us</span>
                             <ArrowUpRight className="w-3.5 h-3.5 text-black group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />

@@ -29,7 +29,7 @@ export default function BlogContent({ blog }: BlogContentProps) {
             <div key={idx} className="space-y-6">
               {/* Section Title */}
               {section.title && (
-                <h2 className="font-sans font-bold text-lg text-white tracking-tight mt-8">
+                <h2 className="text-section-heading mt-8">
                   {section.title}
                 </h2>
               )}

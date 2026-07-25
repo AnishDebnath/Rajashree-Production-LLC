@@ -16,7 +16,7 @@ export default function BlogsSection({ blogsData, onSelectBlog, setActiveTab, on
             <div className="max-w-6xl mx-auto px-6 space-y-12">
                 <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 pb-4">
                     <div className="space-y-3">
-                        <h2 className="font-sans font-bold text-3xl sm:text-4.5xl text-white tracking-tight leading-[1.1]">
+                        <h2 className="text-section-heading">
                             Dive Into Our Blogs
                         </h2>
                         <div className="h-0.5 w-16 bg-gold" />
@@ -29,7 +29,7 @@ export default function BlogsSection({ blogsData, onSelectBlog, setActiveTab, on
                             window.scrollTo({ top: 0, behavior: 'instant' });
                             onShowMessage("Showing entire filmmaking blog catalog!", "info");
                         }}
-                        className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gold hover:bg-white text-black font-sans font-bold text-[10px] sm:text-xs tracking-widest uppercase cursor-pointer select-none transition-all duration-300 shrink-0"
+                        className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gold hover:bg-white text-black font-sans font-bold text-xs tracking-widest uppercase cursor-pointer select-none transition-all duration-300 shrink-0"
                     >
                         <span>Read All Blogs</span>
                         <ArrowUpRight className="w-3.5 h-3.5 text-black group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />

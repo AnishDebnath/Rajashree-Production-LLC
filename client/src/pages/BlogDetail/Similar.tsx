@@ -42,9 +42,10 @@ export default function BlogSimilar({ similarBlogs, onSelectBlog, onShowMessage,
       {/* 3. SIMILAR BLOGS SECTION */}
       <div className="pt-16 mt-16 pb-16">
         <div className="max-w-3xl mx-auto px-6 sm:px-10 md:px-12">
-          <h2 className="font-sans font-bold text-xl sm:text-2xl text-white tracking-tight mb-12 text-left">
+          <h2 className="text-section-heading">
             Similar Blog Posts
           </h2>
+          <div className="h-0.5 w-12 bg-gold mb-4" />
 
           {/* 2-column list of matching posts - matching ProjectDetail Similar gap */}
           <AnimatePresence mode="wait">
@@ -80,7 +81,7 @@ export default function BlogSimilar({ similarBlogs, onSelectBlog, onShowMessage,
           <div className="flex justify-center mt-12">
             <button
               onClick={onBack}
-              className="group relative inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-accent-red hover:bg-[#ff3b3b] text-white font-sans font-bold text-[10px] tracking-widest uppercase cursor-pointer select-none overflow-hidden transition-all duration-300 shadow-[0_12px_40px_rgba(214,40,40,0.25)] hover:shadow-[0_16px_50px_rgba(214,40,40,0.45)] hover:-translate-y-0.5 active:scale-98"
+              className="group relative inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-accent-red hover:bg-[#ff3b3b] text-white font-sans font-bold text-xs tracking-widest uppercase cursor-pointer select-none overflow-hidden transition-all duration-300 shadow-[0_12px_40px_rgba(214,40,40,0.25)] hover:shadow-[0_16px_50px_rgba(214,40,40,0.45)] hover:-translate-y-0.5 active:scale-98"
             >
               <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               <span>Read All Blogs</span>

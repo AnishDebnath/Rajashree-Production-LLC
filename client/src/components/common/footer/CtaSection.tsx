@@ -59,10 +59,11 @@ export default function CtaSection({ onCollaborateClick }: CtaSectionProps) {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: '-50px' }}
                     transition={{ duration: 0.7, delay: 0.1 }}
-                    className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] max-w-2xl mb-6"
+                    className="text-section-heading max-w-2xl mb-3"
                 >
                     Let's shape your next visual masterpiece
                 </motion.h2>
+                <div className="w-16 h-[1.5px] bg-gold mx-auto mb-6" />
 
                 <motion.p
                     initial={{ opacity: 0, y: 15 }}

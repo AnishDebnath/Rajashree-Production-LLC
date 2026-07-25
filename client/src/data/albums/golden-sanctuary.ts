@@ -3,7 +3,7 @@ import type { Album } from './index';
 const album: Album = {
     id: 'golden-sanctuary',
     title: 'Heritage Hooghly & Victoria Serenade',
-    description: "A serene, golden visual study of Kolkata's iconic heritage architecture including Victoria Memorial and Princep Ghat, where nature and historic monuments exist in absolute harmony. This photo series explores the symmetry and majesty of Bengal's heritage structures at the break of dawn.",
+    description: "A peaceful visual study of Kolkata's famous heritage architecture — Victoria Memorial and Princep Ghat. Nature and historic monuments exist in harmony. This photo series explores the symmetry and beauty of Bengal's heritage structures at dawn.",
     coverImage: '/src/assets/images/victoria-memorial-film.jpg',
     location: 'Kolkata, Bengal',
     year: '2025-2026',
@@ -14,18 +14,18 @@ const album: Album = {
     otherEquipment: 'DJI Inspire 3 Drone, Heavy Duty Ronin 2 Gimbal',
     highlights: [
         'Documenting the architectural symmetry of Victoria Memorial and Princep Ghat during golden hours.',
-        'Capturing flocking birds over Hooghly River at sunrise in perfect sync with morning temple bells.',
-        'A deep-dive study of vintage North Kolkata heritage mansions that have stood for centuries.'
+        'Capturing birds over Hooghly River at sunrise in sync with morning temple bells.',
+        'A deep study of vintage North Kolkata heritage mansions standing for centuries.'
     ],
     challenges: [
         'Managing high-contrast lighting between bright sunrise sky and deep shadow archways.',
-        'Securing drone permissions near heritage zones to safely capture aerial vistas of Kolkata skyline.',
-        'Working with local authorities to find undisturbed compositions and capture peaceful frames.'
+        'Getting drone permissions near heritage zones for aerial views of Kolkata skyline.',
+        'Working with local authorities to find peaceful compositions and capture quiet frames.'
     ],
     behindTheScenes: [
         'Waking up at 4:00 AM daily for two weeks to study wind patterns and capture the river with mirror-like stillness.',
-        'Engaging with local wooden boatmen to navigate the Hooghly River during blue hour.',
-        'Color grading with custom warm, low-contrast presets to accentuate rich gold and amber hues.'
+        'Working with local wooden boatmen to navigate the Hooghly River during blue hour.',
+        'Color grading with custom warm, low-contrast presets to highlight rich gold and amber tones.'
     ],
     photos: [
         {

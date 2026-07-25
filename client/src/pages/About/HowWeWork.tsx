@@ -9,22 +9,23 @@ export default function HowWeWorkSection() {
 
                         {/* Left Column Narrative */}
                         <div className="lg:col-span-7 flex flex-col gap-6">
-                            <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight">
+                            <h2 className="text-section-heading">
                                 How We Work
                             </h2>
+                            <div className="h-0.5 w-12 bg-gold" />
 
                             <div className="flex flex-col gap-5 text-neutral-400 leading-relaxed font-light text-sm sm:text-base mt-4">
                                 <p className="text-white font-normal text-base sm:text-lg">
-                                    At Rajashree Production, we're all about making the creative process feel like a breeze on a sunny day. We start by diving headfirst into your ideas, and then we sprinkle our creative magic like confetti at a party.
+                                    Our production process is structured around three phases — pre-production, production, and post-production — each designed to ensure clarity, creative alignment, and on-time delivery.
                                 </p>
                                 <p className="text-gold font-semibold underline decoration-gold/30">
-                                    We keep you in the loop every step of the way because, after all, it's your show!
+                                    We maintain transparent communication at every stage so you always know where your project stands.
                                 </p>
                                 <p className="text-xs sm:text-sm">
-                                    We're the team that turns "work" into "wow", and we do it with smiles, laughter, and a touch of video wizardry. So, grab your popcorn, because this creative journey is going to be a blast!
+                                    In pre-production, we develop concepts, write scripts, storyboard, scout locations, cast talent, and plan logistics. During production, our crew captures your story with cinema-grade equipment and experienced direction. In post-production, we edit, color grade, design sound, add visual effects, and deliver in your required formats.
                                 </p>
                                 <p className="text-xs sm:text-sm">
-                                    We'll tap into our creative talents, dust off our brainstorming hats, and make sure that the journey from concept to creation is a toe-tapping, smile-inducing experience. Together, we'll create video magic that's not only effective but also unforgettable. Ready to dance to the beat of your story? Let's get started!
+                                    Whether it's a feature film, commercial, corporate video, or digital content — our team manages every detail so you can focus on the creative vision. Let's start your project.
                                 </p>
                             </div>
                         </div>

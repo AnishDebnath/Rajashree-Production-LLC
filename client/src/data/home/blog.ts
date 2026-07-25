@@ -1,23 +1,23 @@
 export const homeBlogs = [
     {
-        category: "NEWS",
-        title: "Rajashree Production Video Production Career Opportunities and Upcoming Event",
-        author: "Rajrupa Sen",
-        date: "Dec 12, 2025",
-        image: "/src/assets/images/film-crew-set-kolkata.jpg"
+        category: "STORIES",
+        title: "From Script to Screen: Our Journey Making a Feature Film in Kolkata",
+        author: "Vikramaditya Roy",
+        date: "Jan 15, 2026",
+        image: "/src/assets/images/kolkata-film-hero.jpg"
     },
     {
         category: "TIPS & TRICKS",
-        title: "Mastering Cinematic Lighting & Color: The Golden Hour Aesthetic of Kolkata",
-        author: "Vikramaditya Roy",
-        date: "Oct 12, 2025",
-        image: "/src/assets/images/howrah-bridge-dusk.jpg"
+        title: "5 Simple Tips for Making Good Corporate Videos",
+        author: "Aisha Sen",
+        date: "Jan 8, 2026",
+        image: "/src/assets/images/victoria-memorial-film.jpg"
     },
     {
-        category: "STORIES",
-        title: "Lights, Camera, Action! Behind the Scenes of a Rajashree Production Shoot",
-        author: "Marcus Thorne",
-        date: "Oct 16, 2025",
-        image: "/src/assets/images/kumartuli-sculptor-film.jpg"
+        category: "NEWS",
+        title: "Rajashree Production LLP Now Offers OTT Content Production",
+        author: "Elina Roy",
+        date: "Dec 20, 2025",
+        image: "/src/assets/images/project-ott-thriller.jpg"
     }
 ];

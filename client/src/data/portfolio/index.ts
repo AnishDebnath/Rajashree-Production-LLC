@@ -43,9 +43,21 @@ export const projectsData: Project[] = [
 // ── IDs of projects featured on home page ──
 // Add/remove IDs to control which projects appear in FeaturedPortfolio section
 export const projectCategories: Category[] = [
-    'All', 'Animation', 'Commercials', 'Corporate', 'Documentary',
-    'Educational', 'Entertainment', 'Event', 'Fashion', 'Interview',
-    'Lifestyle', 'Product Video', 'Real Estate', 'Social Media'
+    'All',
+    'Feature Film',
+    'Short Film',
+    'TV Commercial',
+    'Brand Film',
+    'Corporate Video',
+    'Music Video',
+    'Documentary',
+    'Web Series',
+    'OTT Content',
+    'Product Video',
+    'Animation/VFX',
+    'Event Coverage',
+    'Educational',
+    'Social Media'
 ];
 
 export const featuredProjectIds: string[] = ['1', '7', '3', '20', '13', '18'];
@@ -61,7 +73,7 @@ export const featuredProjects: {
         {
             id: '1',
             title: 'Sundarbans Echoes',
-            client: 'BENGAL HERITAGE',
+            client: 'BENGAL HERITAGE TRUST',
             category: 'Documentary',
             image: '/src/assets/images/project-doc-sundarbans.jpg',
         },
@@ -69,27 +81,27 @@ export const featuredProjects: {
             id: '7',
             title: 'Baluchari Heritage',
             client: 'COUTURE CREATIONS',
-            category: 'Fashion',
+            category: 'Brand Film',
             image: '/src/assets/images/project-fashion-saree.jpg',
         },
         {
             id: '3',
-            title: 'Culinary Journeys',
+            title: 'Culinary Journeys: Bengal',
             client: 'FOODWONDERS',
-            category: 'Lifestyle',
+            category: 'Short Film',
             image: '/src/assets/images/project-short-film-tea.jpg',
         },
         {
             id: '20',
             title: "The Timekeeper's Watch",
             client: 'STARFEST',
-            category: 'Entertainment',
+            category: 'Feature Film',
             image: '/src/assets/images/project-biopic-1920s.jpg',
         },
         {
             id: '13',
             title: 'Rising Tides',
-            client: 'AWARENESS INC.',
+            client: 'AWARENESS INITIATIVE',
             category: 'Documentary',
             image: '/src/assets/images/project-doc-sundarbans.jpg',
         },
@@ -97,7 +109,7 @@ export const featuredProjects: {
             id: '18',
             title: 'Kolkata Gold Commercial',
             client: 'ROYAL JEWELLERS',
-            category: 'Commercials',
+            category: 'TV Commercial',
             image: '/src/assets/images/project-commercial-gold.jpg',
         }
     ];

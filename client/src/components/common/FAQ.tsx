@@ -16,14 +16,14 @@ export default function FAQ({ faqs, onShowMessage, sectionId, className = 'bg-tr
         <section className={`relative z-20 ${className} pt-24 pb-8 px-6 md:px-12`} id={sectionId}>
             <div className="max-w-4xl mx-auto space-y-16">
                 <div className="text-center space-y-4">
-                    <h2 className="font-sans font-bold text-2xl text-white tracking-tight">
+                    <h2 className="text-section-heading">
                         Frequently Asked Questions (FAQs)
                     </h2>
                     <div className="h-0.5 w-12 bg-gold mx-auto" />
                 </div>
 
                 <div className="space-y-4">
-                    {faqs.map((faq, i) => {
+                    {faqs.slice(0, 7).map((faq, i) => {
                         const isOpen = expandedFaq === i;
                         const serialNum = String(i + 1).padStart(2, '0');
                         return (

@@ -18,9 +18,10 @@ export default function ProjectSimilarSection({
     return (
         <div className="w-full flex flex-col items-center my-14 px-6">
             <div className="max-w-2xl w-full flex flex-col gap-5 text-left">
-                <h3 className="font-display font-bold text-xl text-white tracking-tight px-1">
+                <h2 className="text-section-heading">
                     View Similar Projects
-                </h3>
+                </h2>
+                <div className="h-0.5 w-12 bg-gold" />
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full">
                     {suggestedProjects.map((proj) => (
@@ -84,7 +85,7 @@ export default function ProjectSimilarSection({
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={onBack}
-                    className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent-red hover:bg-[#ff3b3b] text-white font-sans font-bold text-[10px] sm:text-xs tracking-widest uppercase cursor-pointer select-none transition-all duration-300"
+                    className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent-red hover:bg-[#ff3b3b] text-white font-sans font-bold text-xs tracking-widest uppercase cursor-pointer select-none transition-all duration-300"
                 >
                     <span>All Projects</span>
                 </motion.button>

@@ -1,18 +1,18 @@
 import type { BlogPost } from './index';
 
 export const bengaliCinemaSlate2026: BlogPost = {
-    id: 'storystreams-gears-up-for-spectacular-2023',
+    id: 'rajashree-production-2026-bengali-cinema-slate',
     category: 'NEWS',
-    title: 'Rajashree Production LLC Unveils 2026 Bengali Cinema Slate: Feature Films & OTT Series',
-    author: 'VIKRAMADITYA ROY',
+    title: 'Rajashree Production LLP Announces 2026 Bengali Cinema Slate: Feature Films & OTT Series',
+    author: 'Vikramaditya Roy',
     date: 'JAN 15, 2026',
     image: '/src/assets/images/kolkata-film-hero.jpg',
-    excerpt: 'Get an exclusive sneak peek into our upcoming feature films, OTT thriller web series, and international festival submissions.',
-    introduction: "As we step into 2026, the team at Rajashree Production LLC is rolling out a series of cutting-edge production upgrades, expanding our creative horizons with RED 8K camera rigs and Dolby Atmos post-suites.",
+    excerpt: 'Get a sneak peek into our upcoming feature films, OTT thriller web series, and festival submissions.',
+    introduction: "As we step into 2026, the team at Rajashree Production LLP is rolling out new production upgrades, expanding our creative capabilities with RED 8K camera rigs and Dolby Atmos post-production suites.",
     sections: [
         {
-            title: 'Our Next-Gen Technological Setup',
-            content: 'We have updated our Kolkata studio floor with HDR tracking systems and DaVinci Resolve color suites.'
+            title: 'Our New Technical Setup',
+            content: 'We have upgraded our Kolkata studio floor with HDR tracking systems and DaVinci Resolve color suites.'
         },
         {
             items: [
@@ -29,5 +29,5 @@ export const bengaliCinemaSlate2026: BlogPost = {
             ]
         }
     ],
-    conclusion: "We cannot wait to share these film projects with you. 2026 is set to be our most collaborative and creative year yet!"
+    conclusion: "We can't wait to share these film projects with you. 2026 is set to be our most collaborative and creative year yet!"
 };

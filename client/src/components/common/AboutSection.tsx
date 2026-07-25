@@ -44,9 +44,10 @@ export default function AboutSection({
 
                     {/* Left Header */}
                     <div className="lg:col-span-4">
-                        <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight">
-                            About Our Agency
+                        <h2 className="text-section-heading">
+                            About<br />Rajashree Production
                         </h2>
+                        <div className="h-0.5 w-12 bg-gold" />
 
                         {showCta && onNavigateToAbout && (
                             <motion.button
@@ -57,7 +58,7 @@ export default function AboutSection({
                                     window.scrollTo({ top: 0, behavior: 'instant' });
                                     onShowMessage?.("Discovering Rajashree Production agency story!", "info");
                                 }}
-                                className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gold hover:bg-white text-black font-sans font-bold text-[10px] sm:text-xs tracking-widest uppercase cursor-pointer select-none transition-all duration-300 shrink-0 mt-6"
+                                className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gold hover:bg-white text-black font-sans font-bold text-xs tracking-widest uppercase cursor-pointer select-none transition-all duration-300 shrink-0 mt-6"
                             >
                                 <span>About Us</span>
                                 <ArrowUpRight className="w-3.5 h-3.5 text-black group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />

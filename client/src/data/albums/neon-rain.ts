@@ -3,7 +3,7 @@ import type { Album } from './index';
 const album: Album = {
     id: 'neon-rain',
     title: 'Kolkata After Dark: Tramway Lights',
-    description: "Capturing the cinematic soul of Kolkata streets at dusk and night. Wet pavement reflections, yellow trams bathed in warm ambient lights, and classic yellow taxis traveling through the city's historic arteries.",
+    description: "Capturing the cinematic soul of Kolkata streets at dusk and night. Wet pavement reflections, yellow trams in warm lights, and classic yellow taxis moving through the city's historic streets.",
     coverImage: '/src/assets/images/kolkata-tram-night.jpg',
     location: 'North Kolkata, India',
     year: '2025',
@@ -15,10 +15,10 @@ const album: Album = {
     highlights: [
         'Blending classic Kolkata trams with vintage yellow taxis under glowing streetlights.',
         'Studying rain reflections on asphalt, using passing traffic to paint streaks of warm gold and deep amber.',
-        'Exploring the tight, high-density alleyways of College Street and Shyambazar at 2:00 AM.'
+        'Exploring the tight, busy alleyways of College Street and Shyambazar at 2:00 AM.'
     ],
     challenges: [
-        'Keeping cinema camera gear dry and functional during heavy monsoon downpours.',
+        'Keeping cinema camera gear dry and working during heavy monsoon downpours.',
         'Balancing high-contrast street lights with dark shadows without overexposing highlights.',
         'Navigating fast-moving city traffic safely while positioning the camera low on wet pavement.'
     ],

@@ -1,4 +1,4 @@
-import { Sparkles, Award, Users, Target, Heart, Star } from 'lucide-react';
+import { Sparkles, Award, Users, Target, Heart, Star, Film, Camera, Mic, Layers } from 'lucide-react';
 
 export interface USP {
     title: string;
@@ -8,33 +8,43 @@ export interface USP {
 
 export const usps: USP[] = [
     {
-        title: 'Exceptional Creativity',
-        desc: 'Clients choose us for our unparalleled creative prowess. We breathe life into ideas, turning them into visually stunning, memorable videos.',
-        icon: Sparkles
+        title: 'Full-Service Production House',
+        desc: 'We handle every stage — from concept and script to shooting, editing, color grading, sound design, and final delivery. One team, complete solution.',
+        icon: Film
     },
     {
-        title: 'Proven Track Record',
-        desc: "Our portfolio is a testament to our success. We've consistently delivered outstanding results, earning the trust of clients time and again.",
-        icon: Award
-    },
-    {
-        title: 'Collaborative Approach',
-        desc: "We don't just work for our clients; we work with them. Our collaborative spirit ensures that each project is a true partnership, vision coming to life.",
+        title: 'Experienced Creative Team',
+        desc: 'Our team has award-winning directors, cinematographers, editors, sound designers, VFX artists, and producers who have worked on feature films, commercials, documentaries, and digital content.',
         icon: Users
     },
     {
-        title: 'Innovative Solutions',
-        desc: "We're known for pushing boundaries and finding innovative solutions. Clients appreciate our ability to think outside the box and deliver beyond expectations.",
+        title: 'Kolkata-Based, Global Quality',
+        desc: 'Based in Kolkata, West Bengal. We use local talent, locations, and production support while delivering quality that matches international standards for brands and platforms worldwide.',
         icon: Target
     },
     {
-        title: 'Exceptional Team',
-        desc: 'Our team is a powerhouse of talent, experience, and passion. Clients choose us for the depth of expertise and dedication we bring to every project.',
+        title: 'All Formats Under One Roof',
+        desc: 'We produce feature films, short films, TV commercials, brand films, corporate videos, music videos, documentaries, web series, OTT content, and social media content — all in one place.',
+        icon: Camera
+    },
+    {
+        title: 'Professional Equipment & Studios',
+        desc: 'High-end cinema cameras (RED, ARRI), professional lighting, grip equipment, sound recording gear, green screen studios, and post-production suites for color grading and audio mixing.',
+        icon: Sparkles
+    },
+    {
+        title: 'Client-First Collaborative Process',
+        desc: 'We work closely with you at every stage — understanding goals, sharing creative direction, taking feedback, and delivering on time and on budget. Your vision, our expertise.',
         icon: Heart
     },
     {
-        title: 'Attention to Detail',
-        desc: 'We obsess over the finest points. Every frame, every edit, every sound is carefully crafted to ensure the highest quality and maximum impact.',
-        icon: Star
+        title: 'Complete Post-Production',
+        desc: 'Full post-production including editing, color grading, VFX, motion graphics, sound design, audio mixing, subtitles, and multi-format delivery for broadcast and digital.',
+        icon: Layers
+    },
+    {
+        title: 'Transparent Production Management',
+        desc: 'Clear timelines, detailed budgets, regular updates, and dedicated production managers who handle logistics, permits, casting, locations, and crew so you can focus on the creative.',
+        icon: Award
     }
 ];

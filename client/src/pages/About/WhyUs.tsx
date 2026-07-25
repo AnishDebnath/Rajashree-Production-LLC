@@ -36,19 +36,20 @@ export default function WhyUsSection({ usps }: WhyUsSectionProps) {
 
                         {/* Right Column Narrative */}
                         <div className="lg:col-span-7 order-1 lg:order-2 flex flex-col gap-6">
-                            <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight">
+                            <h2 className="text-section-heading">
                                 Why us?
                             </h2>
+                            <div className="h-0.5 w-12 bg-gold" />
 
                             <div className="flex flex-col gap-5 text-neutral-400 leading-relaxed font-light text-sm sm:text-base mt-4">
                                 <p className="text-white font-normal text-base sm:text-lg">
-                                    People hire us not just because we're good at what we do (spoiler: we are!), but because we bring the "wow" and "wow again" to every project. We're the team that believes in making the process as enjoyable as the final product.
+                                    People hire us for our full-service production capabilities, experienced creative team, and transparent collaborative process. We handle every stage from concept to delivery with attention to craft — whether it's a feature film, commercial, documentary, or digital content.
                                 </p>
                                 <p className="text-gold font-semibold underline decoration-gold/30">
-                                    We're the friendly faces who turn your ideas into eye-popping video magic.
+                                    Our collaborative approach keeps you informed at every stage, with transparent budgets and timelines.
                                 </p>
                                 <p className="text-xs sm:text-sm">
-                                    From adding a sprinkle of fun to a dash of creativity, we've got the secret sauce that keeps our clients coming back for more. So, why hire us? Because we're not just your video crew; we're your partners in making dreams come true!
+                                    Based in Kolkata, West Bengal, we combine local production expertise with global quality standards. Our portfolio spans feature films, TV commercials, corporate videos, documentaries, music videos, web series, and digital content — all delivered with professional integrity.
                                 </p>
                             </div>
                         </div>
@@ -62,12 +63,12 @@ export default function WhyUsSection({ usps }: WhyUsSectionProps) {
                     <div id="wait-theres-more">
                         <div className="text-center max-w-2xl mx-auto mb-12">
                             <h3 className="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-white tracking-tight leading-tight">
-                                Wait! There's more....
+                                Our Core Strengths
                             </h3>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8">
-                            {usps.map((usp, uIdx) => {
+                            {usps.slice(0, 6).map((usp, uIdx) => {
                                 const IconComp = usp.icon;
                                 return (
                                     <div key={uIdx} className="flex gap-4 group">
